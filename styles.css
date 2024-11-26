@@ -1,4 +1,4 @@
-/* stile generale per il bottone */
+/* ----- BOTTONE TIPICO ----- */
 .bottone_tipico {
     font-family: Space Grotesk;
     letter-spacing: 1px;
@@ -7,11 +7,24 @@
     border: none; /* ma potrei fare 1px e poi specificare border-color e altro*/
     padding: 10px 24px;
     cursor: pointer; /* mostra la mano al passaggio del mouse */
-    display: inline-flex; /* allinea testo orizzontalmente */
     align-items: center; /* centra immagine e testo verticalmente */
 }
 
-/* stile al passaggio del mouse */
 .bottone_tipico:hover {
     background-color: #F2F2F2;  /* Cambia il colore del bottone al passaggio del mouse */
+}
+
+/* ----- BOTTONE CRAWLING DESKTOP ----- */
+.bottone_crawling {
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease; /* quando hover del mouse la transizione ci mette 0.3 sec ed è morbida */
+}
+
+.bottone-con-icona img {
+    height: 150px;
+}
+
+.bottone-con-icona:hover img {
+    content: url('whole_snake_button3-REV.png'); /* Sostituisci l'immagine */
 }
