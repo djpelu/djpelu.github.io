@@ -1,3 +1,21 @@
+/* the best way to set sizes of stuff is to do it relatively to the body of the page, so that the size is scaled based on devices ecc. */
+/* let's do so */
+body {
+    font-size: 100%; /* usiamo font size preimpostato del browser di chi usa il sito, generalmenre 16 px*/
+}
+
+h1 {
+    font-size: 2.5em; /* an em is 16 px */
+    font-family: Space Grotesk;
+    letter-spacing: 1px;
+}
+
+p {
+    font-size: 0.875em;
+    font-family: Space Grotesk;
+    letter-spacing: 1px;
+}
+
 /* ----- BOTTONE TIPICO ----- */
 .bottone_tipico {
     font-family: Space Grotesk;
