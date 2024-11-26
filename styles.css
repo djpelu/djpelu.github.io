@@ -1,9 +1,11 @@
 /* stile generale per il bottone */
 .bottone_tipico {
+    font-family: Space Grotesk;
+    letter-spacing: 1px;
     background-color: #D9F582;
     color: #2E2E2E; /* colore testo */
     border: none; /* ma potrei fare 1px e poi specificare border-color e altro*/
-    font-family: Arial;
+    padding: 10px 24px;
     cursor: pointer; /* mostra la mano al passaggio del mouse */
     display: inline-flex; /* allinea testo orizzontalmente */
     align-items: center; /* centra immagine e testo verticalmente */
