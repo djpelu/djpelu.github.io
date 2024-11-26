@@ -1,1 +1,15 @@
+/* stile generale per il bottone */
+.bottone_tipico {
+    background-color: #D9F582;
+    color: #2E2E2E; /* colore testo */
+    border: none; /* ma potrei fare 1px e poi specificare border-color e altro*/
+    font-family: Arial;
+    cursor: pointer; /* mostra la mano al passaggio del mouse */
+    display: inline-flex; /* allinea testo orizzontalmente */
+    align-items: center; /* centra immagine e testo verticalmente */
+}
 
+/* stile al passaggio del mouse */
+.bottone_tipico:hover {
+    background-color: #F2F2F2;  /* Cambia il colore del bottone al passaggio del mouse */
+}
