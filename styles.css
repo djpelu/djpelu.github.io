@@ -11,7 +11,8 @@ body {
     background-image: url("images/sfondo3_sopra_newDET.png") ;
     background-repeat:repeat-x; /* ripete immagine su asse x */
     background-position: center;
-    height: 822px;
+    background-size: 45em;
+    height: 45em;
 }
 
 h1 {
