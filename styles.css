@@ -5,17 +5,18 @@ i vari elementi */
 body {
     font-family: Space Grotesk;
     font-size: 100%; /* usiamo font size preimpostato del browser di chi usa il sito, generalmenre 16 px*/
-    letter-spacing: 0.7em;
+}
+
+#home_s1 {
+    background-image: url("images/sfondo3_sopra_newDET.png") ;
 }
 
 h1 {
     font-size: 2.5em;
-    color:red
 }
 
 p {
     font-size: 0.875em;
-    color: blue
 }
 
 /* ----- BOTTONE TIPICO ----- */
