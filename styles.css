@@ -44,5 +44,5 @@ p {
 }
 
 .bottone-con-icona:hover img {
-    content: url('whole_snake_button3-REV.png'); /* Sostituisci l'immagine */
+    content: url('images/whole_snake_button3-REV.png'); /* Sostituisci l'immagine */
 }
