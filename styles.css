@@ -2,30 +2,46 @@
 /* qui in body imposto gli stili generali rispetto ai quali poi definisco/differenzio i vari elementi per esempio mettendo 
 font-size: 100% scelgo di usare la font size preimpostata del browser degli users che poi posso scalare quando definisco 
 i vari elementi */
+
 body {
     font-family: Space Grotesk;
     font-size: 100%; /* usiamo font size preimpostato del browser di chi usa il sito, generalmenre 16 px*/
+    margin: 0;
 }
 
+/* ----- SEZIONI ----- */
+/* SEZIONE 1 */
 #home_s1 {
+    height: 46em; /* altezza sezione */
+    text-align: center;
     background-image: url("images/sfondo3_sopra_newDET.png") ;
     background-repeat:repeat-x; /* ripete immagine su asse x */
     background-position: center top;
-    background-size: 50em;
-    height: 50em;
-    padding: none;
+    background-size: auto 100%;  /* larghezza automatica, altezza = 100% dell'altezza della sezione */
 }
 
-h1 {
+#home_s1 h1 {
     font-size: 2.5em;
-    color: red
+    margin: 0;
 }
 
-p {
+#home_s1 p {
     font-size: 0.875em;
+    margin: 0;
 }
 
-/* ----- BOTTONE TIPICO ----- */
+/* SEZIONE 2 */
+#home_s2 {
+    height: 23em; /* altezza sezione */
+    text-align: center;
+    background-image: url("images/sfondo3_sotto.png") ;
+    background-repeat:repeat-x; /* ripete immagine su asse x */
+    background-position: center top;
+    background-size: auto 100%;  /* larghezza automatica, altezza = 100% dell'altezza della sezione */
+}
+
+/* ----- BOTTONI ----- */
+/* BOTTONE TIPICO */
 .bottone_tipico {
     background-color: #D9F582;
     color: #2E2E2E; /* colore testo */
@@ -39,7 +55,7 @@ p {
     background-color: #F2F2F2;  /* Cambia il colore del bottone al passaggio del mouse */
 }
 
-/* ----- BOTTONE CRAWLING DESKTOP ----- */
+/* BOTTONE CRAWLING DESKTOP */
 .bottone_crawling {
     border: none;
     cursor: pointer;
