@@ -39,10 +39,10 @@ p {
     transition: 0.3s ease; /* quando hover del mouse la transizione ci mette 0.3 sec ed è morbida */
 }
 
-.bottone-con-icona img {
+.bottone_crawling img {
     height: 150px;
 }
 
-.bottone-con-icona:hover img {
+.bottone_crawling:hover img {
     content: url('images/whole_snake_button3-REV.png'); /* Sostituisci l'immagine */
 }
