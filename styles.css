@@ -9,6 +9,9 @@ body {
 
 #home_s1 {
     background-image: url("images/sfondo3_sopra_newDET.png") ;
+    background-repeat:repeat-x; /* ripete immagine su asse x */
+    background-position: center;
+    height: 822px;
 }
 
 h1 {
@@ -21,7 +24,6 @@ p {
 
 /* ----- BOTTONE TIPICO ----- */
 .bottone_tipico {
-    letter-spacing: 2.5em;
     background-color: #D9F582;
     color: #2E2E2E; /* colore testo */
     border: none; /* ma potrei fare 1px e poi specificare border-color e altro*/
