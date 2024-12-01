@@ -15,36 +15,37 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<!-- Il tag <body> contiene tutto il contenuto visibile della pagina (testo, immagini, link, ecc.) -->
-<body>
-
+<!-- nel body ci sono tutti gli elementi visibili del sito -->
+<body>        
     <!-- SEZIONE 1 -->
-     <section id="home_s1">
-        <!-- header di livello 1 -->
-        <h1>dj-pelu</h1>
+    <section id="home_s1">
+    <!-- credo un container grande quanto l'immagine sfondo così da poterci posizionare le cose come voglio -->
+        <div class="bg_container">
 
-        <!-- paragrafo sotto l'intestazione <p> -->
-        <p>faccio molte cose, principlamente scrivo, ma di certo non sono una dj</p>
+            <div class="bio_container">
+                <h1>dj-pelu</h1>
+                <p>faccio molte cose, principlamente scrivo, ma di certo non sono una dj</p>
+                <button class="bottone_tipico">altre cose su di me</button>
+            </div>
 
-        <!-- inserisco bottoni semplici, solo testo, con una class che mi permetteraà di personalizzarli in css-->
-        <!-- metto i bottoni in un contenitore per gestirli più facilmente -->
-         <div class="box_bottoni">
-            <button class="bottone_tipico">alta letteartura</button>
-            <button class="bottone_tipico">bei dipinti</button>
-            <button class="bottone_tipico">canzoni</button>
-            <button class="bottone_tipico">video</button>
-            <button class="bottone_tipico">ci sono cavalli più belli</button>
-         </div>
+            <div class="art_container">
+                <button class="bottone_tipico">alta letteartura</button>
+                <button class="bottone_tondo">art roulette</button>
+            </div>
 
+            <!-- inserisco il bottone mobile di TRE!-->
+            <button class="bottone_tipico pos_bottone_TRE">ci sono cavalli più belli</button>
 
-        <!-- inserisco bottone con icona-->
-        <button class="bottone_crawling">
-            <img src="images/whole_snake_button2-REV.png" alt="bottone-videogioco-crawling">
-        </button>
+            <!-- inserisco bottone con icona per crawling-->
+            <button class="bottone_crawling">
+                <img src="images/whole_snake_button2-REV.png" alt="bottone-videogioco-crawling">
+            </button>
+        </div>
     </section>
 
     <!-- SEZIONE 2 -->
     <section id="home_s2"></section>
+</div>
     
 </body>
 </html>
