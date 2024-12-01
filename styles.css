@@ -9,13 +9,23 @@ body {
     margin: 0;
 }
 
-/* ----- SEZIONI ----- */
 /* SEZIONE 1 */
 #home_s1 {
     position: relative;
     height: 46em; /* altezza sezione */
     text-align: center;
     background-image: url("images/sfondo3_sopra_newDET.png") ;
+    background-repeat:repeat-x; /* ripete immagine su asse x */
+    background-position: center top;
+    background-size: auto 100%;  /* larghezza automatica, altezza = 100% dell'altezza della sezione */
+}
+
+/* SEZIONE 2 */
+#home_s2 {
+    position: relative;
+    height: 23em; /* altezza sezione */
+    text-align: center;
+    background-image: url("images/sfondo3_sotto.png") ;
     background-repeat:repeat-x; /* ripete immagine su asse x */
     background-position: center top;
     background-size: auto 100%;  /* larghezza automatica, altezza = 100% dell'altezza della sezione */
@@ -32,34 +42,42 @@ body {
     transform: translate(-50%, -50%); /* sposta l'elemento indietro della metà della sua altezza e larghezza */
 }
 
-#home_s1 .bio_container{
-    position: inherit; /* eredita position absolute dal parent */
-    left: 50%;
-    transform: translate(-50%, 0%);
-}
-
-#home_s1 .art_container{
+#home_s1 .main_container{
     position: inherit;
     transform: translate(-50%, -50%);
     left: 50%;
-    top: 50%;
+    top: 38%;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1.5em;
 }
 
+#home_s2 .social_container {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 1.5em;
+}
+
 /* TESTI */
-#home_s1 h1 {
-    font-size: 2.5em;
+h1 {
+    font-size: 3em;
     padding-top: 0.5em;
+    padding-bottom: 0.5em;
     margin: 0;
 }
 
-#home_s1 p {
+p {
     font-size: 1.1em;
-    padding: 0.3em;
+    padding: 0em;
     margin: 0;
+}
+
+.highlight {
+    background-color: #F7F7FF;
 }
 
 /* BOTTONE TIPICO */
@@ -99,8 +117,20 @@ body {
     background-color: #F2F2F2;
 }
 
+/* BOTTONE ICONA */
+.social_icon {
+    height: 7em;
+    width: auto;
+}
+
+.bottone_social {
+    background-color: #FFFEF2;
+    border: none;
+    cursor: pointer;
+}
+
 /* BOTTONE TRE */
-#home_s1 .pos_bottone_TRE {
+.pos_bottone_TRE {
     position: inherit;
     top: 63.5%;
     left: 72%;
@@ -125,13 +155,3 @@ body {
     content: url('images/whole_snake_button3-REV.png'); /* Sostituisci l'immagine */
 }
 
-
-/* SEZIONE 2 */
-#home_s2 {
-    height: 23em; /* altezza sezione */
-    text-align: center;
-    background-image: url("images/sfondo3_sotto.png") ;
-    background-repeat:repeat-x; /* ripete immagine su asse x */
-    background-position: center top;
-    background-size: auto 100%;  /* larghezza automatica, altezza = 100% dell'altezza della sezione */
-}
