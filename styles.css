@@ -1,12 +1,46 @@
+/*creo la class nascosto per nasscondere le robe*/
+.nascosto  {
+    display: none;
+}
 
 /* qui in body imposto gli stili generali rispetto ai quali poi definisco/differenzio i vari elementi per esempio mettendo 
 font-size: 100% scelgo di usare la font size preimpostata del browser degli users che poi posso scalare quando definisco 
 i vari elementi */
-
 body {
     font-family: Space Grotesk;
     font-size: 100%; /* usiamo font size preimpostato del browser di chi usa il sito, generalmenre 16 px*/
     margin: 0;
+}
+
+/* TESTI */
+h1 {
+    font-size: 3em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    margin: 0;
+}
+
+p {
+    font-size: 1.1em;
+    padding: 0em;
+    margin: 0;
+    overflow-wrap: break-word;
+}
+
+ul {
+    font-size: 1.1em;
+    padding: 0.3em;
+    margin: 0;
+    overflow-wrap: break-word;
+}
+
+ul li {
+    margin-bottom: 0.2em;
+    text-indent: 0;
+}
+
+.highlight {
+    background-color: #F7F7FF;
 }
 
 /* SEZIONE 1 */
@@ -37,8 +71,8 @@ body {
     height: 46em;
     width: 70em;
     position: absolute;
-    top: 50%; /* sposta il centro dell'elemento al 50% dell'altezza del container */
-    left: 50%; /* sposta il centro dell'elemento al 50% della larghezza del container */
+    top: 50%; /* sposta l'angolo in alto a destra dell'elemento al 50% dell'altezza del container */
+    left: 50%; /* sposta l'angolo in altro a destra dell'elemento al 50% della larghezza del container */
     transform: translate(-50%, -50%); /* sposta l'elemento indietro della metà della sua altezza e larghezza */
 }
 
@@ -62,22 +96,41 @@ body {
     gap: 1.5em;
 }
 
-/* TESTI */
-h1 {
-    font-size: 3em;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    margin: 0;
+.bio_flexbox {
+    flex-wrap: wrap; /*quando stringo il display infila le foto tra le scritte*/
+    display: flex;
+    height: 100vh;
+    background-color: #FFFEF2;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 2em;
+    padding-right: 2em;
 }
 
-p {
-    font-size: 1.1em;
-    padding: 0em;
-    margin: 0;
+#bio_container {
+    padding-right: 2em;
+    padding-left: 2em;
+    align-self: center;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.highlight {
-    background-color: #F7F7FF;
+#bio_p_container {
+    text-indent: 1em;
+    text-align: justify;
+    padding-bottom: 2em;
+}
+
+#left_pic {
+    height: 15em;
+    width:auto;
+}
+
+#right_pic {
+    width: 22em;
+    height:auto;
 }
 
 /* BOTTONE TIPICO */
@@ -117,7 +170,7 @@ p {
     background-color: #F2F2F2;
 }
 
-/* BOTTONE ICONA */
+/* BOTTONE SOCIAL */
 .social_icon {
     height: 7em;
     width: auto;
@@ -155,3 +208,95 @@ p {
     content: url('images/whole_snake_button3-REV.png'); /* Sostituisci l'immagine */
 }
 
+/* BOTTONE CRAWLING MOBILE */
+.bottone_crawling_mobile {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease; /* quando hover del mouse la transizione ci mette 0.3 sec ed è morbida */
+}
+
+.bottone_crawling_mobile img {
+    height: 17em;
+}
+
+.bottone_crawling_mobile:hover img {
+    content: url('images/lil_snake_button2.png'); /* Sostituisci l'immagine */
+}
+
+/* -------------------- MOBILE VERSIONE -------------------- */
+/* IDEA CLAMO: metti le fiamme che bruciano il prato nella versione per phone */
+@media only screen and (max-width: 600px) {
+
+    /* elimino margini bianchi e problemi di alignemnt */
+    html, body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    /* elimino cose */
+    .pos_bottone_TRE, .bottone_crawling {
+        display: none;
+    }
+
+    /* aggiungo cose */
+    .nascosto {
+        display: inline;
+    }
+
+    /* sistemo sezione 1 */
+    #home_s1 .main_container{
+        transform: translate(-50%, 0);
+        left: 50%;
+        top: 0;
+        gap: 1em;
+    }
+
+    .title {
+        padding-top: 1em;
+        padding-bottom: 0;
+    }
+
+    .bio {
+        font-size: 0.95em;
+        padding-bottom: 0.3em;
+    }
+
+    .bottone_tipico {
+        font-size: 1em;
+    }
+
+    .bottone_tondo {
+        font-size: 1em;
+    }
+
+    /* sistemo sezione 2 */
+    #home_s2 {
+        height: 6em;
+        background-image: none;
+        background-color: #FFFEF2;
+    }
+
+    #home_s2 .social_container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        gap: 0.5em;
+    }
+
+    .social_icon {
+        height: 5em;
+        width: auto;
+    }
+    
+    .bottone_social {
+        background-color: #FFFEF2;
+        border: none;
+        cursor: pointer;
+    }
+}
