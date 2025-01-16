@@ -104,7 +104,7 @@ ul li {
     background-size: auto 100%;  /* larghezza automatica, altezza = 100% dell'altezza della sezione */
 }
 
-/* CONTAINER */
+/* HOME CONTAINERS */
 .bg_container{
     margin: 0 auto; /*centra il container nel viewport*/
     height: 46em;
@@ -135,6 +135,8 @@ ul li {
     gap: 1.5em;
 }
 
+
+/* BIO CONTAINERS */
 .bio_flexbox {
     flex-wrap: wrap; /*quando stringo il display infila le foto tra le scritte*/
     display: flex;
@@ -256,7 +258,7 @@ ul li {
 }
 
 .bottone_crawling_mobile img {
-    height: 17em;
+    height: 19em;
 }
 
 .bottone_crawling_mobile:hover img {
