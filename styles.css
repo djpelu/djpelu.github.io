@@ -7,7 +7,7 @@
 font-size: 100% scelgo di usare la font size preimpostata del browser degli users che poi posso scalare quando definisco 
 i vari elementi */
 body {
-    font-family: Space Grotesk;
+    font-family: "Space Grotesk", "Roboto", "Helvetica", "Arial", sans-serif;
     font-size: 100%; /* usiamo font size preimpostato del browser di chi usa il sito, generalmenre 16 px*/
     margin: 0;
 }
@@ -66,7 +66,7 @@ ul li {
 }
 
 /* CONTAINER */
-#home_s1 .bg_container{
+.bg_container{
     margin: 0 auto; /*centra il container nel viewport*/
     height: 46em;
     width: 70em;
@@ -87,7 +87,7 @@ ul li {
     gap: 1.5em;
 }
 
-#home_s2 .social_container {
+.social_container {
     position: absolute;
     top: 45%;
     left: 50%;
@@ -123,12 +123,12 @@ ul li {
     padding-bottom: 2em;
 }
 
-#left_pic {
+.left_pic {
     height: 15em;
     width:auto;
 }
 
-#right_pic {
+.right_pic {
     width: 22em;
     height:auto;
 }
@@ -225,7 +225,6 @@ ul li {
 }
 
 /* -------------------- MOBILE VERSIONE -------------------- */
-/* IDEA CLAMO: metti le fiamme che bruciano il prato nella versione per phone */
 @media only screen and (max-width: 600px) {
 
     /* elimino margini bianchi e problemi di alignemnt */
@@ -236,6 +235,8 @@ ul li {
         padding: 0;
         overflow-x: hidden;
     }
+
+    /*HOME*/
 
     /* elimino cose */
     .pos_bottone_TRE, .bottone_crawling {
@@ -299,4 +300,25 @@ ul li {
         border: none;
         cursor: pointer;
     }
+
+    /*BIO*/
+    .left_pic, .right_pic {
+        display: none;
+    }
+
+    #bio_title{
+        font-size: 2.3em;
+        padding-bottom: 0.5em;
+    }
+
+    .bio_flexbox {
+        height: auto;
+        padding-left: none;
+        padding-right: none;
+        padding-bottom: 2em;
+    }
+    
+    #bio_container {
+        width:100%;
+    } 
 }
