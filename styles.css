@@ -15,9 +15,9 @@ body {
 /* TESTI */
 h1 {
     font-size: 3em;
+    margin: 0;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
-    margin: 0;
 }
 
 p {
@@ -39,8 +39,47 @@ ul li {
     text-indent: 0;
 }
 
-.highlight {
+.cream_highlight {
     background-color: #F7F7FF;
+}
+
+.orange_highlight {
+    background-color: orange;
+}
+
+/* POP-UP */
+#allarme {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("images/allarme.png");
+    background-size: fill;
+    position: inherit;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    padding: 1em;
+    width: 13em;
+    height: auto;
+}
+
+#allarme h1 {
+    color: red;
+    padding: 0;
+    font-size: 2em;
+}
+
+#allarme p {
+    color: brown;
+}
+
+#allarme_x{
+    color:red;
+    background-color: transparent;
+    border: none;
+    font-weight: 900;
+    font-size: 1.5em;
 }
 
 /* SEZIONE 1 */
@@ -135,7 +174,7 @@ ul li {
 
 /* BOTTONE TIPICO */
 .bottone_tipico {
-    font-family: Space Grotesk;
+    font-family: "Space Grotesk", "Roboto", "Helvetica", "Arial", sans-serif;
     font-size: 1.2em;
     background-color: #D9F582;
     color: #2E2E2E; /* colore testo */
@@ -153,7 +192,7 @@ ul li {
 /* BOTTONE TONDO */
 .bottone_tondo {
     display: inline-block;
-    font-family: Space Grotesk;
+    font-family: "Space Grotesk", "Roboto", "Helvetica", "Arial", sans-serif;
     font-size: 1.1em;
     background-color: #D9F582;
     color: #2E2E2E;
@@ -237,7 +276,6 @@ ul li {
     }
 
     /*HOME*/
-
     /* elimino cose */
     .pos_bottone_TRE, .bottone_crawling {
         display: none;
@@ -256,12 +294,12 @@ ul li {
         gap: 1em;
     }
 
-    .title {
+    h1 {
         padding-top: 1em;
         padding-bottom: 0;
     }
 
-    .bio {
+    p, ul {
         font-size: 0.95em;
         padding-bottom: 0.3em;
     }
@@ -306,11 +344,6 @@ ul li {
         display: none;
     }
 
-    #bio_title{
-        font-size: 2.3em;
-        padding-bottom: 0.5em;
-    }
-
     .bio_flexbox {
         height: auto;
         padding-left: none;
@@ -320,5 +353,11 @@ ul li {
     
     #bio_container {
         width:100%;
-    } 
+        padding: 0;
+    }
+
+    #bio_container h1 {
+        font-size: 2.3em;
+        padding-bottom: 0.5em;
+    }
 }
