@@ -353,7 +353,7 @@ ul li {
     
     #bio_container {
         width:100%;
-        padding: 0;
+        padding: 1em;
     }
 
     #bio_container h1 {
