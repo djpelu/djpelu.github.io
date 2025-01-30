@@ -12,12 +12,22 @@ body {
     margin: 0;
 }
 
+#tre_body {
+    background-image: url("images/tre_bg.png");
+}
+
 /* TESTI */
 h1 {
     font-size: 3em;
     margin: 0;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
+}
+
+h2 {
+    font-size: 2.2em;
+    margin: 0;
+    padding-bottom: 0.2em;
 }
 
 p {
@@ -55,7 +65,7 @@ ul li {
     justify-content: center;
     background-image: url("images/allarme.png");
     background-size: fill;
-    position: inherit;
+    position: absolute;
     transform: translate(-50%, -50%);
     left: 50%;
     top: 50%;
@@ -82,7 +92,7 @@ ul li {
     font-size: 1.5em;
 }
 
-/* SEZIONE 1 */
+/* HOME SEZIONE 1 */
 #home_s1 {
     position: relative;
     height: 46em; /* altezza sezione */
@@ -93,7 +103,7 @@ ul li {
     background-size: auto 100%;  /* larghezza automatica, altezza = 100% dell'altezza della sezione */
 }
 
-/* SEZIONE 2 */
+/* HOME SEZIONE 2 */
 #home_s2 {
     position: relative;
     height: 23em; /* altezza sezione */
@@ -102,6 +112,14 @@ ul li {
     background-repeat:repeat-x; /* ripete immagine su asse x */
     background-position: center top;
     background-size: auto 100%;  /* larghezza automatica, altezza = 100% dell'altezza della sezione */
+}
+
+/* CONTAINERS */
+.vert_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 /* HOME CONTAINERS */
@@ -116,7 +134,7 @@ ul li {
 }
 
 #home_s1 .main_container{
-    position: inherit;
+    position: absolute;
     transform: translate(-50%, -50%);
     left: 50%;
     top: 38%;
@@ -164,14 +182,38 @@ ul li {
     padding-bottom: 2em;
 }
 
-.left_pic {
-    height: 15em;
-    width:auto;
+/*TRE CONTAINERS*/
+#tre_oriz_box {
+    display: flex;
+    width: 70vw;
+    height: 75vh;
+    justify-content: center;
 }
 
-.right_pic {
-    width: 22em;
-    height:auto;
+#tre_text_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: bisque;
+    box-shadow: 3px 2px 5px black;
+    border-color: 1px black;
+    padding:2em 1em 3em 1em;
+    margin: 2em;
+    text-align: center;
+    min-width: 17em;
+    max-width: 30em;
+}
+
+#tre_avviso {
+    font-family: 'Courier New', Courier, monospace;
+    padding: 4em;
+    background-image: url("images/tre_avviso.png");
+    background-size: 100% 100%; /*l'immagine si adatta alle dimensioni del box*/
+}
+
+.tre_graffiti{
+    margin-top: 10em;
+    width: 35%;
 }
 
 /* BOTTONE TIPICO */
@@ -193,7 +235,6 @@ ul li {
 
 /* BOTTONE TONDO */
 .bottone_tondo {
-    display: inline-block;
     font-family: "Space Grotesk", "Roboto", "Helvetica", "Arial", sans-serif;
     font-size: 1.1em;
     background-color: #D9F582;
@@ -211,6 +252,22 @@ ul li {
     background-color: #F2F2F2;
 }
 
+/* BOTTONE ROSSO */
+.bottone_rosso {
+    background-color: red;
+    border:none;
+    width: 6em;
+    height: 6em;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.1s ease;
+    box-shadow: 3px 2px 5px black;
+}
+
+.bottone_rosso:hover {
+    background-color: #DB0000;
+}
+
 /* BOTTONE SOCIAL */
 .social_icon {
     height: 7em;
@@ -225,7 +282,7 @@ ul li {
 
 /* BOTTONE TRE */
 .pos_bottone_TRE {
-    position: inherit;
+    position: absolute;
     top: 63.5%;
     left: 72%;
 }
@@ -236,7 +293,7 @@ ul li {
     border: none;
     cursor: pointer;
     transition: 0.3s ease; /* quando hover del mouse la transizione ci mette 0.3 sec ed è morbida */
-    position: inherit;
+    position: absolute;
     top: 81.7%;
     left: 25%; 
 }
@@ -258,7 +315,7 @@ ul li {
 }
 
 .bottone_crawling_mobile img {
-    height: 18em;
+    height: 18.5em;
 }
 
 .bottone_crawling_mobile:hover img {
@@ -342,7 +399,7 @@ ul li {
     }
 
     /*BIO*/
-    .left_pic, .right_pic {
+    .bio_pic {
         display: none;
     }
 
@@ -361,5 +418,26 @@ ul li {
     #bio_container h1 {
         font-size: 2.3em;
         padding-bottom: 0.5em;
+    }
+
+    /*TRE*/
+    #tre_oriz_box {
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+    }
+
+    .tre_graffiti{
+        margin-top: 10em;
+        width: 60%;
+    }
+
+    #tre_text_box {
+        padding: 1.5em 2em 2em 2em;
+        margin: 2em;
+    }
+    
+    #tre_avviso {
+        padding: 3em;
     }
 }
