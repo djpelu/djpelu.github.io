@@ -59,7 +59,7 @@ ul li {
 
 /* POP-UP */
 #allarme {
-    display: none;
+    /* display: none; */ /* COSI SI VEDE ANCHE DA PC PER ORA*/
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -321,6 +321,12 @@ ul li {
 .bottone_crawling_mobile:hover img {
     content: url('images/lil_snake_button2.png'); /* Sostituisci l'immagine */
 }
+
+/* BOTTONE LIT  MOBILE */
+.lit_pic {
+    height: 17em;
+}
+
 
 /* -------------------- MOBILE VERSIONE -------------------- */
 @media only screen and (max-width: 600px) {
