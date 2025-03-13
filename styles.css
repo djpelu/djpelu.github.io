@@ -16,6 +16,10 @@ body {
     background-image: url("images/tre_bg.png");
 }
 
+#lit_body {
+    background-color: peachpuff;
+}
+
 /* TESTI */
 h1 {
     font-size: 3em;
@@ -216,6 +220,27 @@ ul li {
     width: 35%;
 }
 
+/* TUTTO LIT */
+
+
+.lit_box {
+    display: inline-block;
+    padding: 2em 1em 0em 3em;
+}
+
+.lit_btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease; /* quando hover del mouse la transizione ci mette 0.3 sec ed è morbida */
+}
+
+.lit_pic {
+    height: 17em;
+}
+
+
+
 /* BOTTONE TIPICO */
 .bottone_tipico {
     font-family: "Space Grotesk", "Roboto", "Helvetica", "Arial", sans-serif;
@@ -322,10 +347,6 @@ ul li {
     content: url('images/lil_snake_button2.png'); /* Sostituisci l'immagine */
 }
 
-/* BOTTONE LIT  MOBILE */
-.lit_pic {
-    height: 17em;
-}
 
 
 /* -------------------- MOBILE VERSIONE -------------------- */
