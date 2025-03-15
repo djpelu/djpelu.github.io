@@ -61,6 +61,23 @@ ul li {
     background-color: orange;
 }
 
+/* EFFETTO TYPEWRITER: cursore*/
+#typewriter {
+    width: max-content;
+    overflow: hidden;
+    padding:0;
+    border-right: .15em solid black; /* crea il finto cursore */
+    white-space: nowrap; /* Impedisce al testo di andare a capo */
+    letter-spacing: .15em; /* aggiunge spazio tra le lettere per migliorare l'effetto */
+    animation: blink-caret 0.75s step-end infinite; /* uso l'animazione che ho creato qui sotto che fa lampeggiare il cursore. dura 0.75s, si ripete all'infinito e usa step-end per un effetto più netto */
+}
+
+/* creo animazione del cursore */
+@keyframes blink-caret {
+    from, to { border-color: transparent } /* a inizio e fine animazione il cursore è trasparent */
+    50% { border-color: black; } /* a metà animazione il cursore diventa nero */
+}
+
 /* POP-UP */
 #allarme {
     /* display: none; */ /* COSI SI VEDE ANCHE DA PC PER ORA*/
@@ -221,8 +238,6 @@ ul li {
 }
 
 /* TUTTO LIT */
-
-
 .lit_box {
     display: inline-block;
     padding: 2em 1em 0em 3em;
@@ -239,7 +254,10 @@ ul li {
     height: 17em;
 }
 
-
+#lit_title{
+    height: 3em;
+    margin: 2em 0 1em 3em;
+    }
 
 /* BOTTONE TIPICO */
 .bottone_tipico {
