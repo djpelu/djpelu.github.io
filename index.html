@@ -20,48 +20,44 @@
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
 </head>
 
-<!-- nel body ci sono tutti gli elementi visibili del sito -->
 <body>
-
     <!-- SEZIONE 1 -->
     <section id="home_s1">
-    <!-- credo un container grande quanto l'immagine sfondo così da poterci posizionare le cose come voglio -->
-        <div class="bg_container">
-
+        <div class="bg_container"> <!-- container grande quanto l'immagine sfondo così posso posizionare le cose come voglio -->
             <div class="main_container">
                 <h1>dj-pelu</h1>
                 <p> <span class="cream_highlight">faccio molte cose,<br class="nascosto"> principalmente scrivo,<br>ma di certo non sono una dj</span></p>
                 <a href="bio.html">
-                    <button class="bottone_tipico">altre cose su di me</button>
+                    <button class="btn_verde btn_rettangolo">altre cose su di me</button>
                 </a>
                 <a href="lit.html">
-                    <button class="bottone_tipico">alta letteratura</button>
+                    <button class="btn_verde btn_rettangolo">alta letteratura</button>
                 </a>
-                <button class="bottone_tondo">art roulette</button>
-                <!-- bottoni nascosti: crawling mobile + 3! mobile -->
-                <button class="bottone_crawling_mobile nascosto"><img src="images/lil_snake_button1.png" alt="bottone-videogioco-crawling"></button>
+                <button class="btn_verde btn_tondo">art roulette</button>
+                <!-- bottoni nascosti: crawling mobile + 3 mobile -->
+                <button class="btn_crawling_mobile nascosto"><img src="images/lil_snake_button1.png"></button>
                 <a href="TRE.html">
-                    <button class="bottone_tipico nascosto">dove sono i cavalli?!</button>
+                    <button class="btn_verde btn_rettangolo nascosto">dove sono i cavalli?!</button>
                 </a>
             </div>
 
-            <!-- inserisco pop-up di allarme per versione mobile -->
+            <!-- bottone desktop di TRE!-->
+            <a href="TRE.html">
+                <button class="btn_verde btn_rettangolo pos_btn_TRE">ci sono cavalli più belli</button>
+            </a>
+
+            <!-- bottone desktop crawling-->
+            <button class="btn_crawling">
+                <img src="images/whole_snake_button2-REV.png">
+            </button>
+
+            <!-- pop-up di allarme per versione mobile -->
             <div id="allarme">
                 <h1>ATTENZIONE!!</h1>
             <!-- <p>questo sito è molto meglio dal pc! pensaci mentre lo guardi fal telefono</p>-->
                 <p>questo sito non è ancora finito e anzi è molto lontano dall'esserlo</p>
                 <button id="allarme_x">X</button>
             </div>
-
-            <!-- inserisco il bottone desktop di TRE!-->
-            <a href="TRE.html">
-                <button class="bottone_tipico pos_bottone_TRE">ci sono cavalli più belli</button>
-            </a>
-
-            <!-- inserisco bottone desktop crawling-->
-            <button class="bottone_crawling">
-                <img src="images/whole_snake_button2-REV.png" alt="bottone-videogioco-crawling">
-            </button>
             
 
         </div>
@@ -71,17 +67,16 @@
     <section id="home_s2">
         <div class="social_container">
             <a href="https://www.youtube.com/@djpeluformerjaydeelupe8286" target="_blank" rel="noreferrer noopener">
-                <button class="bottone_social"><img src="icons/yt.svg" alt="youtube" class="social_icon"></button>
+                <button class="btn_social"><img src="icons/yt.svg" class="social_icon"></button>
             </a>
             <a href="https://www.instagram.com/speedy_gaynzales/" target="_blank" rel="noreferrer noopener">
-                <button class="bottone_social"><img src="icons/ig.svg" alt="instagram" class="social_icon"></button>
+                <button class="btn_social"><img src="icons/ig.svg" class="social_icon"></button>
             </a>
             <a href="https://www.linkedin.com/in/alessandra-peluzzi-01aba4225/" target="_blank" rel="noreferrer noopener">
-                <button class="bottone_social"><img src="icons/in.svg" alt="linkedin" class="social_icon"></button>
+                <button class="btn_social"><img src="icons/in.svg" class="social_icon"></button>
             </a>
         </div>
     </section>
     <script src="popup.js"></script>
 </body>
 </html>
-<!-- Il tag di chiusura </html> indica la fine del documento HTML -->

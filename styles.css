@@ -1,26 +1,15 @@
-/*creo la class nascosto per nasscondere le robe*/
-.nascosto  {
-    display: none;
-}
-
-/* qui in body imposto gli stili generali rispetto ai quali poi definisco/differenzio i vari elementi per esempio mettendo 
-font-size: 100% scelgo di usare la font size preimpostata del browser degli users che poi posso scalare quando definisco 
-i vari elementi */
+/* GLOBAL */
 body {
     font-family: "Space Grotesk", "Roboto", "Helvetica", "Arial", sans-serif;
     font-size: 100%; /* usiamo font size preimpostato del browser di chi usa il sito, generalmenre 16 px*/
     margin: 0;
 }
 
-#tre_body {
-    background-image: url("images/tre_bg.png");
+.nascosto  { /*questa class mi permette di nascondere le cose facilmente*/
+    display: none;
 }
 
-#lit_body {
-    background-color: peachpuff;
-}
-
-/* TESTI */
+/* GLOBAL: testi*/
 h1 {
     font-size: 3em;
     margin: 0;
@@ -41,14 +30,14 @@ p {
     overflow-wrap: break-word;
 }
 
-ul {
+ ul { /* unordered list: elenco puntato con elementi non-numerati */
     font-size: 1.1em;
     padding: 0.3em;
     margin: 0;
     overflow-wrap: break-word;
 }
 
-ul li {
+ul li { /* list item */
     margin-bottom: 0.2em;
     text-indent: 0;
 }
@@ -59,6 +48,63 @@ ul li {
 
 .orange_highlight {
     background-color: orange;
+}
+
+/* GLOBAL: box*/
+.vert_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* GLOBAL: bottoni*/
+.btn_verde {
+    font-family: inherit;
+    color: #2E2E2E; /* colore testo */
+    background-color: #D9F582;
+    border: none;
+    cursor: pointer; /* manina quando hover */
+    transition: 0.1s ease;
+}
+
+.btn_verde:hover {
+    background-color: #F2F2F2;
+}
+
+.btn_rosso {
+    background-color: red;
+    box-shadow: 3px 2px 5px black;
+    border: none;
+}
+
+.btn_rosso:hover {
+    background-color: #DB0000;
+}
+
+.btn_rettangolo {
+    font-size: 1.2em;
+    padding: 0.38em 2em;
+    align-items: center;
+}
+
+.btn_tondo {
+    font-size: 1.1em;
+    width: 6em;
+    height: 6em;
+    border-radius: 50%;
+    text-align: center; /* Allinea il testo al centro */
+}
+
+.social_icon {
+    height: 7em;
+    width: auto;
+}
+
+.btn_social {
+    background-color: #FFFEF2;
+    border: none;
+    cursor: pointer;
 }
 
 /* EFFETTO TYPEWRITER: cursore*/
@@ -72,13 +118,13 @@ ul li {
     animation: blink-caret 0.75s step-end infinite; /* uso l'animazione che ho creato qui sotto che fa lampeggiare il cursore. dura 0.75s, si ripete all'infinito e usa step-end per un effetto più netto */
 }
 
-/* creo animazione del cursore */
+/* animazione cursore */
 @keyframes blink-caret {
     from, to { border-color: transparent } /* a inizio e fine animazione il cursore è trasparent */
     50% { border-color: black; } /* a metà animazione il cursore diventa nero */
 }
 
-/* POP-UP */
+/* POP-UP: allarme */
 #allarme {
     /* display: none; */ /* COSI SI VEDE ANCHE DA PC PER ORA*/
     flex-direction: column;
@@ -113,7 +159,7 @@ ul li {
     font-size: 1.5em;
 }
 
-/* HOME SEZIONE 1 */
+/* HOME */
 #home_s1 {
     position: relative;
     height: 46em; /* altezza sezione */
@@ -124,7 +170,6 @@ ul li {
     background-size: auto 100%;  /* larghezza automatica, altezza = 100% dell'altezza della sezione */
 }
 
-/* HOME SEZIONE 2 */
 #home_s2 {
     position: relative;
     height: 23em; /* altezza sezione */
@@ -135,15 +180,6 @@ ul li {
     background-size: auto 100%;  /* larghezza automatica, altezza = 100% dell'altezza della sezione */
 }
 
-/* CONTAINERS */
-.vert_box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-/* HOME CONTAINERS */
 .bg_container{
     margin: 0 auto; /*centra il container nel viewport*/
     height: 46em;
@@ -174,8 +210,48 @@ ul li {
     gap: 1.5em;
 }
 
+/* HOME: bottoni */
+.pos_btn_TRE {
+    position: absolute;
+    top: 63.5%;
+    left: 72%;
+}
 
-/* BIO CONTAINERS */
+.btn_crawling {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease; /* quando hover del mouse la transizione ci mette 0.3 sec ed è morbida */
+    position: absolute;
+    top: 81.7%;
+    left: 25%; 
+}
+
+.btn_crawling img {
+    height: 10em;
+}
+
+.btn_crawling:hover img {
+    content: url('images/whole_snake_button3-REV.png'); /* Sostituisci l'immagine */
+}
+
+.btn_crawling_mobile {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease; /* quando hover del mouse la transizione ci mette 0.3 sec ed è morbida */
+}
+
+.btn_crawling_mobile img {
+    height: 18.5em;
+}
+
+.btn_crawling_mobile:hover img {
+    content: url('images/lil_snake_button2.png'); /* Sostituisci l'immagine */
+}
+
+
+/* BIO */
 .bio_flexbox {
     flex-wrap: wrap; /*quando stringo il display infila le foto tra le scritte*/
     display: flex;
@@ -203,7 +279,11 @@ ul li {
     padding-bottom: 2em;
 }
 
-/*TRE CONTAINERS*/
+/*TRE*/
+#tre_body {
+    background-image: url("images/tre_bg.png");
+}
+
 #tre_oriz_box {
     display: flex;
     width: 70vw;
@@ -237,134 +317,32 @@ ul li {
     width: 35%;
 }
 
-/* TUTTO LIT */
-.lit_box {
-    display: inline-block;
-    padding: 2em 1em 0em 3em;
+/* LIT */
+#lit_body {
+    background-color: peachpuff;
+    margin: 2em;
 }
 
-.lit_btn {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    transition: 0.3s ease; /* quando hover del mouse la transizione ci mette 0.3 sec ed è morbida */
+.lit_box {
+    padding: 2em 1em 0em 3em;
+    display: inline-block;
 }
 
 .lit_pic {
-    height: 17em;
+    height: 15em;
+    transition: 0.3s ease;
+    cursor: pointer;
+    padding: 0 1em 1em 0;
+}
+
+.lit_pic:hover {
+    transform: scale(1.05);
 }
 
 #lit_title{
     height: 3em;
     margin: 2em 0 1em 3em;
     }
-
-/* BOTTONE TIPICO */
-.bottone_tipico {
-    font-family: "Space Grotesk", "Roboto", "Helvetica", "Arial", sans-serif;
-    font-size: 1.2em;
-    background-color: #D9F582;
-    color: #2E2E2E; /* colore testo */
-    border: none; /* ma potrei fare 1px e poi specificare border-color e altro*/
-    padding: 0.38em 2em;
-    cursor: pointer; /* mostra la mano al passaggio del mouse */
-    align-items: center; /* centra immagine e testo verticalmente */
-    transition: 0.1s ease; /* Aggiunge una transizione per il colore */
-}
-
-.bottone_tipico:hover {
-    background-color: #F2F2F2;  /* Cambia il colore del bottone al passaggio del mouse */
-}
-
-/* BOTTONE TONDO */
-.bottone_tondo {
-    font-family: "Space Grotesk", "Roboto", "Helvetica", "Arial", sans-serif;
-    font-size: 1.1em;
-    background-color: #D9F582;
-    color: #2E2E2E;
-    border: none; /* Rimuove il bordo */
-    width: 6em; /* Larghezza del bottone */
-    height: 6em; /* Altezza del bottone */
-    border-radius: 50%; /* Fa diventare il bottone rotondo */
-    cursor: pointer; /* Cambia il puntatore del mouse */
-    text-align: center; /* Allinea il testo al centro */
-    transition: 0.1s ease; /* Aggiunge una transizione per il colore */
-}
-
-.bottone_tondo:hover {
-    background-color: #F2F2F2;
-}
-
-/* BOTTONE ROSSO */
-.bottone_rosso {
-    background-color: red;
-    border:none;
-    width: 6em;
-    height: 6em;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: 0.1s ease;
-    box-shadow: 3px 2px 5px black;
-}
-
-.bottone_rosso:hover {
-    background-color: #DB0000;
-}
-
-/* BOTTONE SOCIAL */
-.social_icon {
-    height: 7em;
-    width: auto;
-}
-
-.bottone_social {
-    background-color: #FFFEF2;
-    border: none;
-    cursor: pointer;
-}
-
-/* BOTTONE TRE */
-.pos_bottone_TRE {
-    position: absolute;
-    top: 63.5%;
-    left: 72%;
-}
-
-/* BOTTONE CRAWLING DESKTOP */
-.bottone_crawling {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    transition: 0.3s ease; /* quando hover del mouse la transizione ci mette 0.3 sec ed è morbida */
-    position: absolute;
-    top: 81.7%;
-    left: 25%; 
-}
-
-.bottone_crawling img {
-    height: 10em;
-}
-
-.bottone_crawling:hover img {
-    content: url('images/whole_snake_button3-REV.png'); /* Sostituisci l'immagine */
-}
-
-/* BOTTONE CRAWLING MOBILE */
-.bottone_crawling_mobile {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    transition: 0.3s ease; /* quando hover del mouse la transizione ci mette 0.3 sec ed è morbida */
-}
-
-.bottone_crawling_mobile img {
-    height: 18.5em;
-}
-
-.bottone_crawling_mobile:hover img {
-    content: url('images/lil_snake_button2.png'); /* Sostituisci l'immagine */
-}
-
 
 
 /* -------------------- MOBILE VERSIONE -------------------- */
@@ -381,7 +359,7 @@ ul li {
 
     /*HOME*/
     /* elimino cose */
-    .pos_bottone_TRE, .bottone_crawling {
+    .pos_btn_TRE, .btn_crawling {
         display: none;
     }
 
@@ -408,11 +386,11 @@ ul li {
         padding-bottom: 0.3em;
     }
 
-    .bottone_tipico {
+    .btn_rettangolo {
         font-size: 1em;
     }
 
-    .bottone_tondo {
+    .btn_tondo {
         font-size: 1em;
     }
 
@@ -437,7 +415,7 @@ ul li {
         width: auto;
     }
     
-    .bottone_social {
+    .btn_social {
         background-color: #FFFEF2;
         border: none;
         cursor: pointer;
