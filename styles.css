@@ -110,10 +110,10 @@ ul li { /* list item */
 /* EFFETTO TYPEWRITER: cursore*/
 #typewriter {
     width: max-content;
+    white-space: nowrap;
     overflow: hidden;
     padding:0;
     border-right: .15em solid black; /* crea il finto cursore */
-    white-space: nowrap; /* Impedisce al testo di andare a capo */
     letter-spacing: .15em; /* aggiunge spazio tra le lettere per migliorare l'effetto */
     animation: blink-caret 0.75s step-end infinite; /* uso l'animazione che ho creato qui sotto che fa lampeggiare il cursore. dura 0.75s, si ripete all'infinito e usa step-end per un effetto più netto */
 }
@@ -185,8 +185,8 @@ ul li { /* list item */
     height: 46em;
     width: 70em;
     position: absolute;
-    top: 50%; /* sposta l'angolo in alto a destra dell'elemento al 50% dell'altezza del container */
-    left: 50%; /* sposta l'angolo in altro a destra dell'elemento al 50% della larghezza del container */
+    top: 50%; /* sposta l'angolo in alto a sx dell'elemento al 50% dell'altezza del container */
+    left: 50%; /* sposta l'angolo in altro a sx dell'elemento al 50% della larghezza del container */
     transform: translate(-50%, -50%); /* sposta l'elemento indietro della metà della sua altezza e larghezza */
 }
 
@@ -319,9 +319,15 @@ ul li { /* list item */
 
 /* LIT */
 #lit_body {
+    background-image: url("images/LIT_bg_mobile.png");
     background-color: peachpuff;
     margin: 2em;
 }
+
+#lit_title_div { 
+    height: 3em;
+    margin: 7em 0 5em 3em;
+    }
 
 .lit_box {
     padding: 2em 1em 0em 3em;
@@ -329,7 +335,7 @@ ul li { /* list item */
 }
 
 .lit_pic {
-    height: 15em;
+    height: 13em;
     transition: 0.3s ease;
     cursor: pointer;
     padding: 0 1em 1em 0;
@@ -339,10 +345,9 @@ ul li { /* list item */
     transform: scale(1.05);
 }
 
-#lit_title{
-    height: 3em;
-    margin: 2em 0 1em 3em;
-    }
+#lit_home {
+    margin: 2em
+}
 
 
 /* -------------------- MOBILE VERSIONE -------------------- */
@@ -463,4 +468,53 @@ ul li { /* list item */
     #tre_avviso {
         padding: 3em;
     }
+
+    /* LIT */
+    #lit_body {
+        background-image: url("images/LIT_bg_mobile.png");
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #lit_body h1 {
+        font-size: 2.2em;
+    }
+
+    #lit_body h2 {
+        font-size: 1.8em;
+    }
+
+    #lit_title_div { 
+        min-height: 3em;
+        margin: 5em 1em 1em 1em;
+    }
+    
+    #typewriter {
+        text-align: center; /*centra il testo nel div*/
+        margin: 0 auto;
+        /* overflow-wrap: break-word; /* Permette al testo di andare a capo su parole lunghe */
+        /* white-space: normal; /* Permette al testo di andare a capo naturalmente */
+        /* max-width: 80%; */
+    }
+
+    .lit_box {
+        padding: 3em 0 0 0;
+        display: flex;
+        flex-direction: column;
+        width:100vw;
+        align-items: center;
+    }
+    
+    .lit_pic {    
+        padding: 1em 0;
+        height:auto;
+        width: 15em;
+    }
+
+    #lit_home {
+        margin: 3em auto;
+    }
+
 }
