@@ -357,7 +357,7 @@ ul li { /* list item */
 
 
 /* -------------------- MOBILE VERSIONE -------------------- */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 60em) {
 
     /* elimino margini bianchi e problemi di alignemnt */
     html, body {
@@ -381,9 +381,13 @@ ul li { /* list item */
 
     /* sistemo sezione 1 */
     #home_s1 {
-        background-image: url("images/mucche.jpg");
-        background-attachment: fixed;
-        background-size: 100% auto;
+        background-image: none;
+        background-color: rgb(157, 230, 157);
+    }
+
+    #home_s1 h1 {
+        padding-top: 1em;
+        padding-bottom: 0;
     }
 
     #home_s1 .main_container{
@@ -391,11 +395,6 @@ ul li { /* list item */
         left: 50%;
         top: 0;
         gap: 1em;
-    }
-
-    h1 {
-        padding-top: 1em;
-        padding-bottom: 0;
     }
 
     p, ul {
