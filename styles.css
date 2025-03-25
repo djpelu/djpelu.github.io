@@ -23,6 +23,12 @@ h2 {
     padding-bottom: 0.2em;
 }
 
+h3 {
+    font-size: 1.6em;
+    margin: 0;
+    padding-bottom: 0.1em;
+}
+
 p {
     font-size: 1.1em;
     padding: 0em;
@@ -164,7 +170,7 @@ ul li { /* list item */
     position: relative;
     height: 46em; /* altezza sezione */
     text-align: center;
-    background-image: url("images/sfondo3_sopra_newDET.png") ;
+    background-image: url("images/sfondo3_sopra_newDET.png");
     background-repeat:repeat-x; /* ripete immagine su asse x */
     background-position: center top;
     background-size: auto 100%;  /* larghezza automatica, altezza = 100% dell'altezza della sezione */
@@ -326,7 +332,7 @@ ul li { /* list item */
 
 #lit_title_div { 
     height: 3em;
-    margin: 7em 0 5em 3em;
+    margin: 5em 0 3em 3em;
     }
 
 .lit_box {
@@ -374,6 +380,12 @@ ul li { /* list item */
     }
 
     /* sistemo sezione 1 */
+    #home_s1 {
+        background-image: url("images/mucche.jpg");
+        background-attachment: fixed;
+        background-size: 100% auto;
+    }
+
     #home_s1 .main_container{
         transform: translate(-50%, 0);
         left: 50%;
@@ -488,7 +500,7 @@ ul li { /* list item */
 
     #lit_title_div { 
         min-height: 3em;
-        margin: 5em 1em 1em 1em;
+        margin: 5em 0 0 0;
     }
     
     #typewriter {
@@ -510,7 +522,7 @@ ul li { /* list item */
     .lit_pic {    
         padding: 1em 0;
         height:auto;
-        width: 15em;
+        width: 11em;
     }
 
     #lit_home {
