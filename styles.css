@@ -19,13 +19,13 @@ h1 {
 h2 {
     font-size: 2.2em;
     margin: 0;
-    padding: 0.2em 0;
+    padding: 0.3em 0;
 }
 
 h3 {
     font-size: 1.6em;
     margin: 0;
-    padding: 0.1em, 0;
+    padding: 0.2em, 0;
 }
 
 p {
@@ -339,13 +339,17 @@ ul li { /* list item */
     margin: 2em;
 }
 
+#lit_body h3 {
+    margin-bottom: 0.3em;
+}
+
 #lit_title_div { 
     height: 3em;
-    margin: 5em 0 3em 3em;
+    margin: 7em 0 2em 3em;
     }
 
 .lit_box {
-    padding: 2em 1em 0em 3em;
+    padding: 2em 1em 0 3em;
     display: inline-block;
 }
 
@@ -397,7 +401,7 @@ ul li { /* list item */
 
     /* aggiungo cose */
     .nascosto {
-        display: block;
+        display: inline-block;
     }
 
     /* sezione 1 */
@@ -439,11 +443,11 @@ ul li { /* list item */
         top: 77%;
         left: 50%;
         transform: translate(-50, -50);
-        gap: 1em;
+        width: fit-content;
         background-color: #F7F7FF;
         opacity: 0.8;
-        width: fit-content;
-        padding: 0.2em 1em;
+        padding: 0.2em 1em;        
+        gap: 1em;
         border-radius: 10px;
     }
 
