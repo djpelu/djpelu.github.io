@@ -257,28 +257,38 @@ ul li { /* list item */
 
 
 /* BIO */
-.bio_flexbox {
-    flex-wrap: wrap; /*quando stringo il display infila le foto tra le scritte*/
-    display: flex;
-    height: 100vh;
+#bio_body {
     background-color: #FFFEF2;
+    display: flex;
     align-items: center;
     justify-content: space-around;
-    padding-left: 2em;
-    padding-right: 2em;
+    padding: 2em 2em;
 }
 
-#bio_container {
-    padding-right: 2em;
-    padding-left: 2em;
+.side_col {
+    flex: 1;
+    display: felx;
+}
+
+.side_col img {
+    width: 100%;
+    height:auto;
+}
+
+.central_col {
+    flex: 1.2;
     align-self: center;
     width: 40%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0 2em;
 }
 
-#bio_p_container {
+
+#bio_p {
+    flex-grow: 1;  /* Permette agli elementi di espandersi */
+    flex-basis: 0;
     text-indent: 1em;
     text-align: justify;
     padding-bottom: 2em;
@@ -443,24 +453,22 @@ ul li { /* list item */
     }
     
     /*BIO*/
-    .bio_pic {
+    .side_col {
         display: none;
     }
 
-    .bio_flexbox {
+    #bio_body {
         height: auto;
-        padding-left: none;
-        padding-right: none;
-        padding-bottom: 2em;
+        padding: 3em 0 2em 0;
     }
     
-    #bio_container {
+    .central_col {
         width:100%;
         padding: 1em;
     }
 
-    #bio_container h1 {
-        font-size: 2.3em;
+    #bio_p h1 {
+        font-size: 2.2em;
         padding-bottom: 0.5em;
     }
 
