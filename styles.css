@@ -13,20 +13,19 @@ body {
 h1 {
     font-size: 3em;
     margin: 0;
-    padding-top: 0.5em;
     padding-bottom: 0.5em;
 }
 
 h2 {
     font-size: 2.2em;
     margin: 0;
-    padding-bottom: 0.2em;
+    padding: 0.2em 0;
 }
 
 h3 {
     font-size: 1.6em;
     margin: 0;
-    padding-bottom: 0.1em;
+    padding: 0.1em, 0;
 }
 
 p {
@@ -102,22 +101,11 @@ ul li { /* list item */
     text-align: center; /* Allinea il testo al centro */
 }
 
-.social_icon {
-    height: 7em;
-    width: auto;
-}
-
-.btn_social {
-    background-color: #FFFEF2;
-    border: none;
-    cursor: pointer;
-}
-
 /* EFFETTO TYPEWRITER: cursore*/
 #typewriter {
     width: max-content;
     white-space: nowrap;
-    overflow: hidden;
+    overflow: hidden; /*evita scroll orizzontale*/
     padding:0;
     border-right: .15em solid black; /* crea il finto cursore */
     letter-spacing: .15em; /* aggiunge spazio tra le lettere per migliorare l'effetto */
@@ -165,46 +153,45 @@ ul li { /* list item */
     font-size: 1.5em;
 }
 
-/* HOME */
+/* HOME: sezione 1 */
 #home_s1 {
     position: relative;
-    height: 46em; /* altezza sezione */
+    height: 46em;
     text-align: center;
     background-image: url("images/sfondo3_sopra_newDET.png");
-    background-repeat:repeat-x; /* ripete immagine su asse x */
+    background-repeat:repeat-x;
     background-position: center top;
     background-size: auto 100%;  /* larghezza automatica, altezza = 100% dell'altezza della sezione */
 }
 
-#home_s2 {
-    position: relative;
-    height: 23em; /* altezza sezione */
-    text-align: center;
-    background-image: url("images/sfondo3_sotto.png") ;
-    background-repeat:repeat-x; /* ripete immagine su asse x */
-    background-position: center top;
-    background-size: auto 100%;  /* larghezza automatica, altezza = 100% dell'altezza della sezione */
-}
-
-.bg_container{
-    margin: 0 auto; /*centra il container nel viewport*/
+.bg_container {
+    position: absolute;
     height: 46em;
     width: 70em;
-    position: absolute;
-    top: 50%; /* sposta l'angolo in alto a sx dell'elemento al 50% dell'altezza del container */
-    left: 50%; /* sposta l'angolo in altro a sx dell'elemento al 50% della larghezza del container */
+    top: 50%; /* sposta l'angolo in alto a sx dell'elemento al centro del container */
+    left: 50%; /* sposta l'angolo in altro a sx dell'elemento al centro del container */
     transform: translate(-50%, -50%); /* sposta l'elemento indietro della metà della sua altezza e larghezza */
 }
 
-#home_s1 .main_container{
+.main_container{
     position: absolute;
-    transform: translate(-50%, -50%);
     left: 50%;
     top: 38%;
+    transform: translate(-50%, -50%);
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1.5em;
+}
+
+/* HOME: sezione 2 */
+#home_s2 {
+    position: relative;
+    height: 23em;
+    background-image: url("images/sfondo3_sotto.png") ;
+    background-repeat:repeat-x;
+    background-position: center top;
+    background-size: auto 100%;
 }
 
 .social_container {
@@ -213,7 +200,19 @@ ul li { /* list item */
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
-    gap: 1.5em;
+    justify-content: center;
+    gap: 5em;
+}
+
+.social_icon {
+    height: 5em;
+    width: auto;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.social_icon:hover {
+    transform: scale(1.05);
 }
 
 /* HOME: bottoni */
@@ -368,40 +367,6 @@ ul li { /* list item */
         overflow-x: hidden;
     }
 
-    /*HOME*/
-    /* elimino cose */
-    .pos_btn_TRE, .btn_crawling {
-        display: none;
-    }
-
-    /* aggiungo cose */
-    .nascosto {
-        display: inline;
-    }
-
-    /* sistemo sezione 1 */
-    #home_s1 {
-        background-image: none;
-        background-color: rgb(157, 230, 157);
-    }
-
-    #home_s1 h1 {
-        padding-top: 1em;
-        padding-bottom: 0;
-    }
-
-    #home_s1 .main_container{
-        transform: translate(-50%, 0);
-        left: 50%;
-        top: 0;
-        gap: 1em;
-    }
-
-    p, ul {
-        font-size: 0.95em;
-        padding-bottom: 0.3em;
-    }
-
     .btn_rettangolo {
         font-size: 1em;
     }
@@ -410,33 +375,73 @@ ul li { /* list item */
         font-size: 1em;
     }
 
-    /* sistemo sezione 2 */
-    #home_s2 {
-        height: 6em;
-        background-image: none;
-        background-color: #FFFEF2;
+    p, ul {
+        font-size: 0.95em;
+        padding-bottom: 0.3em;
     }
 
-    #home_s2 .social_container {
-        position: absolute;
-        top: 50%;
+    /*HOME: elimino cose*/
+    .pos_btn_TRE, .btn_crawling {
+        display: none;
+    }
+
+    /* aggiungo cose */
+    .nascosto {
+        display: block;
+    }
+
+    /* sezione 1 */
+    #home_s1 {
+        position: static;
+        background-image: none;
+        background-color: rgb(157, 230, 157);
+        min-height: fit-content;
+        height: auto;
+    }
+
+    #home_s1 h1 {padding-bottom:0}
+
+    .bg_container { /*lo faccio aderire al alla s1 e non lo cago più*/
+        position: static;
+        height: auto;
+        width: auto;
+        transform: translate(0, 0);
+    }
+
+    .main_container{
+        padding: 2em 0 1em 0;
+        position: static;
+        transform: translate(0, 0);
+        gap: auto;
+    }
+
+    /* sezione 2 */
+    #home_s2 {
+        height: 54vw; /*più o meno metà della larghezza*/
+        background-image: url(images/mucche.png);
+        background-color: rgb(157, 230, 157);
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-size: 100vw auto;
+    }
+
+    .social_container {
+        top: 77%;
         left: 50%;
-        transform: translate(-50%, -50%);
-        display: flex;
-        gap: 0.5em;
+        transform: translate(-50, -50);
+        gap: 1em;
+        background-color: #F7F7FF;
+        opacity: 0.8;
+        width: fit-content;
+        padding: 0.2em 1em;
+        border-radius: 10px;
     }
 
     .social_icon {
-        height: 5em;
+        height: 3em;
         width: auto;
     }
     
-    .btn_social {
-        background-color: #FFFEF2;
-        border: none;
-        cursor: pointer;
-    }
-
     /*BIO*/
     .bio_pic {
         display: none;

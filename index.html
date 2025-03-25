@@ -20,36 +20,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body id="home_body">
     <!-- SEZIONE 1 -->
     <section id="home_s1">
-        <div class="bg_container"> <!-- container grande quanto l'immagine sfondo così posso posizionare le cose come voglio -->
+        <div class="bg_container"> <!-- poiché bg_container mantiene una dimensione fissa, i bottoni appaiono sempre nella stessa posizione relativa rispetto alla struttura generale, anche se la finestra viene ridimensionata. -->
             <div class="main_container">
                 <h1>dj-pelu</h1>
                 <p> <span class="cream_highlight">faccio molte cose,<br class="nascosto"> principalmente scrivo,<br>ma di certo non sono una dj</span></p>
                 <a href="bio.html">
-                    <button class="btn_verde btn_rettangolo">altre cose su di me</button>
-                </a>
+                    <button class="btn_verde btn_rettangolo">altre cose su di me</button></a>
                 <a href="lit.html">
-                    <button class="btn_verde btn_rettangolo">alta letteratura</button>
-                </a>
+                    <button class="btn_verde btn_rettangolo">alta letteratura</button></a>
                 <button class="btn_verde btn_tondo">art roulette</button>
-                <!-- bottoni nascosti: crawling mobile + 3 mobile -->
+                <!-- bottoni mobile nascosti -->
                 <button class="btn_crawling_mobile nascosto"><img src="images/lil_snake_button1.png"></button>
                 <a href="TRE.html">
-                    <button class="btn_verde btn_rettangolo nascosto">dov'è il cavallo?!</button>
-                </a>
+                    <button class="btn_verde btn_rettangolo nascosto">dov'è il cavallo?!</button></a>
             </div>
 
-            <!-- bottone desktop di TRE!-->
+            <!-- bottoni desktop -->
             <a href="TRE.html">
-                <button class="btn_verde btn_rettangolo pos_btn_TRE">ci sono cavalli più belli</button>
-            </a>
-
-            <!-- bottone desktop crawling-->
+                <button class="btn_verde btn_rettangolo pos_btn_TRE">ci sono cavalli più belli</button></a>
             <button class="btn_crawling">
-                <img src="images/whole_snake_button2-REV.png">
-            </button>
+                <img src="images/whole_snake_button2-REV.png"></button>
 
             <!-- pop-up di allarme per versione mobile -->
             <div id="allarme">
@@ -58,7 +51,6 @@
                 <p>questo sito non è ancora finito e anzi è molto lontano dall'esserlo</p>
                 <button id="allarme_x">X</button>
             </div>
-            
 
         </div>
     </section>
@@ -67,14 +59,11 @@
     <section id="home_s2">
         <div class="social_container">
             <a href="https://www.youtube.com/@djpeluformerjaydeelupe8286" target="_blank" rel="noreferrer noopener">
-                <button class="btn_social"><img src="icons/yt.svg" class="social_icon"></button>
-            </a>
+                <img src="icons/yt.svg" class="social_icon"></a>  
             <a href="https://www.instagram.com/speedy_gaynzales/" target="_blank" rel="noreferrer noopener">
-                <button class="btn_social"><img src="icons/ig.svg" class="social_icon"></button>
-            </a>
+                <img src="icons/ig.svg" class="social_icon"></button></a>
             <a href="https://www.linkedin.com/in/alessandra-peluzzi-01aba4225/" target="_blank" rel="noreferrer noopener">
-                <button class="btn_social"><img src="icons/in.svg" class="social_icon"></button>
-            </a>
+                <img src="icons/in.svg" class="social_icon"></button></a>
         </div>
     </section>
     
