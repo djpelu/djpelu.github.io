@@ -1,6 +1,6 @@
 /* GLOBAL */
 body {
-    font-family: "Space Grotesk", "Roboto", "Helvetica", "Arial", sans-serif;
+    font-family: "Space Grotesk", "Roboto", monospace;
     font-size: 100%; /* usiamo font size preimpostato del browser di chi usa il sito, generalmenre 16 px*/
     margin: 0;
 }
@@ -33,6 +33,10 @@ p {
     padding: 0.15em 0;
     margin: 0;
     overflow-wrap: break-word;
+}
+
+.bold {
+    font-weight: bold;
 }
 
  ul { /* unordered list: elenco puntato con elementi non-numerati */
@@ -237,7 +241,7 @@ ul li { /* list item */
 }
 
 .btn_crawling:hover img {
-    content: url('images/whole_snake_button3-REV.png'); /* Sostituisci l'immagine */
+    content: url('images/crawling_btn_desktop2.png'); /* Sostituisci l'immagine */
 }
 
 .btn_crawling_mobile {
@@ -252,7 +256,7 @@ ul li { /* list item */
 }
 
 .btn_crawling_mobile:hover img {
-    content: url('images/lil_snake_button2.png'); /* Sostituisci l'immagine */
+    content: url('images/crawling_btn_mobile2.png'); /* Sostituisci l'immagine */
 }
 
 
@@ -265,17 +269,16 @@ ul li { /* list item */
     padding: 2em 2em;
 }
 
-.side_col {
+.bio_side_col {
     flex: 1;
-    display: felx;
 }
 
-.side_col img {
+.bio_side_col img {
     width: 100%;
     height:auto;
 }
 
-.central_col {
+.bio_central_col {
     flex: 1.2;
     align-self: center;
     width: 40%;
@@ -366,9 +369,62 @@ ul li { /* list item */
     transform: scale(1.05);
 }
 
-#lit_home {
-    margin: 2em
+/* CRAWLING */
+#crawling_body {
+    background-color: black;
 }
+
+#crawling_body h2 {
+    color: white;
+}
+
+.crawling_snake {
+    position: fixed;
+    top: 50%;
+    transform: translate(0, -50%);
+    height: auto;
+    width: 13vw;   
+}
+
+.on_the_left{
+    left: 0; 
+}
+
+.on_the_right {
+    right: 0;    
+}
+
+#crawling_body .vert_box {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 60vw;
+    padding: 3em 0;
+    gap: 3em;
+}
+
+#crawling_title {
+    width: 40vw;
+    padding-bottom: 3em;
+}
+
+#crawling_trailer {
+    width: 40vw;
+    height: 22.5vw;
+    border: 2px solid rgb(45, 45, 45);
+}
+
+#crawling_p {
+    font-family: 'Tektur', 'Courier New', Courier, monospace;
+    color: white;
+    width: 30vw;
+    text-align: center;
+}
+
+#crawling_body button {
+    border-radius: 10px;
+}
+
 
 
 /* -------------------- MOBILE VERSIONE -------------------- */
@@ -544,6 +600,39 @@ ul li { /* list item */
 
     #lit_home {
         margin: 3em auto;
+    }
+
+    /* CRAWLING */
+    .crawling_snake{
+        display: none;
+    }
+
+    .crawling_snake_mobile {
+        width: 95vw;
+    }
+
+    #crawling_body .vert_box {
+        position: absolute;
+        top: 0;
+        width: 100vw;
+        padding: 0;
+        gap: 3em;
+    }
+
+    #crawling_title {
+        width: 80vw;
+        padding-bottom: 0;
+    }
+
+    #crawling_trailer {
+        width: 70vw;
+        height: 45vw;
+        border: 2px solid rgb(45, 45, 45);
+    }
+
+    #crawling_p {
+        width: 70vw;
+        text-align: center;
     }
 
 }
