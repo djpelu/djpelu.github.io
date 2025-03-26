@@ -297,6 +297,8 @@ ul li { /* list item */
 /*TRE*/
 #tre_body {
     background-image: url("images/tre_bg.png");
+    background-color: #033621;
+    margin: 6em 0 6em 0;
 }
 
 #tre_oriz_box {
@@ -371,15 +373,6 @@ ul li { /* list item */
 
 /* -------------------- MOBILE VERSIONE -------------------- */
 @media only screen and (max-width: 60em) {
-
-    /* elimino margini bianchi e problemi di alignemnt */
-    html, body {
-        width: 100%;
-        height: 100%;
-        margin: 0;
-        padding: 0;
-        overflow-x: hidden;
-    }
 
     .btn_rettangolo {
         font-size: 1em;
@@ -462,13 +455,13 @@ ul li { /* list item */
     }
     
     /*BIO*/
-    .side_col {
-        display: none;
-    }
-
     #bio_body {
         height: auto;
         padding: 3em 0 2em 0;
+    }
+    
+    .side_col {
+        display: none;
     }
     
     .central_col {
@@ -482,6 +475,10 @@ ul li { /* list item */
     }
 
     /*TRE*/
+    #tre_body {
+        background-size: 200%;
+    }
+
     #tre_oriz_box {
         flex-direction: column;
         width: 90%;
@@ -504,7 +501,6 @@ ul li { /* list item */
 
     /* LIT */
     #lit_body {
-        background-image: url("images/LIT_bg_mobile.png");
         margin: 0;
         display: flex;
         flex-direction: column;
