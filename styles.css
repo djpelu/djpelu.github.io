@@ -394,7 +394,12 @@ ul li { /* list item */
         padding-bottom: 0.3em;
     }
 
-    /*HOME: elimino cose*/
+    /* HOME */
+    #home_body {
+        background-color: rgb(157, 230, 157);
+    }
+
+    /* elimino cose */
     .pos_btn_TRE, .btn_crawling {
         display: none;
     }
