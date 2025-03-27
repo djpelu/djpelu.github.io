@@ -262,7 +262,7 @@ ul li { /* list item */
 #crawling_mobile_div {
     position: relative;
     height: 20em;
-    width: 100vw;
+    width: 5em;
 }
 
 #crawling_mobile_div img {
@@ -276,7 +276,8 @@ ul li { /* list item */
 
 #crawling_mobile_div button {
     position: absolute;
-    left: 31%;
+    transform: translate(-50%, 0);
+    left: 50%;
     top: 21%;
 }
 
