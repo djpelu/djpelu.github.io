@@ -9,6 +9,17 @@ body {
     display: none;
 }
 
+.overlay_popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 100; /* il popup deve essere in 101 */
+}
+
 /* GLOBAL: testi*/
 h1 {
     font-size: 3em;
@@ -113,35 +124,15 @@ ul li { /* list item */
     text-align: center; /* Allinea il testo al centro */
 }
 
-/* EFFETTO TYPEWRITER: cursore*/
-#typewriter {
-    width: max-content;
-    white-space: nowrap;
-    overflow: hidden; /*evita scroll orizzontale*/
-    padding:0;
-    border-right: .15em solid black; /* crea il finto cursore */
-    letter-spacing: .15em; /* aggiunge spazio tra le lettere per migliorare l'effetto */
-    animation: blink-caret 0.75s step-end infinite; /* uso l'animazione che ho creato qui sotto che fa lampeggiare il cursore. dura 0.75s, si ripete all'infinito e usa step-end per un effetto più netto */
-}
-
-/* animazione cursore */
-@keyframes blink-caret {
-    from, to { border-color: transparent } /* a inizio e fine animazione il cursore è trasparent */
-    50% { border-color: black; } /* a metà animazione il cursore diventa nero */
-}
-
-/* POP-UP: allarme */
+/* POP-UP: allarme */ 
 #allarme {
     /* display: none; */ /* COSI SI VEDE ANCHE DA PC PER ORA*/
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-image: url("images/allarme.png");
-    background-size: fill;
     position: absolute;
     transform: translate(-50%, -50%);
     left: 50%;
     top: 50%;
+    background-image: url("images/allarme.png");
+    background-size: fill;
     padding: 1em;
     width: 13em;
     height: auto;
@@ -158,12 +149,29 @@ ul li { /* list item */
     color: brown;
 }
 
-#allarme_x{
+#allarme_x {
     color:red;
     background-color: transparent;
     border: none;
     font-weight: 900;
     font-size: 1.5em;
+}
+
+/* EFFETTO TYPEWRITER: cursore*/
+#typewriter {
+    width: max-content;
+    white-space: nowrap;
+    overflow: hidden; /*evita scroll orizzontale*/
+    padding:0;
+    border-right: .15em solid black; /* crea il finto cursore */
+    letter-spacing: .15em; /* aggiunge spazio tra le lettere per migliorare l'effetto */
+    animation: blink-caret 0.75s step-end infinite; /* uso l'animazione che ho creato qui sotto che fa lampeggiare il cursore. dura 0.75s, si ripete all'infinito e usa step-end per un effetto più netto */
+}
+
+/* animazione cursore */
+@keyframes blink-caret {
+    from, to { border-color: transparent } /* a inizio e fine animazione il cursore è trasparent */
+    50% { border-color: black; } /* a metà animazione il cursore diventa nero */
 }
 
 /* HOME: sezione 1 */
@@ -415,7 +423,7 @@ ul li { /* list item */
     right: 0;    
 }
 
-#crawling_body .vert_box {
+#crawling_main_div {
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0);
@@ -442,8 +450,37 @@ ul li { /* list item */
     text-align: center;
 }
 
-#crawling_body button {
-    border-radius: 10px;
+/* CRAWLING: pop-up */
+#crawling_popup {
+    display: none;
+    position: absolute;
+    bottom: 10%;
+    z-index: 101;
+    width: 50%;
+    padding-bottom: 1.5em;
+    background-color: #2E2E2E;
+    color: greenyellow;
+    text-align: center;
+    gap: 1em;
+}
+
+#crawling_popup_p {
+    display: inline-block;
+    padding: 0 2em 0.5em;
+}
+
+#crawling_popup .x {
+    margin-left: auto;
+    color: greenyellow;
+    background-color: transparent;
+    border: none;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+#crawling_popup .x:hover {
+    cursor: pointer;
+    color: #F2F2F2;
 }
 
 
@@ -456,7 +493,7 @@ ul li { /* list item */
 
     /* HOME */
     #home_body {
-        background-color: palegreen;
+        background-color: #f7d8ff;;
     }
 
     /* elimino cose */
@@ -622,7 +659,7 @@ ul li { /* list item */
         width: 95vw;
     }
 
-    #crawling_body .vert_box {
+    #crawling_main_div {
         position: absolute;
         top: 0;
         width: 100vw;
@@ -644,6 +681,10 @@ ul li { /* list item */
     #crawling_p {
         width: 85vw;
         text-align: center;
+    }
+
+    #crawling_popup {
+        width: 80%;
     }
 
 }

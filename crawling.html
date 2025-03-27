@@ -19,10 +19,22 @@
 </head>
 
 <body id="crawling_body">
-
+    
     <img src="images/crawling_open.png" class="crawling_snake on_the_left">
 
-    <div class="vert_box">
+    <div id="crawling_main_div" class="vert_box">
+
+        <!-- pop-up e overlay-->
+        <div class="overlay_popup"></div>
+        <div id="crawling_popup">
+            <button class="x">x</button>
+            <div id="crawling_popup_p">
+                <p>Questo gioco è disponibile solo per Microsoft desktop.</p>
+                <p>Google o Anti-virus potrebbero bloccare il download, il motivo è che non sono riconosciuta come una fonte ufficiale, ma sono sicura!</p>
+            </div>
+            <button class="btn_verde btn_rettangolo">continua</button>
+        </div>
+
         <img src="images/crawling_open_mobile.png" class="crawling_snake_mobile nascosto">
         <img src="images/crawling_title.png" id="crawling_title">
         <iframe id="crawling_trailer" src="https://www.youtube.com/embed/tCoczCpChZE?si=bG6hA3o5QlUc2xMX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -31,7 +43,9 @@
             <p><span  style="color:  #d15ff4">Crawling </span>è un videogioco che ho sviluppato nel 2023 per <span  style="color:  #d15ff4">fare pratica con Python</span> e <span  style="color:  #d15ff4">giocare con un tipo di scrittura diverso dal solito</span>. La meccanica è la stessa di <span  style="color:  #d15ff4">Snake</span>, con una svolta: man mano che il serpente cresce è chiamato a fare <span  style="color:  #d15ff4">scelte sempre più difficili che cambiano la trama</span>, proprio come succede nella vita. <span  style="color:  #d15ff4">Trovare l'amore, entrare in politica, affondare in un loop di malattia mentale</span>, questi sono solo alcuni dei percorsi in cui si dirama il gioco. </p>
             <p>Fai il <span style="color:  #d15ff4"> DOWNLOAD</span> per scoprili tutti ;)</p>
         </div>
-        <button class="btn_verde btn_rettangolo">DOWNLOAD</button> <!-- apre informativa, "prosegui con download?", chiede mail, informativa privacy, se continua mando il gioco via mail -->
+        
+        <button class="btn_verde btn_rettangolo popup_trigger">DOWNLOAD</button>
+        
         <a href="index.html">
             <button class="btn_verde btn_rettangolo">home</button>
         </a>
@@ -40,5 +54,6 @@
 
     <img src="images/crawling_closed.png" class="crawling_snake on_the_right">
 
+    <script src="popup.js"></script>
 </body>
 </html>

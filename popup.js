@@ -1,19 +1,33 @@
-// POP-UP ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// rilevo dispositivo utente
-function isMobileDevice() {
-    return /Mobi|Android/i.test(navigator.userAgent);
-}
+const trigger = document.querySelector('.popup_trigger');
+const overlay = document.querySelector('.overlay_popup');
+const popup = document.querySelector('#crawling_popup');
+const closeBtn = document.querySelector('.x')
 
-// mostra pop-up SE su mobile e l'utente NON ha già visto il popup
-if (isMobileDevice() && !sessionStorage.getItem('popupShown')) {
-    setTimeout(function() {
-        document.getElementById('allarme').style.display = 'inherit';
-        // una volta che l'utente ha visto il popup salvo questa informazione
-        sessionStorage.setItem('popupShown', 'true');
-    }, 3000); // 3000 millisecondi = 3 sec per far apparire popup
-}
-
-// chiudi popup quando si clicca X
-document.querySelector('#allarme_x').addEventListener('click', function() {
-    document.getElementById('allarme').style.display = 'none';
+// apri popup se si clicca trigger
+trigger.addEventListener('click', (e) => {
+  e.stopPropagation(); // Evita che il click si propaghi al documento
+  overlay.style.display = 'block';
+  popup.style.display = 'block';
+  document.body.style.overflow = 'hidden'; // Blocca lo scroll
 });
+
+// Chiudi il popup se clicca x
+closeBtn.addEventListener('click', (e) => {
+  e.stopPropagation();
+  overlay.style.display = 'none';
+  popup.style.display = 'none';
+  document.body.style.overflow = 'auto'; // Riabilita lo scroll
+});
+
+// Chiudi il popup se si clicca fuori da esso
+document.addEventListener('click', () => {
+  overlay.style.display = 'none';
+  popup.style.display = 'none';
+  document.body.style.overflow = 'auto'; // Riabilita lo scroll
+});
+
+// Previeni la chiusura quando si clicca dentro il popup
+popup.addEventListener('click', (e) => {
+  e.stopPropagation();
+});
+
