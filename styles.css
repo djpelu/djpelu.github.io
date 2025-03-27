@@ -516,11 +516,11 @@ ul li { /* list item */
         padding: 3em 0 2em 0;
     }
     
-    .side_col {
+    .bio_side_col {
         display: none;
     }
     
-    .central_col {
+    .bio_central_col {
         width:100%;
         padding: 1em;
     }
@@ -620,18 +620,18 @@ ul li { /* list item */
     }
 
     #crawling_title {
-        width: 80vw;
+        width: 85vw;
         padding-bottom: 0;
     }
 
     #crawling_trailer {
-        width: 70vw;
+        width: 85vw;
         height: 45vw;
         border: 2px solid rgb(45, 45, 45);
     }
 
     #crawling_p {
-        width: 70vw;
+        width: 85vw;
         text-align: center;
     }
 
