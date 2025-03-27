@@ -71,14 +71,21 @@ ul li { /* list item */
 .btn_verde {
     font-family: inherit;
     color: #2E2E2E; /* colore testo */
-    background-color: #D9F582;
-    border: none;
+    background-color: greenyellow;
+    border: 0;
+    box-shadow: 0em 0.2em 0.4em;
     cursor: pointer; /* manina quando hover */
     transition: 0.1s ease;
 }
 
 .btn_verde:hover {
     background-color: #F2F2F2;
+    box-shadow: 0 0.1em 0.2em;
+}
+
+.btn_verde:active {
+    background-color: #F2F2F2;
+    box-shadow: 0 0 0;
 }
 
 .btn_rosso {
@@ -95,6 +102,7 @@ ul li { /* list item */
     font-size: 1.2em;
     padding: 0.38em 2em;
     align-items: center;
+    border-radius: 10px;
 }
 
 .btn_tondo {
@@ -137,6 +145,7 @@ ul li { /* list item */
     padding: 1em;
     width: 13em;
     height: auto;
+    box-shadow: 1em 1em 1em;
 }
 
 #allarme h1 {
@@ -226,39 +235,50 @@ ul li { /* list item */
     left: 72%;
 }
 
-.btn_crawling {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    transition: 0.3s ease; /* quando hover del mouse la transizione ci mette 0.3 sec ed è morbida */
+#crawling_div {
+    position: relative;
+    height:10em;
+    width: auto;
+    top: 78.3%;
+    left: 43%;
+    transform: translate(-50%, 0);
+}
+
+#crawling_div img {
     position: absolute;
-    top: 81.7%;
-    left: 25%; 
-}
-
-.btn_crawling img {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     height: 10em;
+    pointer-events: none; /* Permette di cliccare attraverso l'immagine */
 }
 
-.btn_crawling:hover img {
-    content: url('images/crawling_btn_desktop2.png'); /* Sostituisci l'immagine */
+#crawling_div button {
+    position: absolute;
+    left: 57%;
+    top: 43%;
 }
 
-.btn_crawling_mobile {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    transition: 0.3s ease; /* quando hover del mouse la transizione ci mette 0.3 sec ed è morbida */
+#crawling_mobile_div {
+    position: relative;
+    height: 20em;
+    width: 100vw;
 }
 
-.btn_crawling_mobile img {
-    height: 18.5em;
+#crawling_mobile_div img {
+    position: absolute;
+    height: 20em;
+    top: 50%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    pointer-events: none; /* Permette di cliccare attraverso l'immagine */
 }
 
-.btn_crawling_mobile:hover img {
-    content: url('images/crawling_btn_mobile2.png'); /* Sostituisci l'immagine */
+#crawling_mobile_div button {
+    position: absolute;
+    left: 31%;
+    top: 21%;
 }
-
 
 /* BIO */
 #bio_body {
@@ -429,27 +449,17 @@ ul li { /* list item */
 
 /* -------------------- MOBILE VERSIONE -------------------- */
 @media only screen and (max-width: 60em) {
-
-    .btn_rettangolo {
-        font-size: 1em;
-    }
-
-    .btn_tondo {
-        font-size: 1em;
-    }
-
     p, ul {
-        font-size: 0.95em;
         padding-bottom: 0.3em;
     }
 
     /* HOME */
     #home_body {
-        background-color: rgb(157, 230, 157);
+        background-color: palegreen;
     }
 
     /* elimino cose */
-    .pos_btn_TRE, .btn_crawling {
+    .pos_btn_TRE, #crawling_div {
         display: none;
     }
 
@@ -462,7 +472,7 @@ ul li { /* list item */
     #home_s1 {
         position: static;
         background-image: none;
-        background-color: rgb(157, 230, 157);
+        background-color: transparent;
         min-height: fit-content;
         height: auto;
     }
@@ -477,6 +487,7 @@ ul li { /* list item */
     }
 
     .main_container{
+        width: 100vw;
         padding: 2em 0 1em 0;
         position: static;
         transform: translate(0, 0);
@@ -485,16 +496,15 @@ ul li { /* list item */
 
     /* sezione 2 */
     #home_s2 {
-        height: 54vw; /*più o meno metà della larghezza*/
+        height: 60vw; /*più o meno metà della larghezza*/
         background-image: url(images/mucche.png);
-        background-color: rgb(157, 230, 157);
         background-repeat: no-repeat;
         background-position: center bottom;
         background-size: 100vw auto;
     }
 
     .social_container {
-        top: 77%;
+        top: 79%;
         left: 50%;
         transform: translate(-50, -50);
         width: fit-content;
