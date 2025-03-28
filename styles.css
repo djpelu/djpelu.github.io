@@ -348,7 +348,6 @@ ul li { /* list item */
     padding: 1em 2em 2em;
     margin-bottom: 1em;
     text-align: center;
-    min-width: 17em;
     max-width: 30em;
 }
 
@@ -587,11 +586,13 @@ ul li { /* list item */
     /*TRE*/
     #tre_body {
         background-size: 200%;
+        padding: 2em 0;
     }
 
     #tre_oriz_box {
         flex-direction: column;
-        width: 90%;
+        padding: 0;
+        width: 95%;
         height: auto;
     }
 
@@ -601,8 +602,9 @@ ul li { /* list item */
     }
 
     #tre_text_box {
-        padding: 1.5em 2em 2em 2em;
-        margin: 2em;
+        font-size: 1em;
+        padding: 0.5em 1.5em 2em;
+        margin: 0 1em 2em;
     }
     
     #tre_avviso {
