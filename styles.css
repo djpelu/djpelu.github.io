@@ -488,6 +488,11 @@ ul li { /* list item */
 
 /* -------------------- MOBILE VERSIONE -------------------- */
 @media only screen and (max-width: 60em) {
+
+    body {
+        background-attachment: fixed;
+    }
+    
     p, ul {
         padding-bottom: 0.3em;
     }
