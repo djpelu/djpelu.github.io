@@ -1,0 +1,54 @@
+/* QUESTI STYLES FUNZIONANO SE INSERITI NELLO STYLES.CSS DEL SITO*/
+#cd_body {
+    background-color: black;
+    color: white;
+}
+
+#cd_form {
+    justify-content: space-evenly;
+    height: 80vh;
+}
+
+#cd_form input {
+    accent-color: greenyellow;
+}
+
+#cd_email {
+    width: 80vw;
+    max-width: 30em;
+    height: 2em;
+    border-radius: 10px;
+    border: 2px greenyellow solid;
+    background-color: black;
+    margin: 0.2em;
+    color: white;
+    font-family: inherit;
+    font-size: 1em;
+    text-align: center;
+}
+
+#cd_email:focus {
+    background-color: white;
+    color: black;
+    border-color: greenyellow;
+}
+
+#cd_email:valid {
+    background-color: black;
+}
+
+#cd_email:invalid:not(:placeholder-shown) {
+    border-color:darkred;
+    background-color: rgb(255, 228, 228);
+    color: darkred
+}
+
+#cd_privacy_div {
+    text-align: center;
+    width: 80%;
+    max-width: 50em;
+}
+
+#cd_privacy_checkbox {
+    margin-top: 2em;
+}
