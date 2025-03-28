@@ -1,4 +1,3 @@
-// POP-UP 
 // rilevo dispositivo utente
 function isMobileDevice() {
     return /Mobi|Android/i.test(navigator.userAgent);

@@ -137,6 +137,7 @@ ul li { /* list item */
     width: 60%;
     max-width: 25em;
     box-shadow: 1em 1em 1em;
+    gap: 0.5em;
 }
 
 #allarme h1 {
@@ -345,6 +346,7 @@ ul li { /* list item */
     background-color: bisque;
     box-shadow: 3px 2px 5px black;
     padding: 1em 2em 2em;
+    margin-bottom: 1em;
     text-align: center;
     min-width: 17em;
     max-width: 30em;
