@@ -554,6 +554,10 @@ ul li { /* list item */
         padding-bottom: 0.3em;
     }
 
+    .btn_verde {
+        background-color: palegreen;
+    }
+
     /* HOME */
     #home_body {
         background-color: #f7d8ff;;
