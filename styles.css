@@ -124,6 +124,23 @@ ul li { /* list item */
     text-align: center; /* Allinea il testo al centro */
 }
 
+/* EFFETTO TYPEWRITER: cursore*/
+#typewriter {
+    width: max-content;
+    white-space: nowrap;
+    overflow: hidden; /*evita scroll orizzontale*/
+    padding:0;
+    border-right: .15em solid black; /* crea il finto cursore */
+    letter-spacing: .15em; /* aggiunge spazio tra le lettere per migliorare l'effetto */
+    animation: blink-caret 0.75s step-end infinite; /* uso l'animazione che ho creato qui sotto che fa lampeggiare il cursore. dura 0.75s, si ripete all'infinito e usa step-end per un effetto più netto */
+}
+
+/* animazione cursore */
+@keyframes blink-caret {
+    from, to { border-color: transparent } /* a inizio e fine animazione il cursore è trasparent */
+    50% { border-color: black; } /* a metà animazione il cursore diventa nero */
+}
+
 /* POP-UP: allarme */ 
 #allarme {
     /* display: none; */ /* COSI SI VEDE ANCHE DA PC PER ORA*/
@@ -156,23 +173,6 @@ ul li { /* list item */
     border: none;
     font-weight: 900;
     font-size: 1.5em;
-}
-
-/* EFFETTO TYPEWRITER: cursore*/
-#typewriter {
-    width: max-content;
-    white-space: nowrap;
-    overflow: hidden; /*evita scroll orizzontale*/
-    padding:0;
-    border-right: .15em solid black; /* crea il finto cursore */
-    letter-spacing: .15em; /* aggiunge spazio tra le lettere per migliorare l'effetto */
-    animation: blink-caret 0.75s step-end infinite; /* uso l'animazione che ho creato qui sotto che fa lampeggiare il cursore. dura 0.75s, si ripete all'infinito e usa step-end per un effetto più netto */
-}
-
-/* animazione cursore */
-@keyframes blink-caret {
-    from, to { border-color: transparent } /* a inizio e fine animazione il cursore è trasparent */
-    50% { border-color: black; } /* a metà animazione il cursore diventa nero */
 }
 
 /* HOME: sezione 1 */
@@ -511,21 +511,23 @@ ul li { /* list item */
     margin-bottom: 0.5em;
 }
 
-/* CTRL+I*/
+/* SCOGLIO*/
 #scoglio_body {
-    background-color: thistle;
+    background-image: url("images/scoglio_bg.png");
+    background-attachment: fixed;
+    background-size: 100% auto;
+    background-position: center bottom;
 }
 
 #scoglio_main {
-    margin: 7em 0 5em;
-    width: 90vw;
-    max-width: 40em;
+    padding: 5em 0;
+    width: 50vw; 
     text-align: center; 
+    gap: 0.5em;
 }
 
 #scoglio_main img {
-    width: 60em;
-    max-width: 110vw;
+    width: 60em; /* height: 78 em*/
 }
 
 #scoglio_main button {
@@ -534,7 +536,7 @@ ul li { /* list item */
 
 
 
-/* -------------------- MOBILE VERSIONE -------------------- */
+/* MOBILE VERSIONE -------------------- */
 @media only screen and (max-width: 60em) {
 
     p, ul {
@@ -747,6 +749,32 @@ ul li { /* list item */
     /*CTRL+I*/
     #ctrl_main {
         max-width: 80%;
+    }
+
+    /* SCOGLIO */
+    #scoglio_body {
+        background-image: url("images/scoglio_bg_mobile2.png");
+    }
+    
+    #scoglio_main {
+        overflow: hidden;
+        padding: 3em 0;
+        width: 100vw; 
+        text-align: center; 
+        gap: 0.5em;
+    }
+    
+    #scoglio_main img {
+        width: 115vw; /* height: 78 em*/
+    }
+    
+    #scoglio_main p {
+        font-size: 1em;
+        padding: 1em;
+    }
+
+    #scoglio_main button {
+        font-size: 1em;
     }
 
 }
