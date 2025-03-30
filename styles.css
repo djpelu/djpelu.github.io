@@ -513,6 +513,7 @@ ul li { /* list item */
 
 /* SCOGLIO*/
 .parallax_container {
+    background-color: #8F99AB;
     position: relative;
     display: flex;
     flex-direction: column;
