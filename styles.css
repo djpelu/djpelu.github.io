@@ -141,6 +141,21 @@ ul li { /* list item */
     50% { border-color: black; } /* a metà animazione il cursore diventa nero */
 }
 
+/* EFFETTO PARALLAX */
+.parallax_container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.parallax_bg {
+    will-change: transform; /* migliora performance grafica*/
+    position: absolute;
+    width: 100%; /*height lo modifico caso per caso perchè la velocità del parallax crea bug*/
+    z-index: -1;
+}
+
 /* POP-UP: allarme */ 
 #allarme {
     /* display: none; */ /* COSI SI VEDE ANCHE DA PC PER ORA*/
@@ -512,24 +527,16 @@ ul li { /* list item */
 }
 
 /* SCOGLIO*/
-.parallax_container {
+#scoglio_body {
     background-color: #8F99AB;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
-.parallax_bg {
-    will-change: transform;
-    position: absolute;
-    width: 100%;
+#scoglio_bg {
     height: 85%; /*siccome la velocità del parallax aumenta la dimensione del bg, usa questo per tweeking*/
-    z-index: -1;
     background-image: url('images/scoglio_bg.png');
     background-size: 100% auto;
     background-position: center bottom;
-    background-repeat: repeat-y;
+    background-repeat: repeat-y;    
 }
 
 #scoglio_main {
@@ -767,15 +774,9 @@ ul li { /* list item */
     }
 
     /* SCOGLIO */  
-    .parallax_bg {
-        position: absolute;
-        width: 100%;
+    #scoglio_bg {
         height: 98%; /*siccome la velocità del parallax aumenta la dimensione del bg, usa questo per tweeking*/
-        z-index: -1;
-        background-image: url('images/scoglio_bg_mobile2.png');
-        background-size: 100% auto;
-        background-position: center bottom;
-        background-repeat: repeat-y;
+        background-image: url('images/scoglio_bg_mobile.png');
     }
     
     
