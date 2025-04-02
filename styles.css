@@ -492,7 +492,8 @@ ul li { /* list item */
 }
 
 .lit_pic {
-    height: 13em;
+    max-width: 13em;
+    max-height: 15em;
     transition: 0.3s ease;
     cursor: pointer;
     padding: 0 1em 1em 0;
@@ -559,10 +560,6 @@ ul li { /* list item */
 
     p, ul {
         padding-bottom: 0.3em;
-    }
-
-    .btn_verde {
-        background-color: palegreen;
     }
 
     /* HOME */
@@ -761,7 +758,6 @@ ul li { /* list item */
     .lit_pic {    
         padding: 1em 0;
         height:auto;
-        width: 11em;
     }
 
     #lit_home {
