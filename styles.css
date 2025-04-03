@@ -191,6 +191,16 @@ ul li { /* list item */
 }
 
 /* HOME: sezione 1 */
+#e {
+    height: 0.7em;
+    width: 0.8em;
+    background-image: url("icons/E.svg");
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 #home_s1 {
     position: relative;
     height: 46em;
