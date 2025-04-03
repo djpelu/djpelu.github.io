@@ -381,7 +381,7 @@ ul li { /* list item */
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
     max-width: 25em;
-    padding: 4em;
+    padding: 4em 6em 4em 4em;
     background-image: url("images/tre_avviso.png");
     background-size: 100% 100%;
 }
@@ -565,6 +565,85 @@ ul li { /* list item */
     margin:0.5em
 }
 
+/* SEDIE */
+#sedie_body {
+    background-color: aquamarine;
+    gap: 1em;
+    height: 100vh;
+}
+
+#sedie_body p {
+    width: 26em;
+    text-align: center;
+}
+
+#flipbook {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#flipbook button {
+    transition: transform 0.5s;
+    padding: 1em;
+    border-radius: 10px;
+    margin: 2em 2em;
+}
+
+.book {
+    position: relative;
+    width: 20em;
+    height: 28.36em;
+    transition: transform 0.5s;
+}
+
+.paper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    perspective: 1500px;
+}
+
+.front,
+.back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-origin: left;
+    transition: transform 0.5s;
+}
+
+.front {
+    z-index: 1;
+    backface-visibility: hidden; /*quando un elemento 2d è ruotato in 3d (come in questo caso), si vede la "schiena" in questo modo la cancelliamo*/
+}
+
+.back {
+    z-index: 0;
+}
+
+.front_content,
+.back_content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.back_content {
+    transform: rotateY(-180deg); /*ruota il contenuto della pagina che altrimenti sarebbe riflesso a causa del flip*/
+}
+
+#p1 {z-index:3}
+#p2 {z-index:2}
+#p3 {z-index:1}
+
+.flipped .front,
+.flipped .back {
+    transform: rotateY(-180deg);
+}
+
 /* MOBILE VERSIONE -------------------- */
 @media only screen and (max-width: 60em) {
 
@@ -688,7 +767,7 @@ ul li { /* list item */
     }
     
     #tre_avviso {
-        padding: 3em;
+        padding: 3em 4em 3em 3em;
     }
 
     /* CRAWLING */
