@@ -1,6 +1,7 @@
 const prevBtn = document.querySelector('#prev_btn');
 const nextBtn = document.querySelector('#next_btn');
 const book = document.querySelector('#book');
+const overlay = document.querySelector('#sedie_overlay')
 
 prevBtn.addEventListener('click', goPrevPage);
 nextBtn.addEventListener('click', goNextPage);
@@ -13,6 +14,7 @@ function openBook() {
     book.style.transform = "translateX(50%)";
     prevBtn.classList.add("flip_btn_sx_open");
     nextBtn.classList.add("flip_btn_dx_open");
+    overlay.classList.add("overlay_popup")
 }
 
 function closeBook(isAtBeginning) {
@@ -23,6 +25,7 @@ function closeBook(isAtBeginning) {
     }
     prevBtn.classList.remove("flip_btn_sx_open");
     nextBtn.classList.remove("flip_btn_dx_open");
+    overlay.classList.remove("overlay_popup")
 }
 
 function goNextPage() {

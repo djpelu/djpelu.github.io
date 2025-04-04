@@ -572,6 +572,10 @@ ul li { /* list item */
     height: 100vh;
 }
 
+#sedie_body .overlay_popup {
+    display: inline-block;
+}
+
 #sedie_body p {
     width: 26em;
     max-width: 90vw;
@@ -582,6 +586,7 @@ ul li { /* list item */
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 101; /* serve per overlay */
 }
 
 #flipbox button {
@@ -898,8 +903,6 @@ ul li { /* list item */
 
     /* SEDIE */
     #sedie_body {
-        margin: 3em 0;
-        height: auto;
         justify-content: space-around;
     }
 
@@ -909,6 +912,8 @@ ul li { /* list item */
 
     #sedie_exit {
         order: 3;
+        margin-bottom: 3em; /*la presenza del div con l'overlay, anche se display: none, incasina space around*/
+
     }
 
     #flipbox {
@@ -916,7 +921,6 @@ ul li { /* list item */
         transform: rotate(90deg);
         transform-origin: center center;
         height: 98vw; /* = width perchè dopo rotazione w e h si invertono*/
-        margin: 11em 0;
     }
 
     .flip_btn_dx_open {
