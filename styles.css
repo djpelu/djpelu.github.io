@@ -574,20 +574,30 @@ ul li { /* list item */
 
 #sedie_body p {
     width: 26em;
+    max-width: 90vw;
     text-align: center;
 }
 
-#flipbook {
+#flipbox {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-#flipbook button {
+#flipbox button {
     transition: transform 0.5s;
-    padding: 1em;
-    border-radius: 10px;
-    margin: 2em 2em;
+    margin: 0 1em;
+    font-size: 1.2em;
+    height: 3em;
+    width: 3em;
+}
+
+.flip_btn_sx_open {
+    transform: translate(-8.2em);
+}
+
+.flip_btn_dx_open {
+    transform: translate(8.2em);
 }
 
 .book {
@@ -598,13 +608,17 @@ ul li { /* list item */
 }
 
 .paper {
+    z-index: 0;
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
     perspective: 1500px;
+    will-change: transform, z-index; /* Ottimizza le animazioni */
 }
+
+#p1 { z-index: 1}
 
 .front,
 .back {
@@ -634,10 +648,6 @@ ul li { /* list item */
 .back_content {
     transform: rotateY(-180deg); /*ruota il contenuto della pagina che altrimenti sarebbe riflesso a causa del flip*/
 }
-
-#p1 {z-index:3}
-#p2 {z-index:2}
-#p3 {z-index:1}
 
 .flipped .front,
 .flipped .back {
@@ -884,6 +894,44 @@ ul li { /* list item */
 
     #scoglio_main button {
         font-size: 1em;
+    }
+
+    /* SEDIE */
+    #sedie_body {
+        margin: 3em 0;
+        height: auto;
+        justify-content: space-around;
+    }
+
+    #sedie_body p {
+        order: 0;
+    }
+
+    #sedie_exit {
+        order: 3;
+    }
+
+    #flipbox {
+        order: 1;
+        transform: rotate(90deg);
+        transform-origin: center center;
+        height: 98vw; /* = width perchè dopo rotazione w e h si invertono*/
+        margin: 11em 0;
+    }
+
+    .flip_btn_dx_open {
+        transform: translate(32vw)
+    }
+
+    .flip_btn_sx_open {
+        transform: translate(-32vw)
+    }
+
+
+    .book {
+        width: 67vw;
+        height: 95vw;
+        transition: transform 0.5s;
     }
 
 }
