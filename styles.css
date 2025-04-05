@@ -156,7 +156,7 @@ ul li { /* list item */
     z-index: -1;
 }
 
-/* POP-UP: allarme */ 
+/* HOME: allarme */ 
 #allarme {
     /* display: none; */ /* COSI SI VEDE ANCHE DA PC PER ORA*/
     position: absolute;
@@ -314,6 +314,51 @@ ul li { /* list item */
     left: 50%;
     top: 21%;
 }
+
+/* HOME: ART-ROULETTE POP-UP*/
+#AR_popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: ivory;
+    padding: 2em;
+    border: 4px solid greenyellow;
+    box-shadow: 1em 1em 1em;
+    z-index: 100;
+}
+
+#AR_popup_pic {
+    max-width: 30em;
+    max-height: 25em;
+    height: auto;
+}
+
+#AR_popup button {
+    cursor: pointer;
+    font-size: 1.5rem;
+    background-color: transparent;
+    border: none;
+}
+
+#AR_popup_close {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+}
+
+#AR_popup_ancora {
+    position: absolute;
+    transform: translate(-50%, 0);
+    left: 50%;
+    bottom: 10px;
+}
+
+#AR_popup.mostra { /* bisoga scrivere così se no la classe non sovrascrive id*/
+    display: block;
+}
+ 
 
 /* BIO */
 #bio_body {
@@ -567,6 +612,7 @@ ul li { /* list item */
 
 /* SEDIE */
 #sedie_body {
+    background-color: #485E51;
     background-image: url("images/sedie_bg.png");
     background-size: 100%;
     background-position: center bottom;

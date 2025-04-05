@@ -32,7 +32,7 @@
                     <button class="btn_verde btn_rettangolo">altre cose su di me</button></a>
                 <a href="lit.html">
                     <button class="btn_verde btn_rettangolo">alta letteratura</button></a>
-                <button class="btn_verde btn_tondo">art roulette</button>
+                <button id="AR_btn" class="btn_verde btn_tondo">art roulette</button>
                 <!-- bottoni mobile nascosti -->
                  <div id="crawling_mobile_div" class="nascosto">
                     <img src="images/crawling_snake_mobile.png">
@@ -60,6 +60,15 @@
                 <button id="allarme_x">X</button>
             </div>
 
+            <!-- ART ROULETTE POP-UP -->
+            <div id="AR_popup">
+                <button id="AR_popup_close">x</button>
+                <a id="AR_popup_link" target="_blank" rel="noreferrer noopener">
+                    <img id="AR_popup_pic" src=""/>
+                </a>
+                <button id="AR_popup_ancora">ancora</button>
+            </div>
+
         </div>
     </section>
 
@@ -75,6 +84,7 @@
         </div>
     </section>
     
+    <script src="art_roulette.js" defer></script>
     <script src="allarme.js" defer></script>
 </body>
 </html>
