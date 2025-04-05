@@ -567,19 +567,10 @@ ul li { /* list item */
 
 /* SEDIE */
 #sedie_body {
-    min-height: 100vh;
-}
-
-#sedie_bg{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
     background-image: url("images/sedie_bg.png");
     background-size: 100%;
     background-position: center bottom;
-    z-index: -100;
+    min-height: 100vh;
 }
 
 #sedie_body .overlay_popup {
@@ -919,10 +910,9 @@ ul li { /* list item */
     }
 
     /* SEDIE */
-    #sedie_bg {
+    #sedie_body {
         background-image: url("images/sedie_bg_mobile.png");
         background-size: cover;
-        will-change: scroll-position;
     }
 
     #sedie_main {
