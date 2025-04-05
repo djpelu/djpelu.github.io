@@ -905,12 +905,22 @@ ul li { /* list item */
     }
 
     /* SEDIE */
-    #sedie_main {
+    #sedie_body {
         height: 100vh;
-        justify-content: space-around;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #sedie_main {
+        gap: 4em;
+        height: auto;
+        width: 100vw;
     }
 
     #sedie_main p {
+        margin-top: 3em;
         order: 0;
     }
 
