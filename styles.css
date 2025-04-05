@@ -722,7 +722,7 @@ ul li { /* list item */
 
     /* HOME */
     #home_body {
-        background-color: #f7d8ff;;
+        background-color: #f7d8ff;
     }
 
     #dj-pelu {
@@ -1001,6 +1001,17 @@ ul li { /* list item */
         width: 63.5vw;
         height: 90vw;
         transition: transform 0.5s;
+    }
+
+    /* ART ROULETTE */
+    #AR_popup {
+        padding: 1vw;
+    }
+
+    #AR_popup_pic {
+        max-width: 90vw;
+        max-height: 70vh;
+        height: auto;
     }
 
 }
