@@ -922,7 +922,7 @@ ul li { /* list item */
     #sedie_bg {
         background-image: url("images/sedie_bg_mobile.png");
         background-size: cover;
-        height: 130vh;
+        will-change: scroll-position;
     }
 
     #sedie_main {
