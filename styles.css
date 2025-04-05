@@ -568,17 +568,20 @@ ul li { /* list item */
 /* SEDIE */
 #sedie_body {
     background-color: aquamarine;
-    gap: 1em;
-    height: 100vh;
 }
 
 #sedie_body .overlay_popup {
     display: inline-block;
 }
 
-#sedie_body p {
+#sedie_main {
+    gap: 1em;
+    height: 100vh;
+}
+
+#sedie_main p {
     width: 26em;
-    max-width: 90vw;
+    max-width: 85vw;
     text-align: center;
 }
 
@@ -902,25 +905,24 @@ ul li { /* list item */
     }
 
     /* SEDIE */
-    #sedie_body {
+    #sedie_main {
+        height: 100vh;
         justify-content: space-around;
     }
 
-    #sedie_body p {
+    #sedie_main p {
         order: 0;
     }
 
     #sedie_exit {
         order: 3;
-        margin-bottom: 3em; /*la presenza del div con l'overlay, anche se display: none, incasina space around*/
-
     }
 
     #flipbox {
         order: 1;
         transform: rotate(90deg);
         transform-origin: center center;
-        height: 98vw; /* = width perchè dopo rotazione w e h si invertono*/
+        height: 95vw; /* = width perchè dopo rotazione w e h si invertono*/
     }
 
     .flip_btn_dx_open {
@@ -933,8 +935,8 @@ ul li { /* list item */
 
 
     .book {
-        width: 67vw;
-        height: 95vw;
+        width: 63.5vw;
+        height: 90vw;
         transition: transform 0.5s;
     }
 
