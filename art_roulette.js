@@ -12,9 +12,6 @@ const opere = [
         src: 'images/roulette_gallery/butts.png',
     },
     {
-        src: 'images/roulette_gallery/fiori.png',
-    },
-    {
         src: 'images/roulette_gallery/fotot.png',
     },
     {
