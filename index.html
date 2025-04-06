@@ -29,35 +29,47 @@
     <section id="home_s1">
         <div id="home_bg_container"> <!-- poiché bg_container mantiene una dimensione fissa, i bottoni appaiono sempre nella stessa posizione relativa rispetto alla struttura generale, anche se la finestra viene ridimensionata. -->
             <div id="home_main_container">
+
                 <div id="home_intro_box">
                     <h1>dj-p<span id="e"></span>lu</h1>
                     <p> <span class="cream_highlight">faccio molte cose,<br class="nascosto"> principalmente scrivo,<br>ma di certo non sono una dj</span></p>
                 </div>
+
                 <a href="bio.html">
-                    <button class="btn_verde btn_rettangolo">altre cose su di me</button></a>
+                    <button class="btn_verde btn_rettangolo">altre cose su di me</button>
+                </a>
+
                 <a href="lit.html">
-                    <button class="btn_verde btn_rettangolo">alta letteratura</button></a>
+                    <button class="btn_verde btn_rettangolo">alta letteratura</button>
+                </a>
+
                 <button id="AR_btn" class="btn_verde btn_tondo">art roulette</button>
+                
                 <!-- bottoni mobile nascosti -->
                  <div id="crawling_mobile_div" class="nascosto">
                     <img src="images/crawling_snake_mobile.png">
                     <a href="crawling.html"><button class="btn_verde btn_rettangolo">crawling</button></a>
                     <img id="fauci" src="images/crawling_fauci_mobile.png">
                  </div>
+
                 <a href="TRE.html">
-                    <button class="btn_verde btn_rettangolo nascosto">dov'è il cavallo?!</button></a>
+                    <button class="btn_verde btn_rettangolo nascosto">dov'è il cavallo?!</button>
+                </a>
+
             </div>
 
             <!-- bottoni desktop -->
-            <a href="TRE.html">
-                <button class="btn_verde btn_rettangolo pos_btn_TRE">ci sono cavalli più belli</button></a>
             <div id="crawling_div">
                 <img src="images/crawling_snake.png">
                 <a href="crawling.html"><button class="btn_verde btn_rettangolo">crawling</button></a>
                 <img src="images/crawling_snake_fauci.png">
             </div>
 
-            <!-- pop-up di allarme per versione mobile -->
+            <a href="TRE.html">
+                <button class="btn_verde btn_rettangolo pos_btn_TRE">ci sono cavalli più belli</button>
+            </a>
+
+            <!-- POPUP: ALLARME -->
             <div id="allarme" class="vert_box">
                 <h1>ATTENZIONE!!</h1>
                 <!-- <p>questo sito è molto meglio dal pc! pensaci mentre lo guardi fal telefono</p>-->
@@ -65,15 +77,15 @@
                 <button id="allarme_x">X</button>
             </div>
 
-            <!-- ART ROULETTE POP-UP -->
+            <!-- POPUP: ART ROULETTE -->
             <div id="AR_popup">
-                <button id="AR_popup_close">x</button>
+                <button id="AR_popup_close" class="trans_btn">x</button>
                 <p style="font-size: 1.3em;font-weight: 500;">La tua opera a caso è...</p>
                 <img id="AR_popup_pic" src=""/>
                 <p id="AR_popup_title"></p>
                 <p id="AR_popup_description"></p>
                 <a id="AR_popup_link" target="_blank" rel="noreferrer noopener">
-                    <button id="AR_popup_vai">vai al contenuto</button>
+                    <button id="AR_popup_vai" class="trans_btn">vai al contenuto</button>
                 </a>
             </div>
 
@@ -83,13 +95,48 @@
     <!-- SEZIONE 2 -->
     <section id="home_s2">
         <div class="social_container">
+
             <a href="https://www.youtube.com/@djpeluformerjaydeelupe8286" target="_blank" rel="noreferrer noopener">
-                <img src="icons/yt.svg" class="social_icon"></a>  
+                <img src="icons/yt.svg" class="social_icon">
+            </a>  
+
             <a href="https://www.instagram.com/speedy_gaynzales/" target="_blank" rel="noreferrer noopener">
-                <img src="icons/ig.svg" class="social_icon"></button></a>
+                <img src="icons/ig.svg" class="social_icon"></button>
+            </a>
+
             <a href="https://www.linkedin.com/in/alessandra-peluzzi-01aba4225/" target="_blank" rel="noreferrer noopener">
-                <img src="icons/in.svg" class="social_icon"></button></a>
+                <img src="icons/in.svg" class="social_icon"></button>
+            </a>
+
         </div>
+    </section>
+
+    <!-- SEZIONE 3 -->
+    <section id="home_s3">
+
+        <form id="collab_form" class="vert_box" method="POST" action="https://formspree.io/f/mrbpopnv" >
+
+            <h2>collaboriamo?</h2>
+
+            <div class="fdiv">
+                <label for="fname">nome</label>
+                <input type="text" id="fname">
+            </div>
+
+            <div class="fdiv">
+                <label for="femail">e-mail</label>
+                <input type="text" id="femail" required>
+            </div>
+            
+            <div style="width: 100%">
+                <label for="fmex">che facciamo?</label>
+                <textarea id="fmex" required></textarea>
+            </div>
+
+            <input type="submit" id="finvia" class="trans_btn" value="invia">
+
+        </form>
+
     </section>
     
     <script src="art_roulette.js" defer></script>

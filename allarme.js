@@ -9,7 +9,7 @@ if (isMobileDevice() && !sessionStorage.getItem('popupShown')) {
         document.getElementById('allarme').style.display = 'inherit';
         // una volta che l'utente ha visto il popup salvo questa informazione
         sessionStorage.setItem('popupShown', 'true');
-    }, 3000); // 3000 millisecondi = 3 sec per far apparire popup
+    }, 2000); // 3000 millisecondi = 3 sec per far apparire popup
 }
 
 // chiudi popup quando si clicca X
