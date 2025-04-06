@@ -684,6 +684,7 @@ ul li { /* list item */
     width: 20em;
     height: 28.36em;
     transition: transform 0.5s;
+    pointer-events: none;
 }
 
 .paper {
@@ -829,6 +830,20 @@ ul li { /* list item */
     #bio_p h1 {
         font-size: 2.2em;
         padding-bottom: 0.5em;
+    }
+
+    /* HOME: ART ROULETTE */
+    #AR_popup {
+        padding: 2em 2vw;
+        box-shadow: 0em 1em 1.5em black;
+        min-width: 80vw;
+    }
+
+    #AR_popup_pic {
+        max-width: 85vw;
+        max-height: 68vh;
+        height: auto;
+        margin-top: 0.5em;
     }
 
     /*TRE*/
@@ -1021,19 +1036,6 @@ ul li { /* list item */
         width: 63.5vw;
         height: 90vw;
         transition: transform 0.5s;
-    }
-
-    /* ART ROULETTE */
-    #AR_popup {
-        padding: 2em 2vw;
-        box-shadow: 0em 1em 1.5em black;
-    }
-
-    #AR_popup_pic {
-        max-width: 85vw;
-        max-height: 68vh;
-        height: auto;
-        margin-top: 0.5em;
     }
 
 }
