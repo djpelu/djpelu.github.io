@@ -616,7 +616,7 @@ ul li { /* list item */
 #sedie_body {
     background-color: #485E51;
     background-image: url("images/sedie_bg.png");
-    background-size: 100%;
+    background-size: 80% auto;
     background-position: center bottom;
     min-height: 100vh;
 }
