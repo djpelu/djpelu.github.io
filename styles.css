@@ -253,7 +253,7 @@ ul li { /* list item */
 
 .social_container {
     position: absolute;
-    top: 45%;
+    top: 39%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
@@ -904,7 +904,7 @@ ul li { /* list item */
     }
 
     #AR_popup_pic {
-        max-width: 85vw;
+        width: 90vw;
         max-height: 60vh;
         height: auto;
         margin-top: 0.5em;
