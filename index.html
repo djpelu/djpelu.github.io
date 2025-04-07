@@ -117,20 +117,20 @@
         <form id="collab_form" class="vert_box" method="POST" action="https://formspree.io/f/mrbpopnv" >
 
             <h2>collaboriamo?</h2>
+            
+            <div style="width: 100%">
+                <label for="fmex"></label>
+                <textarea id="fmex" name="proposta" placeholder="Ecco cosa ti propongo..." required></textarea>
+            </div>
 
             <div class="fdiv">
                 <label for="fname">nome</label>
-                <input type="text" id="fname">
+                <input type="text" id="fname" name="nome">
             </div>
 
             <div class="fdiv">
                 <label for="femail">e-mail</label>
-                <input type="text" id="femail" required>
-            </div>
-            
-            <div style="width: 100%">
-                <label for="fmex">che facciamo?</label>
-                <textarea id="fmex" required></textarea>
+                <input type="email" id="femail" name="email" required>
             </div>
 
             <input type="submit" id="finvia" class="trans_btn" value="invia">
