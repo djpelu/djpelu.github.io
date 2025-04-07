@@ -867,6 +867,7 @@ ul li { /* list item */
 
     /* HOME: sezione 2 */
     #home_s2 {
+        margin-top: 2em;
         height: 60vw; /*più o meno metà della larghezza*/
         background-image: url(images/mucche.png);
         background-repeat: no-repeat;
@@ -875,7 +876,7 @@ ul li { /* list item */
     }
 
     .social_container {
-        top: 79%;
+        top: 65%;
         left: 50%;
         transform: translate(-50, -50);
         width: fit-content;
@@ -893,7 +894,11 @@ ul li { /* list item */
 
     /*HOME: sezione 3*/
     #home_s3 {
-        display: none;
+        height: auto;
+    }
+
+    #collab_form {
+        width: 90vw;
     }
 
     /* HOME: ART ROULETTE */
