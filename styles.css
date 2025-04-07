@@ -916,7 +916,7 @@ ul li { /* list item */
     }
 
     #AR_popup_vai {
-        font-size: clamp(0.6em, 1.1em, 1.1em);
+        font-size: clamp(0, 1.1em, 1.1em);
     }
     
     /*BIO*/
