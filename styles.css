@@ -806,9 +806,6 @@ ul li { /* list item */
     transform: rotateY(-180deg);
 }
 
-/* TABLET VERSION --------------------- */
-@media only screen and (max-width: 60em) {}
-
 /* MOBILE VERSION --------------------- */
 @media only screen and (max-width: 1023px) {
 
@@ -926,26 +923,6 @@ ul li { /* list item */
         font-size: clamp(0.5em, 1.1em, 1.1em);
     }
     
-    /*BIO*/
-    #bio_body {
-        height: auto;
-        padding: 3em 0 2em 0;
-    }
-    
-    .bio_side_col {
-        display: none;
-    }
-    
-    .bio_central_col {
-        width:100%;
-        padding: 1em;
-    }
-
-    #bio_p h1 {
-        font-size: 2.2em;
-        padding-bottom: 0.5em;
-    }
-
     /*TRE*/
     #tre_body {
         background-size: 200%;
@@ -1011,6 +988,63 @@ ul li { /* list item */
         width: 80%;
     }
 
+    /*CTRL+I*/
+    #ctrl_main {
+        max-width: 80%;
+    }
+
+    /* SCOGLIO */  
+    #scoglio_bg {
+        height: 98%; /*siccome la velocità del parallax aumenta la dimensione del bg, usa questo per tweeking*/
+        background-image: url('images/scoglio_bg_mobile.png');
+    }
+    
+    
+    #scoglio_main {
+        overflow: hidden;
+        padding: 3em 0;
+        width: 100vw; 
+        text-align: center; 
+        gap: 0.5em;
+    }
+    
+    #scoglio_main img {
+        width: 115vw;
+    }
+    
+    #scoglio_main p {
+        font-size: 1em;
+        padding: 1em;
+    }
+
+    #scoglio_main button {
+        font-size: 1em;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    
+    /*BIO*/
+    #bio_body {
+        height: auto;
+        padding: 3em 0 2em 0;
+    }
+    
+    .bio_side_col {
+        display: none;
+    }
+    
+    .bio_central_col {
+        width:100%;
+        padding: 1em;
+    }
+
+    #bio_p h1 {
+        font-size: 2.2em;
+        padding-bottom: 0.5em;
+    }
+
     /* LIT */
     #lit_body {
         margin: 0;
@@ -1057,38 +1091,6 @@ ul li { /* list item */
         margin: 3em auto;
     }
 
-    /*CTRL+I*/
-    #ctrl_main {
-        max-width: 80%;
-    }
-
-    /* SCOGLIO */  
-    #scoglio_bg {
-        height: 98%; /*siccome la velocità del parallax aumenta la dimensione del bg, usa questo per tweeking*/
-        background-image: url('images/scoglio_bg_mobile.png');
-    }
-    
-    
-    #scoglio_main {
-        overflow: hidden;
-        padding: 3em 0;
-        width: 100vw; 
-        text-align: center; 
-        gap: 0.5em;
-    }
-    
-    #scoglio_main img {
-        width: 115vw;
-    }
-    
-    #scoglio_main p {
-        font-size: 1em;
-        padding: 1em;
-    }
-
-    #scoglio_main button {
-        font-size: 1em;
-    }
 
     /* SEDIE */
     #sedie_body {
@@ -1137,5 +1139,4 @@ ul li { /* list item */
         height: 90vw;
         transition: transform 0.5s;
     }
-
 }
