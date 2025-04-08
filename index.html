@@ -25,9 +25,12 @@
 </head>
 
 <body id="home_body">
+    <div class="overlay_popup"></div>
     <!-- SEZIONE 1 -->
     <section id="home_s1">
+
         <div id="home_bg_container"> <!-- poiché bg_container mantiene una dimensione fissa, i bottoni appaiono sempre nella stessa posizione relativa rispetto alla struttura generale, anche se la finestra viene ridimensionata. -->
+            
             <div id="home_main_container">
 
                 <div id="home_intro_box">
@@ -69,27 +72,8 @@
                 <button class="btn_verde btn_rettangolo pos_btn_TRE">ci sono cavalli più belli</button>
             </a>
 
-            <!-- POPUP: ALLARME -->
-            <div id="allarme" class="vert_box">
-                <h1>ATTENZIONE!!</h1>
-                <!-- <p>questo sito è molto meglio dal pc! pensaci mentre lo guardi fal telefono</p>-->
-                <p>questo sito non è ancora ottimizzato per ipad</p>
-                <button id="allarme_x">X</button>
-            </div>
-
-            <!-- POPUP: ART ROULETTE -->
-            <div id="AR_popup">
-                <button id="AR_popup_close" class="trans_btn">x</button>
-                <p style="font-size: 1.3em;font-weight: 500;">La tua opera a caso è...</p>
-                <img id="AR_popup_pic" src=""/>
-                <p id="AR_popup_title"></p>
-                <p id="AR_popup_description"></p>
-                <a id="AR_popup_link" target="_blank" rel="noreferrer noopener">
-                    <button id="AR_popup_vai" class="trans_btn">vai al contenuto</button>
-                </a>
-            </div>
-
         </div>
+
     </section>
 
     <!-- SEZIONE 2 -->
@@ -138,8 +122,30 @@
         </form>
 
     </section>
+
+    <!-- POPUP: ALLARME -->
+    <div id="allarme" class="popup">
+        <h1>ATTENZIONE!!</h1>
+        <!-- <p>questo sito è molto meglio dal pc! pensaci mentre lo guardi fal telefono</p>-->
+        <p>questo sito non è ancora ottimizzato per ipad</p>
+        <button id="allarme_x">X</button>
+    </div>
+
+    <!-- POPUP: ART ROULETTE -->
+    <div id="AR_popup" class="popup">
+        <button id="AR_popup_close" class="trans_btn">x</button>
+        <p id="AR_popup_p">La tua opera a caso è</p>
+        <div id="AR_popup_random_content">
+            <img id="AR_popup_pic" src=""/>
+            <p id="AR_popup_title"></p>
+            <p id="AR_popup_description"></p>
+            <a id="AR_popup_link" target="_blank" rel="noreferrer noopener">
+                <button id="AR_popup_vai" class="trans_btn">vai al contenuto</button>
+            </a>
+        </div>
+    </div>
     
     <script src="art_roulette.js" defer></script>
-    <script src="allarme.js" defer></script>
+    <script src="index_popup.js" defer></script>
 </body>
 </html>

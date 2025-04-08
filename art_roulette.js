@@ -137,17 +137,21 @@ const opere = [
         src: 'images/crawling_snake_mobile.png',
         url: 'crawling.html',
         title: "Crawling",
-        description: "Snake, ma man mano che il serpente cresce aumentano anche le sue responsabilità"
+        description: "Snake, ma pian piano che il serpente cresce, aumentano anche le sue responsabilità"
     },       
 ];
 
 
 const popup = document.getElementById('AR_popup');
+const popupP = document.getElementById('AR_popup_p');
+
+const popupRandomContent = document.getElementById('AR_popup_random_content');
 const popupPic = document.getElementById('AR_popup_pic');
-const popupLink = document.getElementById('AR_popup_link');
 const popupTitle = document.getElementById('AR_popup_title');
 const popupDescr = document.getElementById('AR_popup_description');
+const popupLink = document.getElementById('AR_popup_link');
 const popupVai = document.getElementById('AR_popup_vai');
+const overlay = document.querySelector('.overlay_popup');
 
 function Roulette() {
 
@@ -155,36 +159,53 @@ function Roulette() {
     const randomIndex = Math.floor(Math.random() * opere.length);
     const selected = opere[randomIndex];
 
-    popupPic.src = selected.src;
-    popupTitle.textContent = selected.title;
-
-    if (selected.description) {  // Corretto: controlla selected.description
-        popupDescr.textContent = selected.description;
-        popupDescr.style.display = 'block';
-    } else {
-        popupDescr.style.display = 'none';
-    }    
-
-
-    if (selected.url) {
-        popupVai.classList.add('mostra')
-        popupLink.href = selected.url;
-        popupLink.style.pointerEvents = 'auto';
-        popupLink.style.cursor = 'pointer';
-    } else {
-        popupVai.classList.remove('mostra')
-        popupLink.removeAttribute('href');
-        popupLink.style.pointerEvents = 'none';
-        popupLink.style.cursor = 'default';
-    }
-
+    // mostra popup
     popup.classList.add('mostra');
+    popupP.style.margin = "1em"; // margine modificato per centrare meglio la scritta
+    overlay.style.display = 'block';
+    document.body.style.overflow = 'hidden'; // blocca lo scroll
+
+    // puntini progressivi
+    setTimeout(() => popupP.textContent += ".", 500);
+    setTimeout(() => popupP.textContent += ".", 1000);
+    setTimeout(() => popupP.textContent += ".", 1500);
+    
+    // dopo due secondi 'rempiamo' immagine, titolo, eventuale descrizione ed eventuale bottone
+    setTimeout(() => {
+
+        popupP.style.margin = "0" // resettiamo margine
+
+        popupPic.src = selected.src;
+        popupTitle.textContent = selected.title;
+
+        if (selected.description) {
+            popupDescr.textContent = selected.description;
+            popupDescr.style.display = 'block';
+        } else {
+            popupDescr.style.display = 'none';
+        }    
+
+        if (selected.url) {
+            popupVai.classList.add('mostra')
+            popupLink.href = selected.url;
+        } else {
+            popupVai.classList.remove('mostra')
+            popupLink.removeAttribute('href');
+        }
+
+        popupRandomContent.classList.add("mostra") // e li mostriamo
+
+    }, 2000);
 }
 
 document.getElementById('AR_btn').addEventListener('click', Roulette)
 
 document.getElementById('AR_popup_close').addEventListener('click', () => {
+    overlay.style.display = 'none';
+    document.body.style.overflow = 'auto'; // riabilita lo scroll
     popup.classList.remove('mostra');
+    popupRandomContent.classList.remove('mostra');
+    popupP.textContent = "La tua opera a caso è"
 });
 
 

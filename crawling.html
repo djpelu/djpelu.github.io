@@ -20,21 +20,11 @@
 
 <body id="crawling_body">
     
+    <!-- serpente sx -->
     <img src="images/crawling_open.png" class="crawling_snake on_the_left">
 
+    <!-- main -->
     <div id="crawling_main_div" class="vert_box">
-
-        <!-- pop-up e overlay-->
-        <div class="overlay_popup"></div>
-        <div id="crawling_popup">
-            <button class="x">x</button>
-            <div id="crawling_popup_p">
-                <h3>CREDEVI...</h3>
-                <p> Scaricare Crawling direttamente dal mio sito potrebbe esporti a virus e minacce. Per evitare scherzi, clicca il tasto qui sotto, ti invierò il gioco personalmente.</p>
-                <p> Ah, un'ultima cosa: Crawling è disponibile solo per Microsoft desktop.</p>
-            </div>
-            <a href="mailto:peluzzi.alessandra@gmail.com?subject=MANDAMI%20CRAWLING&body=Ciao,%0A%0AMi%20mandi%20CRAWLING?%0A%0AQui%20dovrei%20aver%20messo%20la%20mia%20firma" class="btn_verde btn_rettangolo" style="text-decoration: none;">continua</a>
-        </div>
 
         <img src="images/crawling_open_mobile.png" class="crawling_snake_mobile nascosto">
         <img src="images/crawling_title.png" id="crawling_title">
@@ -53,8 +43,22 @@
         <img src="images/crawling_closed_mobile.png" class="crawling_snake_mobile nascosto">
     </div>
 
+    <!-- serpente dx -->
     <img src="images/crawling_closed.png" class="crawling_snake on_the_right">
 
-    <script src="popup.js" defer></script>
+    <!-- pop-up e overlay-->
+    <div class="overlay_popup"></div>
+
+    <div id="crawling_popup" class="popup">
+        <button class="x">x</button>
+        <div id="crawling_popup_p">
+            <h3>CREDEVI...</h3>
+            <p> Scaricare Crawling direttamente dal mio sito potrebbe esporti a virus e minacce. Per evitare scherzi, clicca il tasto qui sotto, ti invierò il gioco personalmente.</p>
+            <p> Ah, un'ultima cosa: Crawling è disponibile solo per Microsoft desktop.</p>
+        </div>
+        <a href="mailto:peluzzi.alessandra@gmail.com?subject=MANDAMI%20CRAWLING&body=Ciao,%0A%0AMi%20mandi%20CRAWLING?%0A%0AQui%20dovrei%20aver%20messo%20la%20mia%20firma" class="btn_verde btn_rettangolo" style="text-decoration: none;">continua</a>
+    </div>
+
+    <script src="crawling_popup.js" defer></script>
 </body>
 </html>

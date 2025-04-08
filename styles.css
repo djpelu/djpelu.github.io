@@ -9,6 +9,16 @@ body {
     display: none;
 }
 
+.popup {
+    position: fixed;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    z-index: 101;
+    text-align: center;
+    box-shadow: 0 0.5em 1em;
+}
+
 .overlay_popup {
     display: none;
     position: fixed;
@@ -166,40 +176,6 @@ ul li { /* list item */
     z-index: -1;
 }
 
-/* HOME: allarme */ 
-#allarme {
-    display: none;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    left: 50%;
-    top: 50%;
-    background-image: url("images/allarme.png");
-    background-size: fill;
-    padding: 1em;
-    width: 60%;
-    max-width: 25em;
-    box-shadow: 0 0.5em 1em;
-    gap: 0.5em;
-}
-
-#allarme h1 {
-    color: red;
-    padding: 0;
-    font-size: 2em;
-}
-
-#allarme p {
-    color: brown;
-}
-
-#allarme_x {
-    color:red;
-    background-color: transparent;
-    border: none;
-    font-weight: 900;
-    font-size: 1.5em;
-}
-
 /* HOME: sezione 1 */
 #e {
     height: 0.7em;
@@ -327,6 +303,105 @@ ul li { /* list item */
     color: white;
 }
 
+/* HOME: ART-ROULETTE POP-UP*/
+#AR_popup {
+    display: none;
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    padding: 2em;
+    border: 3px solid white;
+    color: white;
+}
+
+#AR_popup.mostra { /* bisoga scrivere così se no la classe non sovrascrive id*/
+    display: block;
+}
+
+#AR_popup_random_content {
+    display: none;
+}
+
+#AR_popup_random_content.mostra {
+    display: block;
+}
+
+#AR_popup_p {
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
+#AR_popup_pic {
+    max-width: 30em;
+    max-height: 25em;
+    margin: 1.5em 0 0.5em;
+    height: auto;
+}
+
+#AR_popup_title {
+    font-size: 1.4em;
+    font-weight: 500;
+}
+
+#AR_popup_description {
+    margin-bottom: 1.5em;
+    text-wrap: pretty;
+}
+
+#AR_popup button {
+    color: white;
+}
+
+#AR_popup button:hover {
+    font-weight: 600;
+}
+
+#AR_popup_close {
+    position: absolute;
+    top: 0.5em;
+    right: 0.5em;
+}
+
+#AR_popup_vai{
+    display: none;
+    position: absolute;
+    bottom: 1em;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+#AR_popup_vai.mostra{
+    display: block;
+}
+
+/* HOME: allarme */ 
+#allarme {
+    display: none;
+    background-image: url("images/allarme.png");
+    background-size: fill;
+    padding: 1em;
+    width: 60%;
+    max-width: 25em;
+    gap: 0.5em;
+}
+
+#allarme h1 {
+    color: red;
+    padding: 0;
+    font-size: 2em;
+}
+
+#allarme p {
+    color: brown;
+}
+
+#allarme_x {
+    color:red;
+    background-color: transparent;
+    border: none;
+    font-weight: 900;
+    font-size: 1.5em;
+}
+ 
 /* HOME: bottoni */
 .pos_btn_TRE {
     position: absolute;
@@ -379,70 +454,6 @@ ul li { /* list item */
     left: 50%;
     top: 21%;
 }
-
-/* HOME: ART-ROULETTE POP-UP*/
-#AR_popup {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: rgb(34,193,195);
-    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
-    padding: 2em;
-    border: 3px solid white;
-    color: white;
-    box-shadow: 1em 1em 1em black;
-    z-index: 100;
-}
-
-#AR_popup_pic {
-    max-width: 30em;
-    max-height: 25em;
-    margin: 1.5em 0 0.5em;
-    height: auto;
-}
-
-#AR_popup_title {
-    font-size: 1.4em;
-    font-weight: 500;
-}
-
-#AR_popup_description {
-    margin-bottom: 1.5em;
-    text-wrap: pretty;
-}
-
-#AR_popup button {
-    color: white;
-}
-
-#AR_popup button:hover {
-    font-weight: 600;
-}
-
-#AR_popup_close {
-    position: absolute;
-    top: 0.5em;
-    right: 0.5em;
-}
-
-#AR_popup_vai{
-    display: none;
-    position: absolute;
-    bottom: 1em;
-    left: 50%;
-    transform: translate(-50%, 0);
-}
-
-#AR_popup.mostra { /* bisoga scrivere così se no la classe non sovrascrive id*/
-    display: block;
-}
-
-#AR_popup_vai.mostra{
-    display: block;
-}
- 
 
 /* BIO */
 #bio_body {
@@ -579,14 +590,10 @@ ul li { /* list item */
 /* CRAWLING: pop-up */
 #crawling_popup {
     display: none;
-    position: absolute;
-    z-index: 101;
-    bottom: 10%;
     width: 50%;
     padding-bottom: 1.5em;
     background-color: #2E2E2E;
     color: greenyellow;
-    text-align: center;
 }
 
 #crawling_popup_p {
@@ -636,6 +643,7 @@ ul li { /* list item */
     transition: 0.3s ease;
     cursor: pointer;
     padding: 0 1em 1em 0;
+    filter: drop-shadow(0.1em 0.1em 0.2em black)
 }
 
 .lit_pic:hover {
@@ -798,8 +806,11 @@ ul li { /* list item */
     transform: rotateY(-180deg);
 }
 
-/* MOBILE VERSIONE -------------------- */
-@media only screen and (max-width: 60em) {
+/* TABLET VERSION --------------------- */
+@media only screen and (max-width: 60em) {}
+
+/* MOBILE VERSION --------------------- */
+@media only screen and (max-width: 1023px) {
 
     p, ul {
         padding-bottom: 0.3em;
@@ -904,7 +915,7 @@ ul li { /* list item */
     }
 
     #AR_popup_pic {
-        width: 90vw;
+        max-width: 90vw;
         max-height: 60vh;
         height: auto;
         margin-top: 0.5em;
