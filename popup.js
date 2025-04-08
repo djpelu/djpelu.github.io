@@ -5,28 +5,28 @@ const closeBtn = document.querySelector('.x')
 
 // apri popup se si clicca trigger
 trigger.addEventListener('click', (e) => {
-  e.stopPropagation(); // Evita che il click si propaghi al documento
+  e.stopPropagation(); // evita che il click si propaghi al documento
   overlay.style.display = 'block';
   popup.style.display = 'block';
-  document.body.style.overflow = 'hidden'; // Blocca lo scroll
+  document.body.style.overflow = 'hidden'; // blocca lo scroll
 });
 
-// Chiudi il popup se clicca x
+// chiudi il popup se clicca x
 closeBtn.addEventListener('click', (e) => {
   e.stopPropagation();
   overlay.style.display = 'none';
   popup.style.display = 'none';
-  document.body.style.overflow = 'auto'; // Riabilita lo scroll
+  document.body.style.overflow = 'auto'; // riabilita lo scroll
 });
 
 // Chiudi il popup se si clicca fuori da esso
 document.addEventListener('click', () => {
   overlay.style.display = 'none';
   popup.style.display = 'none';
-  document.body.style.overflow = 'auto'; // Riabilita lo scroll
+  document.body.style.overflow = 'auto'; // riabilita lo scroll
 });
 
-// Previeni la chiusura quando si clicca dentro il popup
+// previeni la chiusura quando si clicca dentro il popup
 popup.addEventListener('click', (e) => {
   e.stopPropagation();
 });
