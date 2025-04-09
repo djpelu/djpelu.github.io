@@ -642,7 +642,15 @@ ul li { /* list item */
     max-height: 15em;
     transition: 0.3s ease;
     cursor: pointer;
-    padding: 0 1em 1em 0;
+    margin: 0 1em 1em 0;
+}
+
+.lit_pic.full {
+    box-shadow: 0.1em 0.1em 0.2em black;
+
+}
+
+.lit_pic.trans {
     filter: drop-shadow(0.1em 0.1em 0.2em black)
 }
 
@@ -1025,8 +1033,10 @@ ul li { /* list item */
     #scoglio_main button {
         font-size: 1em;
     }
+
 }
 
+ /* per fare la tablet mode metti i breakpoints sopra e sotto e metti classe .tablet_mode*/
 
 @media only screen and (max-width: 600px) {
     
