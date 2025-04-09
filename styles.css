@@ -912,10 +912,15 @@ ul li { /* list item */
     }
 
     #AR_popup_pic {
-        max-width: 90vw;
-        max-height: 60vh;
+        max-width: 80vw;
+        max-height: 50vh;
         height: auto;
         margin-top: 0.5em;
+    }
+
+    #AR_popup_title {
+        max-height: 20vh;
+        font-size: clamp(0.8em, 1.4em, 1.4em);
     }
 
     #AR_popup_vai {
