@@ -461,11 +461,14 @@ ul li { /* list item */
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 2em 2em;
+    padding: 0 2em;
+    height: 100vh;
 }
 
 .bio_side_col {
     flex: 1;
+    margin: 2em;
+    filter: drop-shadow(0.3em 0.3em 0.3em)
 }
 
 .bio_side_col img {
@@ -474,9 +477,7 @@ ul li { /* list item */
 }
 
 .bio_central_col {
-    flex: 1.2;
-    align-self: center;
-    width: 40%;
+    flex: 1.5;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -814,8 +815,9 @@ ul li { /* list item */
     transform: rotateY(-180deg);
 }
 
-/* MOBILE VERSION --------------------- */
-@media only screen and (max-width: 1023px) {
+
+/* VERSIONE TABLET E MOBILE --------------------- */
+@media only screen and (max-width: 1024px) {
 
     p, ul {
         padding-bottom: 0.3em;
@@ -935,23 +937,34 @@ ul li { /* list item */
         white-space: nowrap;
         font-size: clamp(0.5em, 1.1em, 1.1em);
     }
+
+    /*BIO*/
+    #bio_body {
+        flex-direction: column;
+        margin: 2em;
+        height: auto;
+    }
+
+    .bio_central_col {
+        margin: 2em 2em;
+    }
     
     /*TRE*/
     #tre_body {
         background-size: 200%;
-        padding: 2em 0;
+        padding: 2em 0 4em;
     }
 
     #tre_oriz_box {
         flex-direction: column;
-        padding: 0;
-        width: 95%;
+        padding-top: 2em;
+        width: 85%;
         height: auto;
     }
 
     .tre_graffiti{
         margin-top: 10em;
-        width: 60%;
+        width: 35%;
     }
 
     #tre_text_box {
@@ -1022,12 +1035,13 @@ ul li { /* list item */
     }
     
     #scoglio_main img {
-        width: 115vw;
+        width: 100vw;
     }
     
     #scoglio_main p {
         font-size: 1em;
         padding: 1em;
+        width: 80vw;
     }
 
     #scoglio_main button {
@@ -1036,28 +1050,29 @@ ul li { /* list item */
 
 }
 
- /* per fare la tablet mode metti i breakpoints sopra e sotto e metti classe .tablet_mode*/
 
-@media only screen and (max-width: 600px) {
-    
-    /*BIO*/
+/* VERSIONE MOBILE --------------------- */
+@media only screen and (max-width: 767px) {
+
+    /* BIO */
     #bio_body {
+        flex-direction: column;
+        margin: 0 0 2em;
         height: auto;
-        padding: 3em 0 2em 0;
-    }
-    
-    .bio_side_col {
-        display: none;
-    }
-    
-    .bio_central_col {
-        width:100%;
-        padding: 1em;
     }
 
-    #bio_p h1 {
-        font-size: 2.2em;
-        padding-bottom: 0.5em;
+    .bio_central_col {
+        margin: 0 1em 1em;
+    }
+
+    /* TRE */
+    #tre_oriz_box {
+        padding: 0;
+        width: 95%;
+    }
+
+    .tre_graffiti{
+        width: 60%;
     }
 
     /* LIT */
@@ -1106,6 +1121,14 @@ ul li { /* list item */
         margin: 3em auto;
     }
 
+    /* SCOGLIO */
+    #scoglio_main img {
+        width: 115vw;
+    }
+
+    #scoglio_main p {
+        width: 90vw;
+    }
 
     /* SEDIE */
     #sedie_body {

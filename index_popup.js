@@ -1,10 +1,10 @@
 // rilevo dispositivo utente
-function isMobileDevice() {
-    return /Mobi|Android/i.test(navigator.userAgent);
+function isMobileOrTablet() {
+    return /Mobi|Android|Tablet|iPad|iPhone|iPod/i.test(navigator.userAgent);
 }
 
 // mostra pop-up SE su mobile e l'utente NON ha già visto il popup
-if (isMobileDevice() && !sessionStorage.getItem('popupShown')) {
+if (isMobileOrTablet() && !sessionStorage.getItem('popupShown')) {
     setTimeout(function() {
         document.getElementById('allarme').style.display = 'inherit';
         // una volta che l'utente ha visto il popup salvo questa informazione
