@@ -648,7 +648,6 @@ ul li { /* list item */
 
 .lit_pic.full {
     box-shadow: 0.1em 0.1em 0.2em black;
-
 }
 
 .lit_pic.trans {
@@ -741,6 +740,7 @@ ul li { /* list item */
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0 1em;
     z-index: 101; /* serve per overlay */
 }
 
@@ -753,11 +753,11 @@ ul li { /* list item */
 }
 
 .flip_btn_sx_open {
-    transform: translate(-8.2em);
+    transform: translate(-8em);
 }
 
 .flip_btn_dx_open {
-    transform: translate(8.2em);
+    transform: translate(8em);
 }
 
 .book {
