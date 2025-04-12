@@ -1138,7 +1138,6 @@ ul li { /* list item */
     /* LIT */
     #lit_body {
         margin: 0;
-        overflow-x: hidden;
     }
 
     #lit_body h2 {
@@ -1181,9 +1180,7 @@ ul li { /* list item */
     }
     
     .lit_pic {    
-        height: 100%;
-        width: 100%;
-        max-width: 13em;
+        height: auto;
     }
 
     #lit_home {
