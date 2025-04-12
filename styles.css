@@ -888,23 +888,6 @@ ul li { /* list item */
 /* VERSIONE TABLET E MOBILE --------------------- */
 @media only screen and (max-width: 1024px) {
 
-    .seo_tag {
-        bottom: auto;
-        top: 0.5%;
-        position: absolute;
-    }
-
-    #home_body .seo_tag,
-    #bio_body .seo_tag,
-    #lit_body .seo_tag,
-    #scoglio_body .seo_tag,
-    #sedie_body .seo_tag,
-    #ctrl_body .seo_tag {
-        background-color: transparent;
-    }
-
-
-
     p, ul {
         padding-bottom: 0.3em;
     }
