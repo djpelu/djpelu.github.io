@@ -5,6 +5,15 @@ body {
     margin: 0;
 }
 
+.seo_tag {
+    position: fixed;
+    bottom: 0.5%;
+    left: 0;
+    font-size: 0.8em;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
 .nascosto  { /*questa class mi permette di nascondere le cose facilmente*/
     display: none;
 }
