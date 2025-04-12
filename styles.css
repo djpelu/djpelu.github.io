@@ -1179,10 +1179,6 @@ ul li { /* list item */
         grid-template-rows: 1fr 0;
     }
     
-    .lit_pic {    
-        height: auto;
-    }
-
     #lit_home {
         margin: 3em auto;
     }
