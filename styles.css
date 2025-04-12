@@ -713,7 +713,7 @@ ul li { /* list item */
 
 #lit_home {
     display: flex;
-    width: 100vw;
+    width: 100%;
     justify-content: center
 }
 
