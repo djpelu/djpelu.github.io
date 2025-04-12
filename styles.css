@@ -803,11 +803,21 @@ ul li { /* list item */
 }
 
 .flip_btn_sx_open {
-    transform: translate(-8em);
+    transform: translate(-8.34em);
 }
 
 .flip_btn_dx_open {
-    transform: translate(8em);
+    transform: translate(8.34em);
+}
+
+@media (max-width: 800px) { /*se non c'è spazio per i bottoni: nei 33 pixel da 767 a 800 che ci separano dalla mobile mode*/
+    .flip_btn_sx_open {
+        transform: translate(-7.5em);
+    }
+    
+    .flip_btn_dx_open {
+        transform: translate(7.5em);
+    }
 }
 
 .book {
@@ -1187,11 +1197,6 @@ ul li { /* list item */
     }
 
     /* SEDIE */
-    #sedie_body {
-        background-image: url("images/sedie_bg_mobile.png");
-        background-size: cover;
-    }
-
     #sedie_main {
         background-color: transparent;
         padding: 0;
