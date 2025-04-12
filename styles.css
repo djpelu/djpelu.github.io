@@ -9,6 +9,11 @@ body {
     display: none;
 }
 
+.invisibile {
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
 .popup {
     position: fixed;
     transform: translate(-50%, -50%);
@@ -621,7 +626,7 @@ ul li { /* list item */
 #lit_body {
     background-image: url("images/LIT_bg_mobile.png");
     background-color: peachpuff;
-    margin: 2em;
+    margin: 4em 2em;
 }
 
 #lit_body h3 {
@@ -633,9 +638,27 @@ ul li { /* list item */
     margin: 7em 0 2em 3em;
     }
 
-.lit_box {
-    padding: 2em 1em 0 3em;
+.lit_genre {
+    padding: 0.5em 1em 0 3em;
     display: inline-block;
+}
+
+.lit_box {
+    display: flex;
+    gap: 2.5em;
+    flex-wrap: wrap;
+}
+
+.lit_piece {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto 5em;
+    justify-items: center;
+}
+
+.lit_btn {
+    align-self: end;
+    transition: 0.3s ease;
 }
 
 .lit_pic {
@@ -643,7 +666,6 @@ ul li { /* list item */
     max-height: 15em;
     transition: 0.3s ease;
     cursor: pointer;
-    margin: 0 1em 1em 0;
 }
 
 .lit_pic.full {
@@ -656,6 +678,34 @@ ul li { /* list item */
 
 .lit_pic:hover {
     transform: scale(1.05);
+}
+
+.lit_td {
+    max-width: 12em;
+    text-align: center;
+    margin-top: 0.2em;
+}
+
+.lit_t {
+    margin-top: 0.2em;
+    font-weight: 500;
+    font-size: clamp(0.8em, 1em, 1em);
+    white-space: nowrap;
+    line-height: 1em;
+}
+
+.lit_d {
+    font-size: 0.9em;
+}
+
+.lit_btn:hover + .invisibile {
+    opacity: 1;
+}
+
+#lit_home {
+    display: flex;
+    width: 100vw;
+    justify-content: center
 }
 
 /* CTRL+I*/
@@ -1078,13 +1128,6 @@ ul li { /* list item */
     /* LIT */
     #lit_body {
         margin: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #lit_body h1 {
-        font-size: 2.2em;
     }
 
     #lit_body h2 {
@@ -1104,16 +1147,29 @@ ul li { /* list item */
         /* max-width: 80%; */
     }
 
-    .lit_box {
+    .lit_genre {
         padding: 3em 0 0 0;
+        width: 100vw;
         display: flex;
         flex-direction: column;
-        width:100vw;
         align-items: center;
+
+    }
+
+    .lit_box {
+        flex-direction: column;
+        margin: 1em 0;
+    }
+
+    .invisibile.lit_td {
+        display: none;
+    }
+
+    .lit_piece {
+        grid-template-rows: auto;
     }
     
     .lit_pic {    
-        margin: 1em 0;
         height:auto;
     }
 

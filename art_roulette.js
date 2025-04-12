@@ -17,11 +17,6 @@ const opere = [
         title: "I like big butts and i cannot lie",
     },
     {
-        src: 'images/roulette_gallery/fotot.png',
-        title: "Siamo tutti protagonisti",
-        description: "Fototessera di sconosciuta incorniciata male"
-    },
-    {
         src: 'images/roulette_gallery/naso.png',
         title: "Chi va piano si infila in un anagramma",
     },
