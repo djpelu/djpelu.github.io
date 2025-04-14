@@ -137,8 +137,8 @@ const opere = [
         description: "Fanzine sviluppata in collaborazione con Alessia Campanella"
     },
     {
-        src: 'images/roulette_gallery/0_NTC_cover.png',
-        srcset: 'images/roulette_gallery/0_NTC_cover.webp',
+        src: 'images/roulette_gallery/NTC_cover.png',
+        srcset: 'images/roulette_gallery/NTC_cover.webp',
         url: 'https://www.youtube.com/watch?v=6kVqHZlbvEQ',
         title: "Signorina del Nike Training",
         description: "La mia canzone più di successo"
