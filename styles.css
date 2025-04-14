@@ -961,7 +961,7 @@ ul li { /* list item */
     #home_s2 {
         margin-top: 2em;
         height: 60vw; /*più o meno metà della larghezza*/
-        background-image: url("images/mucche.webp"), url("images/mucche.png");
+        background-image: url("images/mucche.png");
         background-repeat: no-repeat;
         background-position: center bottom;
         background-size: 100vw auto;
@@ -991,7 +991,7 @@ ul li { /* list item */
 
     #collab_form {
         width: 85vw;
-        margin-bottom: 2em;
+        margin-bottom: 3em;
     }
 
     .fdiv label {
