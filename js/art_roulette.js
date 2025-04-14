@@ -165,6 +165,8 @@ const popup = document.getElementById('AR_popup');
 const popupP = document.getElementById('AR_popup_p');
 
 const popupRandomContent = document.getElementById('AR_popup_random_content');
+const popupWebpPreload = document.getElementById('AR_webp_preload');
+const popupPngPreload = document.getElementById('AR_png_preload');
 const popupWebp = document.getElementById('AR_popup_webp');
 const popupPic = document.getElementById('AR_popup_pic');
 const popupTitle = document.getElementById('AR_popup_title');
@@ -178,6 +180,10 @@ function Roulette() {
     // seleziona opera casuale
     const randomIndex = Math.floor(Math.random() * opere.length);
     const selected = opere[randomIndex];
+
+    //preload opera
+    popupWebpPreload.href = selected.srcset;
+    popupPngPreload.href = selected.src;
 
     // mostra popup
     popup.classList.add('mostra');
