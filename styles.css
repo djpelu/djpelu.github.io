@@ -524,6 +524,14 @@ ul li { /* list item */
     gap: 2em;
 }
 
+#tre_oriz_box picture {
+    display: block;
+}
+
+#tre_oriz_box picture img {
+    height: 100%;
+}
+
 #tre_text_box {
     background-color: bisque;
     box-shadow: 3px 2px 5px black;
@@ -549,6 +557,11 @@ ul li { /* list item */
 .tre_graffiti{
     margin-top: 10em;
     width: 35%;
+}
+
+#tre_body .vert_box picture {
+    display: flex;
+    justify-content: center;
 }
 
 /* CRAWLING */
@@ -766,8 +779,9 @@ ul li { /* list item */
     width: 60em;
 }
 
-#scoglio_main button {
-    margin:0.5em
+#scoglio_main a {
+    display: inline-block;
+    margin: 0.5em;
 }
 
 /* SEDIE */
@@ -1030,6 +1044,11 @@ ul li { /* list item */
         padding-top: 2em;
         width: 85%;
         height: auto;
+    }
+
+    #tre_oriz_box picture img {
+        height: auto;
+        width: 100%;
     }
 
     .tre_graffiti{

@@ -4,8 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TRE!</title>
+
+    <title>Alessandra Peluzzi | TRE!</title>
+    <meta name="description" content="Pagina dedicata a “TRE”, la parodia di “Una serie di sfortunati eventi” che Alessandra Peluzzi vorrebbe trasformare in un fumetto">
+
+    <link rel="icon" type="image/x-icon" href="/icons/favicon2.ico">
+    <link rel="apple-touch-icon" href="/icons/apple_touch_icon.png">
+    <meta name="author" content="Alessandra Peluzzi">
+
     <link rel="stylesheet" href="styles.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
@@ -16,7 +24,10 @@
     <p class="seo_tag">&nbsp© 2025 Alessandra Peluzzi&nbsp</p>
     
     <div id=tre_oriz_box>
-        <img src="images/tre_quadro.png" style="height:100%">
+         <picture>
+            <source srcset="images/tre_quadro.webp" type="image/webp">
+            <img src="images/tre_quadro.png" alt="Illustrazione di Softea, personaggio di TRE!">
+        </picture>
         <div class="vert_box" style="padding-top: 2em">
             <div id="tre_text_box" class="vert_box">
                 <h2>TRE!</h2>
@@ -24,24 +35,45 @@
             </div>
             <div class="vert_box" id="tre_avviso">
                 <p>AVVISO<br>Ho il progetto di trasformare <i>TRE!</i> in un fumetto.<br>Dettaglio rilevante: non sono capace. Vuoi darmi una mano?<br>clicca qui:</p>
-                <a href="mailto:peluzzi.alessandra@gmail.com?subject=VOGLIO%20AIUTARTI%20A%20FUMETTIZZARE%20TRE!&body=Ciao,%0A%0AVoglio%20aiutarti%20a%20trasformare%20‘TRE!’%20in%20un%20fumetto.%0A%0AQui%20dovrei%20aver%20messo%20la%20mia%20firma" class="btn_rosso btn_tondo" style="width:3em; height:3em"></a>
+                <a href="mailto:peluzzi.alessandra@gmail.com?subject=VOGLIO%20AIUTARTI%20A%20FUMETTIZZARE%20TRE!&body=Ciao,%0A%0AVoglio%20aiutarti%20a%20trasformare%20‘TRE!’%20in%20un%20fumetto.%0A%0AQui%20dovrei%20aver%20messo%20la%20mia%20firma" class="btn_rosso btn_tondo" style="width:3em; height:3em" aria-label="Aiutami"></a>
             </div>
         </div>
     </div>
+
     <div class="vert_box">
-        <img src="images/tre_avv1.png" class="tre_graffiti">
-        <a href="index.html">
-            <button class="btn_verde btn_rettangolo" style="margin-top: 10em;">home</button>
-        </a>
-        <img src="images/tre_avv2.png" class="tre_graffiti">
-        <img src="images/tre_avv3.png" class="tre_graffiti">
-        <img src="images/tre_avv3.png" class="tre_graffiti">
-        <img src="images/tre_avv4.png" class="tre_graffiti">
+
+        <picture>
+            <source srcset="images/tre_avv1.webp" type="image/webp">
+            <img src="images/tre_avv1.png" class="tre_graffiti" alt="Non c'è niente da vedere qui">
+        </picture>
+
+        <a href="index.html" class="btn_verde btn_rettangolo" style="margin-top: 10em;">home</a>
+
+        <picture>
+            <source srcset="images/tre_avv2.webp" type="image/webp">
+            <img src="images/tre_avv2.png" class="tre_graffiti" alt="Ho detto niente">
+        </picture>
+
+        <picture>
+            <source srcset="images/tre_avv3.webp" type="image/webp">
+            <img src="images/tre_avv3.png" class="tre_graffiti" alt="...">
+        </picture>
+
+        <picture>
+            <source srcset="images/tre_avv3.webp" type="image/webp">
+            <img src="images/tre_avv3.png" class="tre_graffiti" alt="...">
+        </picture>
+
+        <picture>
+            <source srcset="images/tre_avv4.webp" type="image/webp">
+            <img src="images/tre_avv4.png" class="tre_graffiti" alt="OK!">
+        </picture>
+
         <p><span class=cream_highlight>se ti va di leggere tre, clicca qui!</span></p>
-        <a href="mailto:peluzzi.alessandra@gmail.com?subject=VOGLIO%20LEGGERE%20TRE!&body=Ciao,%0A%0AMi%20mandi%20'TRE!'?%0A%0AQui%20dovrei%20aver%20messo%20la%20mia%20firma" class="btn_rosso btn_tondo" style="margin:1em; text-decoration: none;"></a>
-        <a href="index.html">
-            <button class="btn_verde btn_rettangolo">home</button>
-        </a>
+
+        <a href="mailto:peluzzi.alessandra@gmail.com?subject=VOGLIO%20LEGGERE%20TRE!&body=Ciao,%0A%0AMi%20mandi%20'TRE!'?%0A%0AQui%20dovrei%20aver%20messo%20la%20mia%20firma" class="btn_rosso btn_tondo" style="margin:1em; text-decoration: none;" aria-label="Scopri TRE!"></a>
+        
+        <a href="index.html" class="btn_verde btn_rettangolo">home</a>
     </div>
 </body>
 </html>
