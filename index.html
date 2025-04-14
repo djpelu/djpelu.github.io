@@ -10,11 +10,13 @@
 
     <!-- titolo pagine nel browser -->
     <title>Alessandra Peluzzi | Official Website</title>
-    <meta name="description" content="Il sito ufficiale di Alessandra Peluzzi: lavoro, progetti, contatti">
+    <meta name="description" content="Il sito ufficiale di Alessandra Peluzzi: lavoro, progetti, contatti, mi fermerei qui ma Google insiste che devo raggiungere almeno 120 caratteri.">
     <!-- favicon -->
     <link rel="icon" type="image/x-icon" href="/icons/favicon2.ico">
     <!-- icona collegamento home iOS -->
     <link rel="apple-touch-icon" href="/icons/apple_touch_icon.png">
+    <!--mi metto come autore su consiglio di chat gpt-->
+    <meta name="author" content="Alessandra Peluzzi">
 
     <!-- collego il l'html al css -->
     <link rel="stylesheet" href="styles.css">
@@ -42,13 +44,9 @@
                     <p> <span class="cream_highlight">faccio molte cose,<br class="nascosto"> principalmente scrivo,<br>ma di certo non sono una dj</span></p>
                 </div>
 
-                <a href="bio.html">
-                    <button class="btn_verde btn_rettangolo">altre cose su di me</button>
-                </a>
+                <a href="bio.html" class="btn_verde btn_rettangolo">altre cose su di me</a>
 
-                <a href="lit.html">
-                    <button class="btn_verde btn_rettangolo">alta letteratura</button>
-                </a>
+                <a href="lit.html" class="btn_verde btn_rettangolo">alta letteratura </a>
 
                 <button id="AR_btn" class="btn_verde btn_tondo">art roulette</button>
                 
@@ -59,9 +57,7 @@
                     <img id="fauci" src="images/crawling_fauci_mobile.png">
                  </div>
 
-                <a href="TRE.html">
-                    <button class="btn_verde btn_rettangolo nascosto">dov'è il cavallo?!</button>
-                </a>
+                <a href="TRE.html" class="btn_verde btn_rettangolo nascosto">dov'è il cavallo?!</a>
 
             </div>
 
@@ -72,9 +68,7 @@
                 <img src="images/crawling_snake_fauci.png">
             </div>
 
-            <a href="TRE.html">
-                <button class="btn_verde btn_rettangolo pos_btn_TRE">ci sono cavalli più belli</button>
-            </a>
+            <a href="TRE.html" class="btn_verde btn_rettangolo pos_btn_TRE">ci sono cavalli più belli</a>
 
         </div>
 
@@ -85,15 +79,15 @@
         <div class="social_container">
 
             <a href="https://www.youtube.com/@djpeluformerjaydeelupe8286" target="_blank" rel="noreferrer noopener">
-                <img src="icons/yt.svg" class="social_icon">
+                <img src="icons/yt.svg" class="social_icon" aria-label="youtube">
             </a>  
 
             <a href="https://www.instagram.com/speedy_gaynzales/" target="_blank" rel="noreferrer noopener">
-                <img src="icons/ig.svg" class="social_icon"></button>
+                <img src="icons/ig.svg" class="social_icon" aria-label="instagram">
             </a>
 
             <a href="https://www.linkedin.com/in/alessandra-peluzzi-01aba4225/" target="_blank" rel="noreferrer noopener">
-                <img src="icons/in.svg" class="social_icon"></button>
+                <img src="icons/in.svg" class="social_icon" aria-label="linkedin">
             </a>
 
         </div>
@@ -108,17 +102,17 @@
             
             <div style="width: 100%">
                 <label for="fmex"></label>
-                <textarea id="fmex" name="proposta" placeholder="Ecco cosa ti propongo..." required></textarea>
+                <textarea id="fmex" name="proposta" placeholder="Ecco cosa ti propongo..." required aria-label="proposta"></textarea>
             </div>
 
             <div class="fdiv">
                 <label for="fname">nome</label>
-                <input type="text" id="fname" name="nome">
+                <input type="text" id="fname" name="nome" autocomplete="name">
             </div>
 
             <div class="fdiv">
                 <label for="femail">e-mail</label>
-                <input type="email" id="femail" name="email" required>
+                <input type="email" id="femail" name="email" required autocomplete="email">
             </div>
 
             <input type="submit" id="finvia" class="trans_btn" value="invia">
