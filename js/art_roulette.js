@@ -46,19 +46,19 @@ const opere = [
         src: 'images/lit_gallery/cassandra.png',
         url: 'https://www.instagram.com/p/CBDUtI7jCFc/',
         title: "Cara Cassandra",
-        description: "Racconto pubblicato da 'La Brutta Rivista'"
+        description: "Racconto pubblicato da “La Brutta Rivista”"
     },
     {
         src: 'images/lit_gallery/chiara.png',
         url: 'https://www.bibliotecadigitale.unipv.eu/entities/multipurpose/ad74892b-da6d-4c58-975f-7e9c371aa3d6',
         title: "Chiara giocava col sangue",
-        description: "Racconto letto al concorso artistico 'Puntiamo i tacchi'"
+        description: "Racconto letto al concorso artistico “Puntiamo i tacchi”"
     },
     {
         src: 'images/lit_gallery/ctrl.png',
         url: 'lit_ctrl.html',
         title: "Ctrl+i",
-        description: "Racconto premiato al concorso letterario 'L’écrivain de la Tour'"
+        description: "Racconto premiato al concorso letterario “L’écrivain de la Tour”"
     },
     {
         src: 'images/lit_gallery/knife.png',
@@ -77,7 +77,7 @@ const opere = [
         src: 'images/lit_gallery/nero.png',
         url: 'https://www.energheia.org/i-brevissimi-2022-nero-argentato-alessandra-peluzzi_milano.html',
         title: "Nero Argentato",
-        description: "Racconto finalista al premio letterario internazionale 'Energheia'"
+        description: "Racconto finalista al premio letterario internazionale “Energheia”"
         
     },
     {
@@ -126,7 +126,7 @@ const opere = [
         src: 'images/tre_quadro.png',
         url: 'TRE.html',
         title: "TRE!",
-        description: "Parodia di 'Una serie di sfortunati eventi' che vorrei trasformare in fumetto"
+        description: "Parodia di “Una serie di sfortunati eventi” che vorrei trasformare in fumetto"
     },
     {
         src: 'images/crawling_snake_mobile.png',
