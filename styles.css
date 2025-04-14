@@ -960,8 +960,8 @@ ul li { /* list item */
     /* HOME: sezione 2 */
     #home_s2 {
         margin-top: 2em;
-        height: 60vw; /*più o meno metà della larghezza*/
-        background-image: url("images/mucche.png");
+        height: 63vw; /*più o meno metà della larghezza*/
+        background-image: url("images/mucche.webp"), url("images/mucche.png");
         background-repeat: no-repeat;
         background-position: center bottom;
         background-size: 100vw auto;
