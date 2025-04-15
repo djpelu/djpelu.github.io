@@ -9,47 +9,42 @@
 
 <url>
   <loc>https://djpelu.github.io/</loc>
-  <lastmod>2025-04-12T13:35:32+00:00</lastmod>
+  <lastmod>2025-04-15T20:22:18+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://djpelu.github.io/bio.html</loc>
-  <lastmod>2025-04-12T13:35:32+00:00</lastmod>
+  <loc>https://djpelu.github.io/bio</loc>
+  <lastmod>2025-04-15T20:22:18+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://djpelu.github.io/lit.html</loc>
-  <lastmod>2025-04-12T13:35:32+00:00</lastmod>
+  <loc>https://djpelu.github.io/lit</loc>
+  <lastmod>2025-04-15T20:22:18+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://djpelu.github.io/crawling.html</loc>
-  <lastmod>2025-04-12T13:35:32+00:00</lastmod>
+  <loc>https://djpelu.github.io/crawling</loc>
+  <lastmod>2025-04-15T20:22:18+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://djpelu.github.io/TRE.html</loc>
-  <lastmod>2025-04-12T13:35:32+00:00</lastmod>
+  <loc>https://djpelu.github.io/TRE</loc>
+  <lastmod>2025-04-15T20:22:18+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://djpelu.github.io/index.html</loc>
-  <lastmod>2025-04-12T13:35:32+00:00</lastmod>
+  <loc>https://djpelu.github.io/lit_scoglio</loc>
+  <lastmod>2025-04-15T20:22:18+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://djpelu.github.io/lit_scoglio.html</loc>
-  <lastmod>2025-04-12T13:35:32+00:00</lastmod>
+  <loc>https://djpelu.github.io/lit_sedie</loc>
+  <lastmod>2025-04-15T20:22:18+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://djpelu.github.io/lit_sedie.html</loc>
-  <lastmod>2025-04-12T13:35:32+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://djpelu.github.io/lit_ctrl.html</loc>
-  <lastmod>2025-04-12T13:35:32+00:00</lastmod>
+  <loc>https://djpelu.github.io/lit_ctrl</loc>
+  <lastmod>2025-04-15T20:22:18+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 
