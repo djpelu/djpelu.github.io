@@ -20,10 +20,10 @@ closeBtn.addEventListener('click', (e) => {
 });
 
 // chiudi popup se si clicca fuori da esso = overlay
-overlay.addEventListener('click', (e) => {
-  e.stopPropagation();
-  overlay.style.display = 'none';
-  popup.style.display = 'none';
-  document.body.style.overflow = 'auto'
-});
+// overlay.addEventListener('click', (e) => {
+//   e.stopPropagation();
+//   overlay.style.display = 'none';
+//   popup.style.display = 'none';
+//   document.body.style.overflow = 'auto'
+// });
 

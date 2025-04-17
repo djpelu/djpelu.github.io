@@ -24,10 +24,3 @@ closeBtn.addEventListener('click', function() {
     overlayPopup.style.display = 'none';
     document.body.style.overflow = 'auto';
 });
-
-// chiudi popup se si clicca fuori da esso = overlay
-overlayPopup.addEventListener('click', () => {
-    overlayPopup.style.display = 'none';
-    devPopup.style.display = 'none';
-    document.body.style.overflow = 'auto';
-});
