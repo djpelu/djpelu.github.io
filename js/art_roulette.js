@@ -173,7 +173,7 @@ const popupTitle = document.getElementById('AR_popup_title');
 const popupDescr = document.getElementById('AR_popup_description');
 const popupLink = document.getElementById('AR_popup_link');
 const popupVai = document.getElementById('AR_popup_vai');
-const overlay = document.querySelector('.overlay_popup');
+const overlay = document.getElementById('AR_popup_overlay');
 
 function Roulette() {
 

@@ -35,8 +35,6 @@
     
     <p class="seo_tag">&nbsp© 2025 Alessandra Peluzzi&nbsp</p>
 
-    <div class="overlay_popup"></div>
-
     <!-- SEZIONE 1 -->
     <section id="home_s1">
 
@@ -127,13 +125,15 @@
     </section>
 
     <!-- POPUP: ALLARME -->
-    <div id="allarme" class="popup">
+    <div class="overlay_popup"></div>
+    <div id="allarme" class="device popup">
         <h1>ATTENZIONE!!</h1>
         <p>questo sito è molto meglio dal pc! pensaci mentre lo guardi dal telefono</p>
-        <button id="allarme_x">X</button>
+        <button class="x">X</button>
     </div>
 
     <!-- POPUP: ART ROULETTE -->
+    <div id="AR_popup_overlay" class="overlay_popup"></div> <!-- non capisco bene la logica ma mi serve avere due overalay altrimenti a quello di AR si applicano le regole di allarme -->
     <div id="AR_popup" class="popup">
         <button id="AR_popup_close" class="trans_btn">x</button>
         <p id="AR_popup_p">La tua opera a caso è</p>
@@ -151,6 +151,6 @@
     </div>
     
     <script src="js/art_roulette.js" defer></script>
-    <script src="js/popup_index.js" defer></script>
+    <script src="js/popup_device.js" defer></script>
 </body>
 </html>

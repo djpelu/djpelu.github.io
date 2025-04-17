@@ -409,7 +409,7 @@ ul li { /* list item */
     color: brown;
 }
 
-#allarme_x {
+#allarme .x {
     color:red;
     background-color: transparent;
     border: none;

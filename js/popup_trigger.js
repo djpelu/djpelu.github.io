@@ -1,6 +1,6 @@
 const trigger = document.querySelector('.popup_trigger');
 const overlay = document.querySelector('.overlay_popup');
-const popup = document.querySelector('#crawling_popup');
+const popup = document.querySelector('.triggered');
 const closeBtn = document.querySelector('.x')
 
 // apri popup se si clicca trigger
