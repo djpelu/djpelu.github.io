@@ -19,15 +19,11 @@ closeBtn.addEventListener('click', (e) => {
   document.body.style.overflow = 'auto'; // riabilita lo scroll
 });
 
-// Chiudi il popup se si clicca fuori da esso
-document.addEventListener('click', () => {
+// chiudi popup se si clicca fuori da esso = overlay
+overlay.addEventListener('click', (e) => {
+  e.stopPropagation();
   overlay.style.display = 'none';
   popup.style.display = 'none';
-  document.body.style.overflow = 'auto'; // riabilita lo scroll
-});
-
-// previeni la chiusura quando si clicca dentro il popup
-popup.addEventListener('click', (e) => {
-  e.stopPropagation();
+  document.body.style.overflow = 'auto'
 });
 

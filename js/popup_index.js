@@ -1,5 +1,5 @@
 const allarmePopup = document.getElementById('allarme')
-const closePopup = document.querySelector('.x')
+const closePopup = document.getElementById('allarme_x')
 const overlayPopup = document.querySelector('.overlay_popup')
 
 // rilevo dispositivo utente
@@ -12,7 +12,7 @@ if (isMobileOrTablet() && !sessionStorage.getItem('popupShown')) {
     setTimeout(function() {
         overlayPopup.style.display = 'block';
         document.body.style.overflow = 'hidden'; // blocca lo scroll
-        allarmePopup.style.display = 'inherit';
+        allarmePopup.style.display = 'block';
         // una volta che l'utente ha visto il popup salvo questa informazione
         sessionStorage.setItem('popupShown', 'true');
     }, 2000); // 3000 millisecondi = 3 sec per far apparire popup
@@ -25,15 +25,9 @@ closePopup.addEventListener('click', function() {
     document.body.style.overflow = 'auto';
 });
 
-// chiudi popup se si clicca fuori da esso
-document.addEventListener('click', () => {
+// chiudi popup se si clicca fuori da esso = overlay
+overlayPopup.addEventListener('click', () => {
     overlayPopup.style.display = 'none';
     allarmePopup.style.display = 'none';
     document.body.style.overflow = 'auto';
-  });
-  
-// previeni chiusura quando si clicca dentro popup
-allarmePopup.addEventListener('click', (e) => {
-e.stopPropagation();
 });
-
