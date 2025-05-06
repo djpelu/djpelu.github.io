@@ -15,7 +15,7 @@ if (isMobileOrTablet() && !sessionStorage.getItem('popupShown')) {
         devPopup.style.display = 'block';
         // una volta che l'utente ha visto il popup salvo questa informazione
         sessionStorage.setItem('popupShown', 'true');
-    }, 2000); // 3000 millisecondi = 3 sec per far apparire popup
+    }, 3000); // 3000 millisecondi = 3 sec per far apparire popup
 }
 
 // chiudi popup quando si clicca X
