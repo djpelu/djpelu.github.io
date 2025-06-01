@@ -503,7 +503,7 @@ ul li { /* list item */
     flex-direction: column;
     margin: 5em;
     width: 40em;
-    max-width: 85vw;
+    max-width: 80vw;
     font-size: 1.1em;
 }
 
