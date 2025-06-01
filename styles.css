@@ -1124,6 +1124,10 @@ ul li { /* list item */
     }
 
     /* CRAWLING */
+    #crawling_body .nascosto {
+        display: inline-block;
+    }
+    
     .crawling_snake{
         display: none;
     }
