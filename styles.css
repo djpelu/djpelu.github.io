@@ -232,11 +232,6 @@ ul li { /* list item */
     gap: 1.5em;
 }
 
-#home_scritti {
-    display: flex;
-    gap: 1em;
-}
-
 /* HOME: sezione 2 */
 #home_s2 {
     position: relative;
@@ -997,11 +992,6 @@ ul li { /* list item */
         position: static;
         transform: translate(0, 0);
         gap: auto;
-    }
-
-    #home_scritti {
-        flex-direction: column;
-        gap: 1em;
     }
 
     /* HOME: sezione 2 */
