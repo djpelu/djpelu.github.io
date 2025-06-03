@@ -470,8 +470,8 @@ ul li { /* list item */
     top: 21%;
 }
 
-/* ALTRI */
-#altri_body {
+/* xTe */
+#xTe_body {
     background-color: lavender;
     min-height: 100vh;
     gap: 3em;
@@ -487,14 +487,14 @@ ul li { /* list item */
     transform: scale(110%);
 }
 
-#altri_main {
+#xTe_main {
     margin: 5em 0 2em;
-    background-image: url("images/altri_main_bg.webp"), url("images/altri_main_bg.jpg");
+    background-image: url("images/xTe_main_bg.webp"), url("images/xTe_main_bg.jpg");
     background-size: contain;
     box-shadow: 0px 3px 4px black;
 }
 
-#altri_testo {
+#xTe_testo {
     display: flex;
     flex-direction: column;
     margin: 5em;
@@ -503,7 +503,7 @@ ul li { /* list item */
     font-size: 1.1em;
 }
 
-#altri_testo p {
+#xTe_testo p {
     text-align: justify;
     margin-bottom: 0.5em;
 }
@@ -1060,12 +1060,12 @@ ul li { /* list item */
         font-size: clamp(0.5em, 1.1em, 1.1em);
     }
 
-    /*ALTRI*/
-    #altri_main {
+    /*xTe*/
+    #xTe_main {
         margin: 5em 0.5em 2em;
     }
 
-    #altri_testo {
+    #xTe_testo {
         margin: 2em;
     }
 
@@ -1195,8 +1195,8 @@ ul li { /* list item */
 /* VERSIONE MOBILE --------------------- */
 @media only screen and (max-width: 767px) {
 
-    /*ALTRI*/
-    #altri_testo {
+    /*xTe*/
+    #xTe_testo {
         margin: 1.5em;
     }
 

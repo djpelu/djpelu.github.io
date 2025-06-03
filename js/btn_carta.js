@@ -1,6 +1,6 @@
 // scartoccia
 document.getElementById('btn_carta').addEventListener('click', function () {
-  const contenuto = document.getElementById('altri_main');
+  const contenuto = document.getElementById('xTe_main');
   const bottone = document.getElementById('btn_carta');
 
   contenuto.classList.remove('nascosto');
@@ -8,8 +8,8 @@ document.getElementById('btn_carta').addEventListener('click', function () {
 });
 
 // accartoccia
-document.getElementById('altri_main').addEventListener('click', function () {
-  const contenuto = document.getElementById('altri_main');
+document.getElementById('xTe_main').addEventListener('click', function () {
+  const contenuto = document.getElementById('xTe_main');
   const bottone = document.getElementById('btn_carta');
 
   contenuto.classList.add('nascosto');
