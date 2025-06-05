@@ -94,6 +94,10 @@ ul li { /* list item */
     background-color: orange;
 }
 
+.plum_highlight {
+    background-color: plum;
+}
+
 /* GLOBAL: box*/
 .vert_box {
     display: flex;
