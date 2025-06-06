@@ -163,7 +163,7 @@ ul li { /* list item */
     text-align: center; /* Allinea il testo al centro */
 }
 
-#btn_cuore {
+.btn_cuore {
     position: relative;
     background-color: transparent;
     border: transparent;
@@ -177,7 +177,7 @@ ul li { /* list item */
     text-decoration: none;
 }
 
-#btn_cuore span {
+.btn_cuore span {
     position: absolute;
     top: 40%;
     left: 50%;
@@ -185,12 +185,7 @@ ul li { /* list item */
     color: #2E2E2E;
 }
 
-#btn_cuore:hover img{
-    content: url("images/btn_cuore_hover.png");
-    
-}
-
-#btn_cuore:hover span{
+.btn_cuore:hover span{
     top: 44%;
     left: 52%;    
 }
@@ -989,7 +984,7 @@ ul li { /* list item */
     /* elimino cose */
     .pos_btn_TRE,
     #crawling_div,
-    #btn_cuore.desktop {
+    .btn_cuore.desktop {
         display: none;
     }
 
@@ -1032,7 +1027,7 @@ ul li { /* list item */
         gap: auto;
     }
 
-    #btn_cuore {
+    .btn_cuore {
         left: 0%;
     }
 
