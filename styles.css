@@ -177,6 +177,10 @@ ul li { /* list item */
     text-decoration: none;
 }
 
+.btn_cuore.desktop {
+    display: inline-block;
+}
+
 .btn_cuore span {
     position: absolute;
     top: 40%;
