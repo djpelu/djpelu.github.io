@@ -88,8 +88,8 @@ const opere = [
         description: "Short film sviluppato in collaborazione con Giulia Timis"
     },
     {
-        src: 'images/lit_gallery/nero.png',
-        srcset: 'images/lit_gallery/nero.webp',
+        src: 'images/lit_gallery/nero2.png',
+        srcset: 'images/lit_gallery/nero2.webp',
         url: 'https://www.energheia.org/i-brevissimi-2022-nero-argentato-alessandra-peluzzi_milano.html',
         title: "Nero Argentato",
         description: "Racconto finalista al premio letterario internazionale “Energheia”"
