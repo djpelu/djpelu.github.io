@@ -163,34 +163,33 @@ ul li { /* list item */
     text-align: center; /* Allinea il testo al centro */
 }
 
-.btn_cuore_div {
+#btn_cuore {
     position: relative;
-    left: -35%;
-    top: -5%;
-}
-
-.btn_cuore {
     background-color: transparent;
-    border: none;
-    filter: drop-shadow(0.1em 0.17em 0.2em black);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transform: rotate(-20deg);
+    border: transparent;
+    font-family: inherit;
+    font-size: 1.1em;
     transition: 0.3s ease;
+    transform: rotate(-10deg);
+    left: -32%;
+    top: -4%;
 }
 
-.btn_cuore_text {
+#btn_cuore span {
     position: absolute;
-    top: 45%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #2E2E2E;;
 }
 
-.btn_cuore:hover {
-    transform: scale(110%);
+#btn_cuore:hover img{
+    content: url("images/btn_cuore_hover.png");
+    
+}
+
+#btn_cuore:hover span{
+    top: 44%;
+    left: 52%;    
 }
 
 /* EFFETTO TYPEWRITER: cursore*/
@@ -987,7 +986,7 @@ ul li { /* list item */
     /* elimino cose */
     .pos_btn_TRE,
     #crawling_div,
-    .btn_cuore_div {
+    #btn_cuore.desktop {
         display: none;
     }
 
@@ -1030,9 +1029,8 @@ ul li { /* list item */
         gap: auto;
     }
 
-    .btn_cuore {
-        position: static;
-        filter: drop-shadow(0.1em 0.17em 0.2em rgb(162, 26, 149));
+    #btn_cuore {
+        left: 0%;
     }
 
     /* HOME: sezione 2 */
