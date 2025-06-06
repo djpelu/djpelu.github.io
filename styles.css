@@ -1032,6 +1032,7 @@ ul li { /* list item */
 
     .btn_cuore {
         position: static;
+        filter: drop-shadow(0.1em 0.17em 0.2em rgb(162, 26, 149));
     }
 
     /* HOME: sezione 2 */
