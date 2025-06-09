@@ -427,7 +427,7 @@ ul li { /* list item */
 #allarme {
     display: none;
     background-image: url("images/allarme.webp"), url("images/allarme.png");
-    background-size: fill;
+    background-size: 100% 100%;
     padding: 1em;
     width: 60%;
     max-width: 25em;
