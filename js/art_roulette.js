@@ -157,6 +157,14 @@ const opere = [
         title: "Crawling",
         description: "Snake, ma pian piano che il serpente cresce, aumentano anche le sue responsabilità"
     },
+    {
+        src: 'images/lit_gallery/blabla.gif',
+        srcset: 'images/lit_gallery/blabla.gif',
+        url: "https://lequivoco.it/racconti/bla-bla/",
+        title: "Bla Bla",
+        description: "Racconto pubblicato da “L'Equivoco”"
+    },
+    
 ];
 
 
