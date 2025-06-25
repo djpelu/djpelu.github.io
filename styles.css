@@ -767,7 +767,7 @@ ul li { /* list item */
 
 .lit_pic {
     max-width: 13em;
-    max-height: 15em;
+    max-height: 14em;
     transition: 0.3s ease;
     cursor: pointer;
 }
@@ -1292,9 +1292,13 @@ ul li { /* list item */
     }
 
     #lit_pieces_div {
-        display: felx;
+        display: flex;
         flex-direction: column;
         gap: 3em;
+    }
+
+    .lit_piece {
+        align-self: center;
     }
 
     .lit_genre_title_piece {

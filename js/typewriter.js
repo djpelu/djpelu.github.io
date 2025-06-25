@@ -1,6 +1,6 @@
 const textElement = document.getElementById('typewriter');
-const texts = ["alta letteratura", "scritti", "cose che ho scritto", "boh"];
-const typingSpeed = 100; // Velocità di scrittura (in millisecondi)
+const texts = ["alta letteratura", "scritti", "cose che ho scritto", "boh", "in ordine cronolog"];
+const typingSpeed = 100; // Velocità di scrittura (in millisecondi)22
 const erasingSpeed = 50; // Velocità di cancellazione (in millisecondi)
 const newTextDelay = 200; // Tempo di attesa prima di iniziare a cancellare (in millisecondi)
 
