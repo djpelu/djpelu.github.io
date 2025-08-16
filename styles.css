@@ -254,7 +254,8 @@ ul li { /* list item */
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    filter: invert(70%);
+    filter: invert(100%);
+    background-color: white;
 }
 
 #home_s1 {
@@ -1058,7 +1059,8 @@ ul li { /* list item */
     }
 
     #e {
-          filter: invert(0%);
+        filter: invert(0%);
+        background-color: transparent;
     }
 
     #home_bg_container { /*lo faccio aderire al alla s1 e non lo cago più*/
