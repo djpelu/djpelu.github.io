@@ -1038,10 +1038,13 @@ ul li { /* list item */
     }
 
     #home_intro_box h1 {
-        padding-bottom:0.1em;
+        padding:0.2em 0;
         font-size: 4em;
     }
-
+    
+    #home_intro_box p {
+        margin-bottom:0;
+    }
 
     #home_bg_container { /*lo faccio aderire al alla s1 e non lo cago più*/
         position: static;
