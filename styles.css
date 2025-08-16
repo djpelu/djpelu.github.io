@@ -1016,7 +1016,7 @@ ul li { /* list item */
         /* background-color: #f7d8ff; */
         /* background-color: rgb(226, 248, 251); */
         background-size: auto 80%;
-        background-image: url("images/home_bg_mobile.webp"), url("images/home_bg_mobile.jpg");
+        background-image: url("images/boh.png"), url("images/home_bg_mobile.webp"), url("images/home_bg_mobile.jpg");
     }
 
     /* elimino cose */
@@ -1046,6 +1046,7 @@ ul li { /* list item */
     #home_intro_box h1 {
         padding:0.2em 0 0 0;
         font-size: 4em;
+        color: white;
     }
     
     #home_intro_box p {
