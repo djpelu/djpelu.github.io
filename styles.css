@@ -533,7 +533,7 @@ ul li { /* list item */
 
 /* xTe */
 #xTe_body {
-    background-color: lavender;
+    background-color: rgb(220, 196, 254);
     min-height: 100vh;
     gap: 3em;
 }
