@@ -1008,10 +1008,15 @@ ul li { /* list item */
     }
 
     /* HOME */
+    #index_html { /*con questo escamotage riesco a mettere lo sfondo colorato al body ed evitare le fasce bianche con elstic-band scroll in safari*/
+        background-color: #8abcf9;
+    }
+    
     #home_body {
         /* background-color: #f7d8ff; */
         /* background-color: rgb(226, 248, 251); */
         background-size: auto 80%;
+        background-image: url("images/home_bg_mobile.webp"), url("images/home_bg_mobile.jpg");
     }
 
     /* elimino cose */
