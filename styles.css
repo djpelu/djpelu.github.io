@@ -254,6 +254,7 @@ ul li { /* list item */
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    filter: invert(70%);
 }
 
 #home_s1 {
@@ -1043,14 +1044,21 @@ ul li { /* list item */
         height: auto;
     }
 
+    #home_intro_box {
+        color: white;
+    }
+
     #home_intro_box h1 {
         padding:0.2em 0 0 0;
-        font-size: 4em;
-        color: white;
+        font-size: 3.5em;
     }
     
     #home_intro_box p {
         margin: 1.5em 0 0;
+    }
+
+    #e {
+          filter: invert(0%);
     }
 
     #home_bg_container { /*lo faccio aderire al alla s1 e non lo cago più*/
@@ -1177,7 +1185,7 @@ ul li { /* list item */
 
     .tre_graffiti{
         margin-top: 10em;
-        width: 35%;
+        width: 36%;
     }
 
     #tre_text_box {
