@@ -533,7 +533,7 @@ ul li { /* list item */
 
 /* xTe */
 #xTe_body {
-    background-color: rgb(220, 196, 254);
+    background-color: rgb(230, 213, 255);
     min-height: 100vh;
     gap: 3em;
 }
@@ -1016,7 +1016,7 @@ ul li { /* list item */
 
     /* HOME */
     #index_html { /*con questo escamotage riesco a mettere lo sfondo colorato al body ed evitare le fasce bianche con elstic-band scroll in safari*/
-        background-color: #a8bad0;
+        background-color: #4872AF;
     }
     
     #home_body {
