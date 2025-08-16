@@ -231,6 +231,21 @@ ul li { /* list item */
 }
 
 /* HOME: sezione 1 */
+#home_intro_box {
+    font-family: monospace;
+}
+
+#home_intro_box h1 {
+    font-size: 4.5em;
+    letter-spacing: 0.2em;
+}
+
+#home_intro_box p {
+    font-size: 1.2em;
+    letter-spacing: 0.2em;
+    margin-bottom: 0.4em;
+}
+
 #e {
     height: 0.7em;
     width: 0.8em;
