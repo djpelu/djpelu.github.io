@@ -240,6 +240,11 @@ ul li { /* list item */
     letter-spacing: 0.2em;
 }
 
+.letter_spacing_correction {
+    display:inline-block;
+    width:0.2em
+}
+
 #home_intro_box p {
     font-size: 1.2em;
     letter-spacing: 0.2em;
