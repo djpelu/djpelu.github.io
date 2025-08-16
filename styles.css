@@ -1009,7 +1009,10 @@ ul li { /* list item */
 
     /* HOME */
     #home_body {
-        background-color: #f7d8ff;
+        /* background-color: #f7d8ff; */
+        /* background-color: rgb(226, 248, 251); */
+        background-image: url("images/boh.jpg");
+        background-size: auto 80%;
     }
 
     /* elimino cose */
@@ -1020,7 +1023,7 @@ ul li { /* list item */
     }
 
     #home_main_container .cream_highlight {
-        background-color: #f7d8ff; 
+        background-color: transparent; 
     }
 
     /* aggiungo cose */
@@ -1032,7 +1035,6 @@ ul li { /* list item */
     #home_s1 {
         position: static;
         background-image: none;
-        background-color: transparent;
         min-height: fit-content;
         height: auto;
     }
