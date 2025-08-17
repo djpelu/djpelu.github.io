@@ -284,6 +284,7 @@ ul li { /* list item */
 
 #ale {
     position: absolute;
+    z-index: 100;
 }
 
 #pelu {
@@ -297,7 +298,7 @@ ul li { /* list item */
     width: 0.9em;
     stroke: black;
     stroke-width: 8px;
-    fill: transparent;
+    fill: white;
 }
 
 .lsc { /*letter spacing correction*/
@@ -1098,11 +1099,16 @@ ul li { /* list item */
     }
 
     #home_alepelu {
-        margin-bottom: 2em;
+        margin: 2em 0;
     }
 
     #home_alepelu h1 {
         color: white;
+   }
+
+   #e {
+    stroke: black;
+    fill: transparent;
    }
 
     .btn_cuore {
