@@ -241,7 +241,7 @@ ul li { /* list item */
     margin-bottom: 1em;
 }
 
-.letter_spacing_correction {
+.lsc { /*letter spacing correction*/
     display:inline-block;
     width:0.2em;
 }
@@ -255,11 +255,9 @@ ul li { /* list item */
 #e {
     height: 0.8em;
     width: 0.8em;
-    background-image: url("icons/E.svg");
-    display: inline-block;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+    stroke: black;
+    stroke-width: 8px;
+    fill: transparent;
 }
 
 #home_s1 {
@@ -1066,8 +1064,7 @@ ul li { /* list item */
 
     #e {
         height: 0.9em;
-        filter: invert(0%);
-        background-color: transparent;
+        stroke: white;
     }
 
     #home_bg_container { /*lo faccio aderire al alla s1 e non lo cago più*/
