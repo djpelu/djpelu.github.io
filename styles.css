@@ -75,7 +75,7 @@ p {
 }
 
  ul { /* unordered list: elenco puntato con elementi non-numerati */
-    font-size: 1.1em;
+    font-size: 1.2em;
     padding: 0.3em;
     margin: 0;
     overflow-wrap: break-word;
@@ -159,7 +159,6 @@ ul li { /* list item */
     box-shadow: 0 0 0;
     transform: scale(0.98);
 }
-
 
 .btn_rettangolo {
     font-size: 1.3em;
@@ -1022,7 +1021,10 @@ ul li { /* list item */
 
     p, ul {
         padding-bottom: 0.3em;
+        font-size: 1.1em;
     }
+
+
 
     /* HOME */
     #index_html { /*con questo escamotage riesco a mettere lo sfondo colorato al body ed evitare le fasce bianche con rubber band scroll in safari*/
