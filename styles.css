@@ -64,7 +64,7 @@ h3 {
 }
 
 p {
-    font-size: 1.1em;
+    font-size: 1.2em;
     padding: 0.15em 0;
     margin: 0;
     overflow-wrap: break-word;
@@ -135,32 +135,41 @@ ul li { /* list item */
 .btn_verde:hover {
     background-color: #F2F2F2;
     box-shadow: 0 0.1em 0.2em;
+    transform: scale(0.991);
 }
 
 .btn_verde:active {
     background-color: #F2F2F2;
     box-shadow: 0 0 0;
+    transform: scale(0.98);
 }
 
 .btn_rosso {
     background-color: red;
-    box-shadow: 3px 2px 5px black;
+    box-shadow: 1px 4px 0px #7a0000;
     border: none;
 }
 
 .btn_rosso:hover {
-    background-color: #DB0000;
+    box-shadow: 0.6px 3.1px #7a0000;
+    transform: scale(0.99);
 }
 
+.btn_rosso:active {
+    box-shadow: 0 0 0;
+    transform: scale(0.98);
+}
+
+
 .btn_rettangolo {
-    font-size: 1.2em;
+    font-size: 1.3em;
     padding: 0.38em 2em;
     align-items: center;
     border-radius: 10px;
 }
 
 .btn_tondo {
-    font-size: 1.1em;
+    font-size: 1.2em;
     width: 6em;
     height: 6em;
     border-radius: 50%;
@@ -172,7 +181,7 @@ ul li { /* list item */
     background-color: transparent;
     border: transparent;
     font-family: inherit;
-    font-size: 1.1em;
+    font-size: 1.2em;
     transition: 0.3s ease;
     transform: rotate(-10deg);
     left: -32%;
@@ -236,9 +245,9 @@ ul li { /* list item */
 }
 
 #home_intro_box h1 {
-    font-size: 4.5em;
+    font-size: 6em;
     letter-spacing: 0.2em;
-    margin-bottom: 1em;
+    padding-bottom: 0.8em;
 }
 
 .lsc { /*letter spacing correction*/
@@ -249,7 +258,7 @@ ul li { /* list item */
 #home_intro_box p {
     font-size: 1.2em;
     letter-spacing: 0.2em;
-    margin-bottom: 0.4em;
+    padding-bottom: 0.4em;
 }
 
 #e {
@@ -479,7 +488,7 @@ ul li { /* list item */
 .pos_btn_TRE {
     position: absolute;
     top: 63.5%;
-    left: 72%;
+    left: 71.5%;
 }
 
 #crawling_div {
@@ -502,7 +511,7 @@ ul li { /* list item */
 
 #crawling_div button {
     position: absolute;
-    left: 57%;
+    left: 56.3%;
     top: 43%;
 }
 
@@ -610,6 +619,10 @@ ul li { /* list item */
     background-image: url("images/tre_bg.webp"), url("images/tre_bg.png");
     background-color: #033621;
     padding: 7em 0 6em 0;
+}
+
+#tre_body p {
+    font-size: 1.1em;
 }
 
 #tre_oriz_box {
@@ -1053,9 +1066,7 @@ ul li { /* list item */
     }
 
     #home_intro_box h1 {
-        padding:0.2em 0 0 0;
-        font-size: 4.5em;
-        margin-bottom: 0.3em;
+        padding:0.4em 0;
     }
     
     #home_intro_box p {
@@ -1284,6 +1295,11 @@ ul li { /* list item */
 
 /* VERSIONE MOBILE --------------------- */
 @media only screen and (max-width: 767px) {
+
+    #home_intro_box h1 {
+        padding:0.3em 0;
+        font-size: 4.5em;
+    }
 
     /*xTe*/
     #xTe_testo {
