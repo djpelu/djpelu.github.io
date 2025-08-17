@@ -1024,6 +1024,14 @@ ul li { /* list item */
         font-size: 1.1em;
     }
 
+    .btn_rettangolo {
+        font-size: 1.2em;
+    }
+    
+    .btn_tond,
+    .btn_cuore {
+        font-size: 1.1em;
+    }
 
 
     /* HOME */
