@@ -1050,9 +1050,8 @@ ul li { /* list item */
     #home_body {
         /* background-color: #f7d8ff; */
         /* background-color: rgb(226, 248, 251); */
-        background-size: cover;
-        background-image: url("images/boh.png"), url("images/home_bg_mobile.webp"), url("images/home_bg_mobile.jpg");
-        background-attachment: fixed;
+        background-size: 100% 70%;
+        background-image: url("images/home_bg_mobile.webp"), url("images/home_bg_mobile.jpg");
     }
 
     /* elimino cose */
@@ -1309,6 +1308,12 @@ ul li { /* list item */
 
 /* VERSIONE MOBILE --------------------- */
 @media only screen and (max-width: 767px) {
+
+    /*HOME*/
+    #home_body {
+        background-size: auto 70%;
+        background-image: url("images/home_bg_mobile.webp"), url("images/home_bg_mobile.jpg");
+    }
 
     /*xTe*/
     #xTe_testo {
