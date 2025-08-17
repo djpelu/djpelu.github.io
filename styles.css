@@ -1061,10 +1061,11 @@ ul li { /* list item */
     }
 
     #home_header_box {
-        margin: 3em 0;
+        margin: 3em 0 2em;
     }
     
     #e {
+        height: 7em;
         stroke: white;
     }
 
