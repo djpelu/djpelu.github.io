@@ -274,6 +274,7 @@ ul li { /* list item */
     height: 4.5em;
     width: 14.602em;
     margin-bottom: 4em;
+    border: red solid 2px;
 }
 
 #home_alepelu h1 {
