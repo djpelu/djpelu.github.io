@@ -269,37 +269,17 @@ ul li { /* list item */
     gap: 1.5em;
 }
 
-#home_alepelu {
-    position: relative;
-    height: 4.5em;
-    width: 14.602em;
-    margin-bottom: 4em;
-    border: red solid 2px;
-}
-
-#home_alepelu h1 {
+#home_header_box {
     font-family: monospace;
-    font-size: 5em;
-    letter-spacing: 0.2em;
-}
-
-#ale {
-    position: absolute;
-    z-index: 100;
-}
-
-#pelu {
-    position: absolute;
-    top: 24%;
-    left: 11%;
+    margin-bottom: 5em;
 }
 
 #e {
-    height: 0.9em;
-    width: 0.9em;
-    stroke: black;
+    height: 6em;
+    width: auto;
+    fill: transparent;
     stroke-width: 8px;
-    fill: white;
+    stroke: black;
 }
 
 .lsc { /*letter spacing correction*/
@@ -1079,9 +1059,12 @@ ul li { /* list item */
         min-height: fit-content;
         height: auto;
     }
+
+    #home_header_box {
+        margin: 3em 0;
+    }
     
     #e {
-        height: 0.9em;
         stroke: white;
     }
 
@@ -1098,21 +1081,6 @@ ul li { /* list item */
         position: static;
         transform: translate(0, 0);
     }
-
-    #home_alepelu {
-        margin: 2em 0;
-        width: 17.524em;
-    }
-
-    #home_alepelu h1 {
-        color: white;
-        font-size: 6em;
-   }
-
-   #e {
-    stroke: black;
-    fill: transparent;
-   }
 
     .btn_cuore {
         left: 0%;
