@@ -1,6 +1,6 @@
 /* GLOBAL */
 body {
-    font-family: "Space Grotesk", "Roboto", monospace;
+    font-family: "Space Grotesk", monospace;
     font-size: 100%; /* usiamo font size preimpostato del browser di chi usa il sito, generalmenre 16 px*/
     margin: 0;
 }
@@ -239,35 +239,6 @@ ul li { /* list item */
 }
 
 /* HOME: sezione 1 */
-#home_intro_box {
-    font-family: monospace;
-}
-
-#home_intro_box h1 {
-    font-size: 5em;
-    letter-spacing: 0.2em;
-    padding-bottom: 0.8em;
-}
-
-.lsc { /*letter spacing correction*/
-    display:inline-block;
-    width:0.2em;
-}
-
-#home_intro_box p {
-    font-size: 1.2em;
-    letter-spacing: 0.2em;
-    padding-bottom: 0.4em;
-}
-
-#e {
-    height: 0.8em;
-    width: 0.8em;
-    stroke: black;
-    stroke-width: 8px;
-    fill: transparent;
-}
-
 #home_s1 {
     position: relative;
     height: 46em;
@@ -290,12 +261,49 @@ ul li { /* list item */
 #home_main_container{
     position: absolute;
     left: 50%;
-    top: 33%;
+    top: 36%;
     transform: translate(-50%, -50%);
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1.5em;
+}
+
+#home_alepelu {
+    position: relative;
+    height: 4.5em;
+    width: 14.602em;
+    margin-bottom: 3em;
+}
+
+#home_alepelu h1 {
+    font-family: monospace;
+    font-size: 5em;
+    letter-spacing: 0.2em;
+}
+
+#ale {
+    position: absolute;
+}
+
+#pelu {
+    position: absolute;
+    top: 24%;
+    left: 11%;
+}
+
+#e {
+    height: 0.9em;
+    width: 0.9em;
+    stroke: black;
+    stroke-width: 8px;
+    fill: transparent;
+}
+
+.lsc { /*letter spacing correction*/
+    display:inline-block;
+    width:0.2em;
+    height: 0.2em;
 }
 
 /* HOME: sezione 2 */
@@ -1070,19 +1078,7 @@ ul li { /* list item */
         min-height: fit-content;
         height: auto;
     }
-
-    #home_intro_box {
-        color: white;
-    }
-
-    #home_intro_box h1 {
-        padding:0.4em 0;
-    }
     
-    #home_intro_box p {
-        margin: 1.5em 0 0;
-    }
-
     #e {
         height: 0.9em;
         stroke: white;
@@ -1101,6 +1097,14 @@ ul li { /* list item */
         position: static;
         transform: translate(0, 0);
     }
+
+    #home_alepelu {
+        margin-bottom: 2em;
+    }
+
+    #home_alepelu h1 {
+        color: white;
+   }
 
     .btn_cuore {
         left: 0%;
@@ -1305,11 +1309,6 @@ ul li { /* list item */
 
 /* VERSIONE MOBILE --------------------- */
 @media only screen and (max-width: 767px) {
-
-    #home_intro_box h1 {
-        padding:0.3em 0;
-        font-size: 4.5em;
-    }
 
     /*xTe*/
     #xTe_testo {
