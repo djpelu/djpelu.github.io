@@ -1100,10 +1100,12 @@ ul li { /* list item */
 
     #home_alepelu {
         margin: 2em 0;
+        width: 17.524em;
     }
 
     #home_alepelu h1 {
         color: white;
+        font-size: 6em;
    }
 
    #e {
