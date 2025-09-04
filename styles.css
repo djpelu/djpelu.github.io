@@ -135,13 +135,13 @@ ul li { /* list item */
 .btn_verde:hover {
     background-color: #F2F2F2;
     box-shadow: 0 0.1em 0.2em;
-    transform: scale(0.991);
+    /* transform: scale(0.991); */
 }
 
 .btn_verde:active {
     background-color: #F2F2F2;
     box-shadow: 0 0 0;
-    transform: scale(0.98);
+    /* transform: scale(0.98); */
 }
 
 .btn_rosso {
