@@ -213,7 +213,7 @@ ul li { /* list item */
     white-space: nowrap;
     overflow: hidden; /*evita scroll orizzontale*/
     padding:0;
-    border-right: .15em solid black; /* crea il finto cursore */
+    border-right: .15em solid rgba(138, 138, 138); /* crea il finto cursore */
     letter-spacing: .15em; /* aggiunge spazio tra le lettere per migliorare l'effetto */
     animation: blink-caret 0.75s step-end infinite; /* uso l'animazione che ho creato qui sotto che fa lampeggiare il cursore. dura 0.75s, si ripete all'infinito e usa step-end per un effetto più netto */
 }
@@ -221,7 +221,7 @@ ul li { /* list item */
 /* animazione cursore */
 @keyframes blink-caret {
     from, to { border-color: transparent } /* a inizio e fine animazione il cursore è trasparent */
-    50% { border-color: black; } /* a metà animazione il cursore diventa nero */
+    50% { border-color: rgb(138, 138, 138); } /* a metà animazione il cursore diventa nero */
 }
 
 /* EFFETTO PARALLAX */
@@ -759,6 +759,8 @@ ul li { /* list item */
 .lit_title {
     position: fixed;
     z-index: 3;
+    color: white;
+
 }
 
 #lit_body h3 {
