@@ -937,6 +937,11 @@ ul li { /* list item */
     text-decoration: underline;
 }
 
+#kafona_body picture {
+    display: flex;
+    justify-content: center;
+}
+
 /* SCOGLIO*/
 #scoglio_body {
     background-color: #8F99AB;
@@ -1099,19 +1104,17 @@ ul li { /* list item */
         font-size: 1.1em;
     }
 
-    .page {
-        max-width: 80%;
-    }
-
     .cols_body {
         flex-direction: column;
         padding: 6em;
         height: auto;
         gap: 2em;
+        align-items: center;
+        justify-content: center;
     }
 
     .side_col {
-        position: relative;
+        position: static;
     }
 
     .central_col {
@@ -1364,6 +1367,22 @@ ul li { /* list item */
         opacity: 1;
     }
 
+    /* KAFONA */
+    #kafona_body .nascosto {
+        display: block;
+    }
+
+    #kafona_body.cols_body {
+        padding: 10em 1em 8em;
+    }
+
+    #kafona_body .side_col img {
+        width: 60%;
+    }
+
+    #kafona_body .page a {
+        text-decoration: underline;
+    }
 }
 
 /* VERSIONE MOBILE --------------------- */
@@ -1496,6 +1515,6 @@ ul li { /* list item */
 
     /* KAFONA */
     #kafona_body h1 {
-        font-size: 4em;
+        font-size: 4.5em;
     }
 }
