@@ -1094,7 +1094,7 @@ ul li { /* list item */
         font-size: 1.2em;
     }
     
-    .btn_tond,
+    .btn_tondo,
     .btn_cuore {
         font-size: 1.1em;
     }
@@ -1374,7 +1374,7 @@ ul li { /* list item */
     }
 
     .central_col {
-        margin: 0 1em;
+        padding: 0 1em;
     }
 
     /*HOME*/
