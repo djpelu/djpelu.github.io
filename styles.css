@@ -1116,6 +1116,7 @@ ul li { /* list item */
 
     .central_col {
         min-height: 0;
+        width: 100%; /*altrimenti, siccome siamo in un flexbox, la dimensione in % di page x tablet e mobile non funziona*/
     }
 
     /* HOME */
@@ -1365,16 +1366,11 @@ ul li { /* list item */
 
 }
 
-
 /* VERSIONE MOBILE --------------------- */
 @media only screen and (max-width: 767px) {
 
     .cols_body {
         padding: 2em;
-    }
-
-    .central_col {
-        padding: 0 1em;
     }
 
     /*HOME*/
@@ -1492,10 +1488,14 @@ ul li { /* list item */
         transform: translate(-32vw)
     }
 
-
     .book {
         width: 63.5vw;
         height: 90vw;
         transition: transform 0.5s;
+    }
+
+    /* KAFONA */
+    #kafona_body h1 {
+        font-size: 4em;
     }
 }
