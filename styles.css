@@ -102,7 +102,64 @@ ul li { /* list item */
     background-color: rgba(124, 184, 35, 0.7);
 }
 
-/* GLOBAL: box*/
+/* GLOBAL: structure*/
+.page {
+    display: flex;
+    flex-direction: column;
+    margin: 5em 0 0;
+    width: 40em;
+    max-width: 85%;
+    font-size: 1.1em;
+}
+
+.page h1 {
+    text-align: center;
+}
+
+.page p {
+    text-align: justify;
+    padding: 0;
+    text-indent: 1em;
+}
+
+.page picture {
+    display: block;
+    margin: 0 auto;   /* centra il picture */
+}
+
+.cols_body {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 0 4em;
+    gap: 4em;
+}
+
+.side_col {
+    flex: 1;
+    position: sticky;
+    top: 0; /*stick here*/
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.side_col img {
+    width: 100%;
+    height:auto;
+}
+
+.central_col {
+    flex: 1.5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: center;
+    gap: 2em;
+}
+
 .vert_box {
     display: flex;
     flex-direction: column;
@@ -223,6 +280,32 @@ ul li { /* list item */
     from, to { border-color: transparent } /* a inizio e fine animazione il cursore è trasparent */
     50% { border-color: rgb(138, 138, 138); } /* a metà animazione il cursore diventa nero */
 }
+
+/*EFFETTO ROTANTE*/
+.box_rotante {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.rotate_right {
+    animation: spin 6s linear infinite;
+}
+
+.rotate_left {
+    animation: spin-reverse 6s linear infinite;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+@keyframes spin-reverse {
+    from { transform: rotate(360deg); }
+    to { transform: rotate(0deg); }
+}
+
 
 /* EFFETTO PARALLAX */
 .parallax_container {
@@ -568,39 +651,15 @@ ul li { /* list item */
 /* BIO */
 #bio_body {
     background-color: #FFFEF2;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 0 2em;
-    height: 100vh;
 }
 
-.bio_side_col {
-    flex: 1;
-    margin: 2em;
-    filter: drop-shadow(0.3em 0.3em 0.3em)
+#bio_side_col {
+    filter: drop-shadow(0.3em 0.3em 0.3em black);
 }
-
-.bio_side_col img {
-    width: 100%;
-    height:auto;
-}
-
-.bio_central_col {
-    flex: 1.5;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 2em;
-}
-
 
 #bio_p {
-    flex-grow: 1;  /* Permette agli elementi di espandersi */
-    flex-basis: 0;
     text-indent: 1em;
     text-align: justify;
-    padding-bottom: 2em;
 }
 
 
@@ -856,22 +915,26 @@ ul li { /* list item */
     background-size: cover;
 }
 
-#ctrl_main {
-    display: flex;
-    flex-direction: column;
-    margin: 5em 0 0;
-    width: 40em;
-    max-width: 85%;
-    font-size: 1.1em;
+/* KAFONA */
+#kafona_body {
+    font-family: 'Lato', sans-serif;
+    box-shadow: inset 0 0 4em 1em rgba(0, 0, 0, 0.5);
 }
 
-#ctrl_main h1 {
-    text-align: center;
+#kafona_body h1 {
+    font-family: 'Luxurious Script', cursive; 
+    font-weight: 400;
+    font-size: 5em;
+    padding: 0;
 }
 
-#ctrl_main p {
-    text-align: justify;
-    margin-bottom: 0.5em;
+#kafona_body .page a {
+    color: #FF48B1;
+    text-decoration: none;
+}
+
+#kafona_body .page a:hover {
+    text-decoration: underline;
 }
 
 /* SCOGLIO*/
@@ -1036,6 +1099,24 @@ ul li { /* list item */
         font-size: 1.1em;
     }
 
+    .page {
+        max-width: 80%;
+    }
+
+    .cols_body {
+        flex-direction: column;
+        padding: 6em;
+        height: auto;
+        gap: 2em;
+    }
+
+    .side_col {
+        position: relative;
+    }
+
+    .central_col {
+        min-height: 0;
+    }
 
     /* HOME */
     #index_html { /*con questo escamotage riesco a mettere lo sfondo colorato al body ed evitare le fasce bianche con rubber band scroll in safari*/
@@ -1173,18 +1254,6 @@ ul li { /* list item */
     #xTe_testo {
         margin: 2em;
     }
-
-
-    /*BIO*/
-    #bio_body {
-        flex-direction: column;
-        margin: 2em;
-        height: auto;
-    }
-
-    .bio_central_col {
-        margin: 2em 2em;
-    }
     
     /*TRE*/
     #tre_body {
@@ -1260,11 +1329,6 @@ ul li { /* list item */
         width: 80%;
     }
 
-    /*CTRL+I*/
-    #ctrl_main {
-        max-width: 80%;
-    }
-
     /* SCOGLIO */  
     #scoglio_bg {
         height: 98%; /*siccome la velocità del parallax aumenta la dimensione del bg, usa questo per tweeking*/
@@ -1305,6 +1369,14 @@ ul li { /* list item */
 /* VERSIONE MOBILE --------------------- */
 @media only screen and (max-width: 767px) {
 
+    .cols_body {
+        padding: 2em;
+    }
+
+    .central_col {
+        margin: 0 1em;
+    }
+
     /*HOME*/
     #home_body {
         background-size: auto 70%;
@@ -1314,17 +1386,6 @@ ul li { /* list item */
     /*xTe*/
     #xTe_testo {
         margin: 1.5em;
-    }
-
-    /* BIO */
-    #bio_body {
-        flex-direction: column;
-        margin: 0 0 2em;
-        height: auto;
-    }
-
-    .bio_central_col {
-        margin: 0 1em 1em;
     }
 
     /* TRE */
