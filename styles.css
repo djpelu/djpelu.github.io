@@ -107,7 +107,6 @@ ul li { /* list item */
     display: flex;
     flex-direction: column;
     margin: 5em 0 0;
-    width: 40em;
     max-width: 85%;
     font-size: 1.1em;
 }
@@ -130,7 +129,6 @@ ul li { /* list item */
 .cols_body {
     display: flex;
     align-items: flex-start;
-    justify-content: space-around;
     padding: 0 4em;
     gap: 4em;
 }
@@ -143,6 +141,7 @@ ul li { /* list item */
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .side_col img {
@@ -151,7 +150,7 @@ ul li { /* list item */
 }
 
 .central_col {
-    flex: 1.5;
+    /* flex: specifica per ogni pagina sito;*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -305,7 +304,6 @@ ul li { /* list item */
     from { transform: rotate(360deg); }
     to { transform: rotate(0deg); }
 }
-
 
 /* EFFETTO PARALLAX */
 .parallax_container {
@@ -657,6 +655,10 @@ ul li { /* list item */
     filter: drop-shadow(0.3em 0.3em 0.3em black);
 }
 
+#bio_central_col {
+    flex: 1.5;
+}
+
 #bio_p {
     text-indent: 1em;
     text-align: justify;
@@ -919,6 +921,10 @@ ul li { /* list item */
 #kafona_body {
     font-family: 'Lato', sans-serif;
     box-shadow: inset 0 0 4em 1em rgba(0, 0, 0, 0.5);
+}
+
+#kafona_body .central_col {
+    flex: 2;
 }
 
 #kafona_body h1 {
@@ -1368,16 +1374,16 @@ ul li { /* list item */
     }
 
     /* KAFONA */
+    #kafona_body .side_col {
+        display: none;
+    }
+
     #kafona_body .nascosto {
         display: block;
     }
 
     #kafona_body.cols_body {
-        padding: 10em 1em 8em;
-    }
-
-    #kafona_body .side_col img {
-        width: 60%;
+        padding: 0 1em;
     }
 
     #kafona_body .page a {
