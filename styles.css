@@ -917,33 +917,33 @@ ul li { /* list item */
     background-size: cover;
 }
 
-/* KAFONA */
-#kafona_body {
+/* freaky */
+#freaky_body {
     font-family: 'Lato', sans-serif;
     box-shadow: inset 0 0 4em 1em rgba(0, 0, 0, 0.5);
 }
 
-#kafona_body .central_col {
+#freaky_body .central_col {
     flex: 2;
 }
 
-#kafona_body h1 {
+#freaky_body h1 {
     font-family: 'Luxurious Script', cursive; 
     font-weight: 400;
     font-size: 5em;
     padding: 0;
 }
 
-#kafona_body .page a {
+#freaky_body .page a {
     color: #FF48B1;
     text-decoration: none;
 }
 
-#kafona_body .page a:hover {
+#freaky_body .page a:hover {
     text-decoration: underline;
 }
 
-#kafona_body picture {
+#freaky_body picture {
     display: flex;
     justify-content: center;
 }
@@ -1373,20 +1373,20 @@ ul li { /* list item */
         opacity: 1;
     }
 
-    /* KAFONA */
-    #kafona_body .side_col {
+    /* freaky */
+    #freaky_body .side_col {
         display: none;
     }
 
-    #kafona_body .nascosto {
+    #freaky_body .nascosto {
         display: block;
     }
 
-    #kafona_body.cols_body {
+    #freaky_body.cols_body {
         padding: 0 1em;
     }
 
-    #kafona_body .page a {
+    #freaky_body .page a {
         text-decoration: underline;
     }
 }
@@ -1519,8 +1519,8 @@ ul li { /* list item */
         transition: transform 0.5s;
     }
 
-    /* KAFONA */
-    #kafona_body h1 {
+    /* freaky */
+    #freaky_body h1 {
         font-size: 4.5em;
     }
 }
