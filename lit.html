@@ -27,28 +27,76 @@
     <div id="lit_title_div">
         <h2 id="typewriter" class="lit_title"></h2>
     </div>
+    <div id="lit_filter">
+        <button class="filter_btn" data-target="all">TUTTI</button>
+        <button class="filter_btn" data-target="riviste">X RIVISTE</button>
+        <button class="filter_btn" data-target="zine">ZINE</button>
+        <button class="filter_btn" data-target="demenziali">DEMENZIALI</button>
+        <button class="filter_btn" data-target="premiati">PREMIATI</button>
+        <button class="filter_btn" data-target="MM">MULTIMEDIALI</button>
+        <button class="filter_btn" data-target="brevi">BREVI</button>
+    </div>
 
     <div id="lit_pieces_div">
 
-        <!-- Sezione "brevi" / titolo inserito alla cazzo su Bla Bla-->
-        <div class="lit_piece">
-            <div class="lit_genre_title_piece">
-                <h3 class="lit_genre_title">brevi</h3>
-                <!-- Bla Bla -->
-                <div class="lit_piece_grid">
-                    <a class="lit_btn" href="https://lequivoco.it/racconti/bla-bla/" target="_blank" rel="noreferrer noopener">
-                        <img class="lit_pic full" src="images/lit_gallery/blabla.gif" alt="Bla Bla">
-                    </a>
-                    <div class="lit_td invisibile">
-                        <p class="lit_t">Bla Bla (2025)</p>
-                        <p class="lit_d">pubblicato da “L'Equivoco”</p>
-                    </div>
-                </div>
+        <!-- Quel Freaky-->
+        <div class="lit_piece" data-category="all demenziali zine brevi">
+            <a class="lit_btn" href="./lit_freaky">
+                <picture>
+                    <source srcset="images/freaky_cuore.webp" type="image/webp">
+                    <img class="lit_pic trans" style="height:11em" src="images/freaky_cuore.png" alt="Quel Freaky di un Carabiniere">
+                </picture>
+            </a>
+            <div class="lit_td invisibile">
+                <p class="lit_t">Quel Freaky di un Carabiniere (2025)</p>
+                <p class="lit_d">Pubblicato in “Super Hardcore l'Italiana”</p>
+            </div>
+        </div>
+
+        <!-- Bla Bla-->
+        <div class="lit_piece" data-category="all riviste premiati brevi">    
+            <a class="lit_btn" href="https://lequivoco.it/racconti/bla-bla/" target="_blank" rel="noreferrer noopener">
+                <img class="lit_pic full" src="images/lit_gallery/blabla.gif" alt="Bla Bla">
+            </a>
+            <div class="lit_td invisibile">
+                <p class="lit_t">Bla Bla (2025)</p>
+                <p class="lit_d">pubblicato da “L'Equivoco”</p>
+            </div>
+        </div>
+
+        <!-- Accaressami l'anima -->
+        <div class="lit_piece" data-category="all demenziali brevi">
+            <a class="lit_btn"
+                href="https://www.wattpad.com/story/351065216-accaressami-l%27anima-albergomi-il-cuore"
+                target="_blank" rel="noreferrer noopener">
+                <picture>
+                    <source srcset="images/lit_gallery/accaressami.webp" type="image/webp">
+                    <img class="lit_pic full" src="images/lit_gallery/accaressami.png"
+                        alt="Accaressami l'anima, albergomi il cuore">
+                </picture>
+            </a>
+            <div class="lit_td invisibile">
+                <p class="lit_t">Accaressami l'anima,<br>albergomi il cuore (2023)</p>
+                <p class="lit_d">fanficiton/parodia su Fabio Caressa e Beppe Bergomi</p>
+            </div>
+        </div>
+
+        <!-- Ctrl+i-->
+        <div class="lit_piece" data-category="all premiati brevi">
+            <a class="lit_btn" href="./lit_ctrl">
+                <picture>
+                    <source srcset="images/lit_gallery/ctrl.webp" type="image/webp">
+                    <img class="lit_pic full" src="images/lit_gallery/ctrl.png" alt="Ctrl+i">
+                </picture>
+            </a>
+            <div class="lit_td invisibile">
+                <p class="lit_t">Ctrl+i (2022)</p>
+                <p class="lit_d">secondo posto a “L’écrivain de la Tour”</p>
             </div>
         </div>
 
         <!-- Chiara giocava col sangue -->
-        <div class="lit_piece_grid lit_piece">
+        <div class="lit_piece" data-category="all brevi">
             <a class="lit_btn"
                 href="https://www.bibliotecadigitale.unipv.eu/entities/multipurpose/ad74892b-da6d-4c58-975f-7e9c371aa3d6"
                 target="_blank" rel="noreferrer noopener">
@@ -63,8 +111,98 @@
             </div>
         </div>
 
+        <!-- Ma sei... un salamino -->
+        <div class="lit_piece" data-category="all demenziali">
+            <a class="lit_btn" href="https://www.wattpad.com/story/323491448-ma-sei-un-salamino" target="_blank"
+                rel="noreferrer noopener">
+                <picture>
+                    <source srcset="images/lit_gallery/salamini.webp" type="image/webp">
+                    <img class="lit_pic full" src="images/lit_gallery/salamini.png" alt="Ma... sei un salamino">
+                </picture>
+            </a>
+            <div class="lit_td invisibile">
+                <p class="lit_t">Ma... sei un salamino (2022)</p>
+                <p class="lit_d">fanficiton/parodia di Twilight</p>
+            </div>
+        </div>
+
+        <!-- Sedie-->
+         <div class="lit_piece" data-category="all zine">
+            <a class="lit_btn" href="./lit_sedie">
+                <picture>
+                    <source srcset="images/lit_gallery/sedie.webp" type="image/webp">
+                    <img class="lit_pic full" src="images/lit_gallery/sedie.png" alt="Chairs, a guide">
+                </picture>
+            </a>
+            <div class="lit_td invisibile">
+                <p class="lit_t">Chairs, a guide (2022)</p>
+                <p class="lit_d">fanzine in collaborazione con Alessia Campanella</p>
+            </div>
+        </div>
+        
+        <!-- Nero Argentato-->
+        <div class="lit_piece" data-category="all brevi premiati">
+            <a class="lit_btn"
+                href="https://www.energheia.org/i-brevissimi-2022-nero-argentato-alessandra-peluzzi_milano.html"
+                target="_blank" rel="noreferrer noopener">
+                <picture>
+                    <source srcset="images/lit_gallery/nero2.webp" type="image/webp">
+                    <img class="lit_pic full" src="images/lit_gallery/nero2.png" alt="Nero Argentato">
+                </picture>
+            </a>
+            <div class="lit_td invisibile">
+                <p class="lit_t">Nero Argentato (2022)</p>
+                <p class="lit_d">finalista al concorso internazionale “Energheia”</p>
+            </div>
+        </div>
+
+        <!-- Lyrics -->
+         <div class="lit_piece" data-category="all demenziali">
+            <a class="lit_btn" href="https://www.youtube.com/playlist?list=PLW9llo_vVgwTy1NZ6NZCe74S1RVCkkl4T"
+                target="_blank" rel="noreferrer noopener">
+                <picture>
+                    <source srcset="images/lit_gallery/jaydee.webp" type="image/webp">
+                    <img class="lit_pic trans" src="images/lit_gallery/jaydee.png" alt="Lyrics by jaydee-lupe">
+                </picture>
+            </a>
+            <div class="lit_td invisibile">
+                <p class="lit_t">Lyrics (2020/2022)</p>
+                <p class="lit_d">by jaydee-lupe</p>
+            </div>
+        </div>
+
+        <!-- Manic pixel killer girl -->
+        <div class="lit_piece" data-category="all MM">
+            <a class="lit_btn" href="https://www.youtube.com/watch?v=wvbalbbxL9M" target="_blank"
+                rel="noreferrer noopener">
+                <picture>
+                    <source srcset="images/lit_gallery/manic.webp" type="image/webp">
+                    <img class="lit_pic full" src="images/lit_gallery/manic.png" alt="Manic Pixel Killer Girl">
+                </picture>
+            </a>
+            <div class="lit_td invisibile">
+                <p class="lit_t">Manic Pixel Killer Girl (2021)</p>
+                <p class="lit_d">short in collaborazione con Giulia Timis</p>
+            </div>
+        </div>
+
+        <!-- Nigella Bites -->
+        <div class="lit_piece" data-category="all demenziali">
+            <a class="lit_btn" href="https://www.wattpad.com/story/269319079-nigella-bites-me" target="_blank"
+                rel="noreferrer noopener">
+                <picture>
+                    <source srcset="images/lit_gallery/nigella.webp" type="image/webp">
+                    <img class="lit_pic full" src="images/lit_gallery/nigella.png" alt="Nigella bites... me">
+                </picture>
+            </a>
+            <div class="lit_td invisibile">
+                <p class="lit_t">Nigella bites... me (2021)</p>
+                <p class="lit_d">fanficiton/parodia di una fanficiton</p>
+            </div>
+        </div>
+
         <!-- Schiantal -->
-        <div class="lit_piece_grid lit_piece">
+        <div class="lit_piece" data-category="all brevi">
             <a class="lit_btn" href="https://www.instagram.com/p/CN2DaGkHoLQ/" target="_blank"
                 rel="noreferrer noopener">
                 <picture>
@@ -79,7 +217,7 @@
         </div>
 
         <!-- Niccolò -->
-        <div class="lit_piece_grid lit_piece">
+        <div class="lit_piece" data-category="all brevi">
             <a class="lit_btn" href="https://www.instagram.com/p/CMuEo1FHhmp/" target="_blank"
                 rel="noreferrer noopener">
                 <picture>
@@ -93,8 +231,23 @@
             </div>
         </div>
 
+        <!-- Knife Life -->
+        <div class="lit_piece" data-category="all MM">
+            <a class="lit_btn" href="https://www.youtube.com/watch?v=zmDYbdEpfk4&amp;t=168s" target="_blank"
+                rel="noreferrer noopener">
+                <picture>
+                    <source srcset="images/lit_gallery/knife.webp" type="image/webp">
+                    <img class="lit_pic trans" src="images/lit_gallery/knife.png" alt="Knife Life">
+                </picture>
+            </a>
+            <div class="lit_td invisibile">
+                <p class="lit_t">Knife Life (2020)</p>
+                <p class="lit_d">short in collaborazione con Giulia Timis</p>
+            </div>
+        </div>
+
         <!-- Cassandra -->
-        <div class="lit_piece_grid lit_piece">
+        <div class="lit_piece" data-category="all brevi riviste MM">
             <a class="lit_btn" href="https://www.instagram.com/p/CBDUtI7jCFc/" target="_blank"
                 rel="noreferrer noopener">
                 <picture>
@@ -109,7 +262,7 @@
         </div>
 
         <!-- Pasta allo scoglio -->
-        <div class="lit_piece_grid lit_piece">
+        <div class="lit_piece" data-category="all brevi riviste">
             <a class="lit_btn" href="./lit_scoglio">
                 <picture>
                     <source srcset="images/lit_gallery/scoglio.webp" type="image/webp">
@@ -122,189 +275,10 @@
             </div>
         </div>
 
-        <!-- Sezione "fanzine" / titolo inserito alla cazzo su Sedie-->
-         <div class="lit_piece">
-            <div class="lit_genre_title_piece">
-                <h3 class="lit_genre_title">fanzine</h3>
-                <div class="lit_piece_grid">
-                    <a class="lit_btn" href="./lit_sedie">
-                        <picture>
-                            <source srcset="images/lit_gallery/sedie.webp" type="image/webp">
-                            <img class="lit_pic full" src="images/lit_gallery/sedie.png" alt="Chairs, a guide">
-                        </picture>
-                    </a>
-                    <div class="lit_td invisibile">
-                        <p class="lit_t">Chairs, a guide (2022)</p>
-                        <p class="lit_d">collab con Alessia Campanella</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <!-- Sezione "parodie di fanfiction" titolo inserito sul Quel Freaky-->
-        <div class="lit_piece">
-            <div class="lit_genre_title_piece">
-                <h3 class="lit_genre_title">demenziali</h3>
-                <!-- Quel Freaky -->
-                <div class="lit_piece_grid">
-                    <a class="lit_btn" href="./lit_freaky">
-                        <picture>
-                            <source srcset="images/freaky_cuore.webp" type="image/webp">
-                            <img class="lit_pic trans" style="height:11em" src="images/freaky_cuore.png" alt="Quel Freaky di un Carabiniere">
-                        </picture>
-                    </a>
-                    <div class="lit_td invisibile">
-                        <p class="lit_t">Quel Freaky di un Carabiniere (2025)</p>
-                        <p class="lit_d">Pubblicato in “Super Hardcore l'Italiana”</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Accaressami l'anima -->
-        <div class="lit_piece_grid lit piece">
-            <a class="lit_btn"
-                href="https://www.wattpad.com/story/351065216-accaressami-l%27anima-albergomi-il-cuore"
-                target="_blank" rel="noreferrer noopener">
-                <picture>
-                    <source srcset="images/lit_gallery/accaressami.webp" type="image/webp">
-                    <img class="lit_pic full" src="images/lit_gallery/accaressami.png"
-                        alt="Accaressami l'anima, albergomi il cuore">
-                </picture>
-            </a>
-            <div class="lit_td invisibile">
-                <p class="lit_t">Accaressami l'anima,<br>albergomi il cuore (2023)</p>
-            </div>
-        </div>
-
-        <!-- Ma sei... un salamino -->
-        <div class="lit_piece_grid lit_piece">
-            <a class="lit_btn" href="https://www.wattpad.com/story/323491448-ma-sei-un-salamino" target="_blank"
-                rel="noreferrer noopener">
-                <picture>
-                    <source srcset="images/lit_gallery/salamini.webp" type="image/webp">
-                    <img class="lit_pic full" src="images/lit_gallery/salamini.png" alt="Ma... sei un salamino">
-                </picture>
-            </a>
-            <div class="lit_td invisibile">
-                <p class="lit_t">Ma... sei un salamino (2022)</p>
-            </div>
-        </div>
-        
-        <!-- Nigella Bites -->
-        <div class="lit_piece_grid lit_piece">
-            <a class="lit_btn" href="https://www.wattpad.com/story/269319079-nigella-bites-me" target="_blank"
-                rel="noreferrer noopener">
-                <picture>
-                    <source srcset="images/lit_gallery/nigella.webp" type="image/webp">
-                    <img class="lit_pic full" src="images/lit_gallery/nigella.png" alt="Nigella bites... me">
-                </picture>
-            </a>
-            <div class="lit_td invisibile">
-                <p class="lit_t">Nigella bites... me (2021)</p>
-            </div>
-        </div>
-
-
-        <!-- Sezione "premiati" / titolo inserito alla cazzo su Ctrl+i-->
-        <div class="lit_piece">
-            <div class="lit_genre_title_piece">
-                <h3 class="lit_genre_title">premiati</h3>
-                <!-- Nero Argentato-->
-                <div class="lit_piece_grid">
-                    <a class="lit_btn"
-                        href="https://www.energheia.org/i-brevissimi-2022-nero-argentato-alessandra-peluzzi_milano.html"
-                        target="_blank" rel="noreferrer noopener">
-                        <picture>
-                            <source srcset="images/lit_gallery/nero2.webp" type="image/webp">
-                            <img class="lit_pic full" src="images/lit_gallery/nero2.png" alt="Nero Argentato">
-                        </picture>
-                    </a>
-                    <div class="lit_td invisibile">
-                        <p class="lit_t">Nero Argentato (2022)</p>
-                        <p class="lit_d">finalista al concorso internazionale “Energheia”</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Ctrl+i-->
-        <div class="lit_piece_grid lit_piece">
-            <a class="lit_btn" href="./lit_ctrl">
-                <picture>
-                    <source srcset="images/lit_gallery/ctrl.webp" type="image/webp">
-                    <img class="lit_pic full" src="images/lit_gallery/ctrl.png" alt="Ctrl+i">
-                </picture>
-            </a>
-            <div class="lit_td invisibile">
-                <p class="lit_t">Ctrl+i (2022)</p>
-                <p class="lit_d">secondo posto a “L’écrivain de la Tour”</p>
-            </div>
-        </div>
-
-        <!-- Sezione "canzoni stupide" / titolo inserito alla cazzo -->
-         <div class="lit_piece">
-            <div class="lit_genre_title_piece">
-            <h3 class="lit_genre_title">canzoni stupide</h3>
-                <div class="lit_piece_grid">
-                    <a class="lit_btn" href="https://www.youtube.com/playlist?list=PLW9llo_vVgwTy1NZ6NZCe74S1RVCkkl4T"
-                        target="_blank" rel="noreferrer noopener">
-                        <picture>
-                            <source srcset="images/lit_gallery/jaydee.webp" type="image/webp">
-                            <img class="lit_pic trans" src="images/lit_gallery/jaydee.png" alt="Lyrics by jaydee-lupe">
-                        </picture>
-                    </a>
-                    <div class="lit_td invisibile">
-                        <p class="lit_t">Lyrics (2020/2022)</p>
-                        <p class="lit_d">by jaydee-lupe</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Sezione "video collab" / titolo inserito alla cazzo su manic pixel killer girl -->
-        <div class="lit_piece">
-            <div class="lit_genre_title_piece">
-                <h3 class="lit_genre_title">video collab</h3>
-                <!-- Manic pixel killer girl -->
-                <div class="lit_piece_grid">
-                    <a class="lit_btn" href="https://www.youtube.com/watch?v=wvbalbbxL9M" target="_blank"
-                        rel="noreferrer noopener">
-                        <picture>
-                            <source srcset="images/lit_gallery/manic.webp" type="image/webp">
-                            <img class="lit_pic full" src="images/lit_gallery/manic.png" alt="Manic Pixel Killer Girl">
-                        </picture>
-                    </a>
-                    <div class="lit_td invisibile">
-                        <p class="lit_t">Manic Pixel Killer Girl (2021)</p>
-                        <p class="lit_d">collab con Giulia Timis</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Knife Life -->
-        <div class="lit_piece_grid lit_piece">
-            <a class="lit_btn" href="https://www.youtube.com/watch?v=zmDYbdEpfk4&amp;t=168s" target="_blank"
-                rel="noreferrer noopener">
-                <picture>
-                    <source srcset="images/lit_gallery/knife.webp" type="image/webp">
-                    <img class="lit_pic trans" src="images/lit_gallery/knife.png" alt="Knife Life">
-                </picture>
-            </a>
-            <div class="lit_td invisibile">
-                <p class="lit_t">Knife Life (2020)</p>
-                <p class="lit_d">collab con Giulia Timis</p>
-            </div>
-        </div>
-    </div>
-
-    <div id="lit_home">
-        <a href="./" class="btn_verde btn_rettangolo" style="margin: 1em;">home</a>
     </div>
 
     <script src="js/typewriter.js"></script>
+    <script src="js/lit_filter.js" defer></script>
 </body>
 
 </html>

@@ -264,7 +264,6 @@ ul li { /* list item */
 
 /* EFFETTO TYPEWRITER: cursore*/
 #typewriter {
-    font-family: Georgia, 'Times New Roman', Times, serif;
     width: max-content;
     white-space: nowrap;
     overflow: hidden; /*evita scroll orizzontale*/
@@ -810,17 +809,41 @@ ul li { /* list item */
     background-image: url("images/LIT_bg.webp"), url("images/LIT_bg.png");
     background-color: peachpuff;
     margin: 4em 2em;
+    position: relative;
 }
 
 #lit_title_div { 
+    margin: 3em 3em 1em;
     height: 3em;
-    margin: 8em 0 4em 3em;
 }
 
 .lit_title {
     position: fixed;
     z-index: 3;
     color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#lit_filter {
+    margin: 1em 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.2em;
+    position: fixed;
+}
+
+.filter_btn {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 1em;
+}
+
+.filter_btn:hover, 
+.filter_btn.active {
+    color: black;
 }
 
 #lit_body h3 {
@@ -830,29 +853,20 @@ ul li { /* list item */
 #lit_pieces_div {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
-    margin: 0 3em;
+    margin: 0 3em 3em;
+    width: 65vw;
+    position: absolute;
+    right: 0;
 }
 
-.lit_piece { /*questo lo applico a tutti i pieces*/
+.lit_piece {
     justify-self: center;
     align-self: end;
-}
-
-/* questi sono i piece col titolo della sezione */
-.lit_genre_title_piece {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    width: fit-content;
-}
-
-/* questi sono i piece normali */
-.lit_piece_grid {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto 5em;
     justify-items: center;
+    transition: opacity 0.3s ease;
 }
 
 .lit_btn {
@@ -903,12 +917,6 @@ ul li { /* list item */
 
 .lit_btn:hover + .invisibile {
     opacity: 1;
-}
-
-#lit_home {
-    display: flex;
-    width: 100%;
-    justify-content: center
 }
 
 /* CTRL+I*/
@@ -1256,6 +1264,8 @@ ul li { /* list item */
         font-size: clamp(0.5em, 1.1em, 1.1em);
     }
 
+    /* LIT */
+    
     /*xTe*/
     #xTe_main {
         margin: 5em 0.5em 2em;
@@ -1369,10 +1379,14 @@ ul li { /* list item */
     }
 
     /* LIT */
+    #lit_body {
+        margin: 4em 0;
+    }
+
     #lit_body .invisibile {
         opacity: 1;
     }
-
+    
     /* freaky */
     #freaky_body .side_col {
         display: none;
@@ -1422,10 +1436,18 @@ ul li { /* list item */
     /* LIT */
     #lit_body {
         margin: 0;
+        position: static;
     }
 
     #lit_body h2 {
         font-size: 1.8em;
+    }
+
+    #typewriter {
+        margin: 0 auto;
+        /* overflow-wrap: break-word; /* Permette al testo di andare a capo su parole lunghe */
+        /* white-space: normal; /* Permette al testo di andare a capo naturalmente */
+        /* max-width: 80%; */
     }
 
     #lit_title_div { 
@@ -1437,31 +1459,31 @@ ul li { /* list item */
         left: 50%;
         transform: translate(-50%, 0);
     }
-    
-    #typewriter {
-        margin: 0 auto;
-        /* overflow-wrap: break-word; /* Permette al testo di andare a capo su parole lunghe */
-        /* white-space: normal; /* Permette al testo di andare a capo naturalmente */
-        /* max-width: 80%; */
+
+    #lit_filter {
+        position: static;
+        display: inline-block;
+        text-align: center;
+        margin: 0.5em;
     }
 
+    .filter_btn {
+        margin: 0.5em 0.5em
+    }
+    
     #lit_pieces_div {
         display: flex;
         flex-direction: column;
         gap: 3em;
+        width: 100vw;
+        position: static;
+        right: auto;
+        margin: 2em 0;
     }
 
     .lit_piece {
         align-self: center;
-    }
-
-    .lit_piece_grid {
         grid-template-rows: auto auto;
-    }
-
-    .lit_genre_title_piece {
-        justify-content: center;
-        align-items: center;
     }
 
     #lit_home {
