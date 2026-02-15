@@ -809,7 +809,6 @@ ul li { /* list item */
     background-image: url("images/LIT_bg.webp"), url("images/LIT_bg.png");
     background-color: peachpuff;
     margin: 4em 2em;
-    position: relative;
 }
 
 #lit_title_div { 
@@ -839,6 +838,16 @@ ul li { /* list item */
     border: none;
     color: white;
     font-size: 1em;
+    transition: opacity 0.3s ease;
+}
+
+#lit_home {
+    display: none;
+}
+
+#filter_home {
+    margin-top: 1em;
+    text-decoration: none;
 }
 
 .filter_btn:hover, 
@@ -853,10 +862,8 @@ ul li { /* list item */
 #lit_pieces_div {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
-    margin: 0 3em 3em;
     width: 65vw;
-    position: absolute;
-    right: 0;
+    margin: 0 3em 0 auto;
 }
 
 .lit_piece {
@@ -1434,9 +1441,16 @@ ul li { /* list item */
     }
 
     /* LIT */
+    #lit_home {
+        display: block;
+    }
+
+    #filter_home {
+        display: none;
+    }
+
     #lit_body {
         margin: 0;
-        position: static;
     }
 
     #lit_body h2 {
@@ -1476,9 +1490,8 @@ ul li { /* list item */
         flex-direction: column;
         gap: 3em;
         width: 100vw;
-        position: static;
         right: auto;
-        margin: 8em 0;
+        margin: 8em 0 0;
     }
 
     .lit_piece {
@@ -1487,7 +1500,7 @@ ul li { /* list item */
     }
 
     #lit_home {
-        margin: 3em auto;
+        margin: 0 auto 4em;
     }
 
     /* SCOGLIO */
