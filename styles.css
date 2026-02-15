@@ -1452,7 +1452,7 @@ ul li { /* list item */
 
     #lit_title_div { 
         min-height: 3em;
-        margin: 5em 0 2em 0;
+        margin: 2em 0 0;
     }
 
     .lit_title {
@@ -1461,10 +1461,10 @@ ul li { /* list item */
     }
 
     #lit_filter {
-        position: static;
         display: inline-block;
         text-align: center;
-        margin: 0.5em;
+        margin: 0 0.5em;
+        z-index: 3;
     }
 
     .filter_btn {
@@ -1478,7 +1478,7 @@ ul li { /* list item */
         width: 100vw;
         position: static;
         right: auto;
-        margin: 2em 0;
+        margin: 8em 0;
     }
 
     .lit_piece {
