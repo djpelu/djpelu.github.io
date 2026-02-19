@@ -23,7 +23,7 @@ const opere = [
     {
         src: 'images/roulette_gallery/naso.png',
         srcset: 'images/roulette_gallery/naso.webp',
-        title: "Chi va piano si infila in un anagramma",
+        title: "Chi va piano va naso e va lontano",
     },
     {
         src: 'images/roulette_gallery/panda.png',
@@ -155,7 +155,7 @@ const opere = [
         srcset: 'images/crawling_snake_mobile.webp',
         url: 'crawling.html',
         title: "Crawling",
-        description: "Snake, ma pian piano che il serpente cresce, aumentano anche le sue responsabilità"
+        description: "Snake, ma al crescere del serpente, aumentano le sue responsabilità"
     },
     {
         src: 'images/lit_gallery/blabla.gif',
@@ -163,6 +163,20 @@ const opere = [
         url: "https://lequivoco.it/racconti/bla-bla/",
         title: "Bla Bla",
         description: "Racconto pubblicato da “L'Equivoco”"
+    },
+    {
+        src: 'images/roulette_gallery/freaky_cuore.png',
+        srcset: 'images/roulette_gallery/freaky_cuore.webp',
+        url: "lit_freaky.html",
+        title: "Quel Freaky di un Carabiniere",
+        description: "Parodia di “Quel pazzo venerdì” pubblicata su “Super Hardcore l'Italiana”"
+    },
+    {
+        src: 'images/lit_gallery/pranzo.jpeg',
+        srcset: 'images/lit_gallery/pranzo.webp',
+        url: "https://exalge.com/radio/program/club-chimera/",
+        title: "Pepita",
+        description: "Radio Club Chimera s2 ep3, parliamo del nugget e poi Clara Bortolotti legge “Pranzo al mare”"
     },
     
 ];
@@ -186,7 +200,7 @@ const overlay = document.querySelector('.overlay_popup');
 function Roulette() {
 
     // seleziona opera casuale
-    const randomIndex = Math.floor(Math.random() * opere.length);
+    const randomIndex = Math.floor(Math.random() * opere.length); // tot = 27
     const selected = opere[randomIndex];
 
     //preload opera
