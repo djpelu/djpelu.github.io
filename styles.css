@@ -262,6 +262,18 @@ ul li { /* list item */
     left: 52%;    
 }
 
+#btn_milan {
+    position: absolute;
+    top: 14%;
+    left: 80%;
+    transform: rotate(15deg);
+}
+
+#btn_milan:hover {
+    transform: rotate(0);
+    transition: 0.3s ease;
+}
+
 /* EFFETTO TYPEWRITER: cursore*/
 #typewriter {
     width: max-content;
