@@ -1164,7 +1164,7 @@ ul li { /* list item */
         /* background-color: #f7d8ff; */
         /* background-color: rgb(226, 248, 251); */
         background-size: 100% 70%;
-        background-image: url("images/home_bg_mobile.webp"), url("images/home_bg_mobile.jpg");
+        background-image: url("images/home_bg_mobile_2.webp"), url("images/home_bg_mobile_2.jpg");
     }
 
     /* elimino cose */
@@ -1434,7 +1434,7 @@ ul li { /* list item */
     /*HOME*/
     #home_body {
         background-size: auto 70%;
-        background-image: url("images/home_bg_mobile.webp"), url("images/home_bg_mobile.jpg");
+        background-image: url("images/home_bg_mobile_2.png"), url("images/home_bg_mobile_2.jpg");
     }
 
     /*xTe*/
