@@ -1157,7 +1157,7 @@ ul li { /* list item */
 
     /* HOME */
     #index_html { /*con questo escamotage riesco a mettere lo sfondo colorato al body ed evitare le fasce bianche con rubber band scroll in safari*/
-        background-color: #4872AF;
+        background-color: #c24cd3;
     }
     
     #home_body {
