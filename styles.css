@@ -1213,6 +1213,7 @@ ul li { /* list item */
         padding: 2em 0 1em 0;
         position: static;
         transform: translate(0, 0);
+        gap: 2.5em;
     }
 
     .btn_cuore {
