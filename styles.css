@@ -1249,6 +1249,7 @@ ul li { /* list item */
     /*HOME: sezione 3*/
     #home_s3 {
         height: auto;
+        background: linear-gradient(0deg, rgb(79, 179, 164) 0%, rgba(173,255,47,1) 90%);
     }
 
     #collab_form {
