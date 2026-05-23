@@ -1157,14 +1157,14 @@ ul li { /* list item */
 
     /* HOME */
     #index_html { /*con questo escamotage riesco a mettere lo sfondo colorato al body ed evitare le fasce bianche con rubber band scroll in safari*/
-        background-color: #c24cd3;
+        background-color: #b5f9ed;
     }
     
     #home_body {
         /* background-color: #f7d8ff; */
         /* background-color: rgb(226, 248, 251); */
         background-size: 100% 70%;
-        background-image: url("images/home_bg_mobile_2.webp"), url("images/home_bg_mobile_2.jpg");
+        background-image:  url("images/home_bg_mobile_2.webp"), url("images/home_bg_mobile_2.png");
     }
 
     /* elimino cose */
@@ -1434,7 +1434,7 @@ ul li { /* list item */
     /*HOME*/
     #home_body {
         background-size: auto 70%;
-        background-image: url("images/home_bg_mobile_2.png"), url("images/home_bg_mobile_2.jpg");
+        background-image: url("images/home_bg_mobile_2.webp"), url("images/home_bg_mobile_2.png");
     }
 
     /*xTe*/
