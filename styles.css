@@ -1129,13 +1129,14 @@ ul li { /* list item */
         font-size: 1.1em;
     }
 
-    .btn_rettangolo {
+    /* .btn_rettangolo {
         font-size: 1.2em;
-    }
+    } */
     
     .btn_tondo,
     .btn_cuore {
-        font-size: 1.1em;
+        font-size: 1.3em;
+        margin:0.15em;
     }
 
     .cols_body {
