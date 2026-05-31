@@ -38,12 +38,30 @@
         <img src="images/crawling_title.png" id="crawling_title">
         <iframe id="crawling_trailer" src="https://www.youtube.com/embed/tCoczCpChZE?si=bG6hA3o5QlUc2xMX" title="Trailer videogioco Crawling" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         <div id="crawling_p">
-            <p style="color: #d15ff4;">E se le responsabilità di Snake crescessero con lui?</p>
-            <p><span  style="color:  #d15ff4">Crawling </span>è un videogioco che ho sviluppato nel 2023 per <span  style="color:  #d15ff4">fare pratica con Python</span> e <span  style="color:  #d15ff4">giocare con un tipo di scrittura diverso dal solito</span>. La meccanica è la stessa di <span  style="color:  #d15ff4">Snake</span>, con una svolta: man mano che il serpente cresce è chiamato a fare <span  style="color:  #d15ff4">scelte sempre più difficili che cambiano la trama</span>, proprio come succede nella vita. <span  style="color:  #d15ff4">Trovare l'amore, entrare in politica, affondare in un loop di malattia mentale</span>, questi sono solo alcuni dei percorsi in cui si dirama il gioco. </p>
-            <p>Fai il <span style="color:  #d15ff4"> DOWNLOAD</span> per scoprili tutti ;)</p>
+            <p style="color: #d15ff4; font-size: 1.5em;">E SE LE RESPONSABILITÀ DI SNAKE CRESCESSERO CON LUI?</p>
+            <p>Crawling è un videogioco che ho sviluppato nel 2023 per fare pratica con Python e giocare con un tipo di scrittura diverso dal solito. La meccanica è la stessa di Snake, con una svolta: man mano che il serpente cresce è chiamato a fare scelte sempre più difficili che cambiano la trama, proprio come succede nella vita. Trovare l'amore, entrare in politica, affondare in un loop di malattia mentale, questi sono solo alcuni dei percorsi in cui si dirama il gioco. </p>
+            <p>Fai il <a href="#crawling_download_btn" id="crawling_download_text_link"> DOWNLOAD</a> per scoprili tutti ;)</p>
         </div>
-        
-        <button class="btn_verde btn_rettangolo popup_trigger" data-intent="email">DOWNLOAD</button>
+        <div id="crawling_p">
+            <p style="color: #d15ff4; font-size: 1.5em;">DOPO IL DOWNLOAD...</p>
+            <p>
+                1. Estrai il contenuto dal file zip<br>
+                2. Avvia il gioco cliccando su crawling_demo.exe<br>
+                3. Divertiti!<br>
+            </p>
+        </div>
+        <div id="crawling_p">
+            <p style="color: #d15ff4; font-size: 1.5em;">NOTE FINALI</p>
+            <p> • Al momento Crawling funziona solo su Windows</p>
+            <p> • Per funzionare, tutti i file devono rimanere nella cartella originale</p>
+
+        </div>
+
+        <a class="btn_verde btn_rettangolo" id="crawling_download_btn"
+            href="https://github.com/djpelu/crawling/releases/download/demo/crawling_demo.zip"
+            target="_blank" rel="noreferrer noopener">
+            DOWNLOAD
+        </a>
         
         <a href="./" class="btn_verde btn_rettangolo">home</a>
 
@@ -53,8 +71,8 @@
     <!-- serpente dx -->
     <img src="images/crawling_closed.png" class="crawling_snake on_the_right" alt="">
 
-    <!-- pop-up e overlay-->
-    <div class="overlay_popup"></div>
+    <!-- VECCHIO POP-UP->
+    <!-- <div class="overlay_popup"></div>
 
     <div id="crawling_popup" class="triggered popup">
         <button class="x">x</button>
@@ -64,7 +82,7 @@
             <p> Ah, un'ultima cosa: Crawling è disponibile solo per Microsoft desktop.</p>
         </div>
         <a href="mailto:peluzzi.alessandra@gmail.com?subject=MANDAMI%20CRAWLING&body=Ciao,%0A%0AMi%20mandi%20CRAWLING?%0A%0AQui%20dovrei%20aver%20messo%20la%20mia%20firma" class="btn_verde btn_rettangolo" style="text-decoration: none;">continua</a>
-    </div>
+    </div> -->
 
     <script src="js/popup_trigger.js" defer></script>
 </body>

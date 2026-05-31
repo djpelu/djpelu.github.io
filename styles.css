@@ -1,4 +1,8 @@
 /* GLOBAL */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     font-family: "Space Grotesk", monospace;
     font-size: 100%; /* usiamo font size preimpostato del browser di chi usa il sito, generalmenre 16 px*/
@@ -786,6 +790,12 @@ ul li { /* list item */
     color: white;
     width: 33vw;
     text-align: center;
+}
+
+#crawling_download_text_link {
+    color: #d15ff4;
+    transition: all 0.3s;
+    cursor: pointer;
 }
 
 /* CRAWLING: pop-up */
