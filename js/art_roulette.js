@@ -178,7 +178,13 @@ const opere = [
         title: "Pepita",
         description: "Radio Club Chimera s2 ep3, parliamo del nugget e poi Clara Bortolotti legge “Pranzo al mare”"
     },
-    
+    {
+        src: 'images/lit_gallery/tu.jpg',
+        srcset: 'images/lit_gallery/tu.webp',
+        url: "https://www.lindiceonline.com/articles/d9fddd06-c90c-4125-b3ba-0a150617cad1",
+        title: "Tu",
+        description: "Finalista alla VIII Edizione del Premio Italo Calvino per i racconti"
+    },
 ];
 
 
