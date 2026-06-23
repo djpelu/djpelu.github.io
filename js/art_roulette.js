@@ -253,7 +253,9 @@ function Roulette() {
     }, 2000);
 }
 
-document.getElementById('AR_btn').addEventListener('click', Roulette)
+document.querySelectorAll('.AR_btn_trigger').forEach(button => {
+    button.addEventListener('click', Roulette);
+});
 
 document.getElementById('AR_popup_close').addEventListener('click', () => {
     overlay.style.display = 'none';

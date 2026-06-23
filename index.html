@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="it", id="index_html">
+<html lang="it" id="index_html">
 
 <head>
     <!-- specifico la codifica dei caratteri usata, "UTF-8" è lo standard e supporta quasi tutti i caratteri -->
@@ -46,14 +46,69 @@
     <p class="seo_tag">&nbsp© 2025 Alessandra Peluzzi&nbsp</p>
 
     <div class="overlay_popup"></div>
+    
+    <!-- MENU -->
+    <label class="hamburger">
+        <input type="checkbox">
+    </label>
+
+    <aside class="sidebar">
+        <nav>
+            <a href="./bio">su di me</a>
+            <a href="./TRE">dov'è il cavallo?</a>
+            <a href="./lit" style="font-size: 1.3em; padding: 0.5em 0 0.5em 0">SCRITTI</a>     
+        </nav>
+        <div id="crawling_mobile_div">
+            <img src="images/crawling_snake_mobile.png" alt="">
+            <a href="./crawling"><button class="btn_verde btn_rettangolo">crawling</button></a>
+            <img id="fauci" src="images/crawling_fauci_mobile.png" alt="">
+        </div>  
+    </aside>
+
+    <!-- SEZIONE 0 -->
+    <section id="home_s0">
+        
+        <div id="s0_main" class="vert_box">    
+            <!-- header -->
+            <div id="home_header_box" title="questo non è un pulsante">
+                <!-- inserisco la e come svg -->
+                <svg id="e" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 20" overflow="visible"
+                    preserveAspectRatio="xMidYMid meet">
+                    <g transform="translate(0,20) scale(0.1,-0.1)">
+                        <path d="M12 188 c-13 -13 -15 -56 -5 -136 l6 -53 75 3 c44 2 77 8 79 14 3 8
+                        -17 10 -67 6 -58 -4 -70 -2 -70 10 0 16 46 28 108 28 17 0 32 5 32 11 0 7 -24
+                        10 -72 8 -71 -4 -73 -3 -76 20 -4 23 -3 24 57 17 36 -4 61 -3 61 2 0 13 -35
+                        22 -83 22 -31 0 -38 3 -35 18 3 14 16 18 71 20 37 2 67 7 67 12 0 15 -134 12
+                        -148 -2z" />
+                    </g>
+                </svg>
+            </div>
+
+            <!-- ultima uscita -->
+            <div id="uu" class="vert_box">
+                <h3>ultima uscita:</h3>
+                <a href="https://www.lindiceonline.com/articles/d9fddd06-c90c-4125-b3ba-0a150617cad1"
+                target="_blank" rel="noreferrer noopener">
+                <picture>
+                    <source srcset="images/lit_gallery/tu.webp" type="image/webp">
+                    <img src="images/lit_gallery/tu.jpg" alt="Tu">
+                </picture>
+                </a>
+                <div id="uu_td">
+                    <p style="font-size: 1.5em; font-weight: 800;">Tu</p>
+                    <p style="font-size: 1.2em; margin:0; padding:0;">finalista alla VIII Edizione del Calvino Racconti</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
 
     <!-- SEZIONE 1 -->
     <section id="home_s1">
-
         <div id="home_bg_container"> <!-- poiché bg_container mantiene una dimensione fissa, i bottoni appaiono sempre nella stessa posizione relativa rispetto alla struttura generale, anche se la finestra viene ridimensionata. -->
-            
-            <div id="home_main_container">
 
+            <div id="home_main_container">
+                <!-- header -->
                 <div id="home_header_box" title="questo non è un pulsante">
                     <!-- inserisco la e come svg -->
                     <svg id="e" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 20" overflow="visible"
@@ -68,45 +123,36 @@
                     </svg>
                 </div>
 
-                <a href="./bio" class="btn_verde btn_rettangolo">su di me</a>
+                <a href="./bio" id="btn_bio" class="btn_verde btn_rettangolo">su di me</a>
 
-                <a href="./lit" class="btn_verde btn_rettangolo">COSE CHE HO SCRITTO</a>
+                <a href="./lit" id="btn_scritti" class="btn_verde btn_rettangolo">COSE CHE HO SCRITTO</a>
 
-                <div>
-                <!-- bottone cuore mobile nascosto-->
-                <a href="./xTe" class="btn_cuore nascosto">
-                    <span>x te</span>
-                    <img src="images/btn_cuore.png" class="btn_cuore_img" alt="Cuoricino" width="90">
-                </a>
+                <button class="btn_verde btn_tondo AR_btn_trigger">art roulette</button>
 
-                    <button id="AR_btn" class="btn_verde btn_tondo">art roulette</button>
-                </div>
-                
-                <!-- altri bottoni mobile nascosti -->
-                 <div id="crawling_mobile_div" class="nascosto">
-                    <img src="images/crawling_snake_mobile.png" alt="">
-                    <a href="./crawling"><button class="btn_verde btn_rettangolo">crawling</button></a>
-                    <img id="fauci" src="images/crawling_fauci_mobile.png" alt="">
-                 </div>
-
-                <a href="./TRE" class="btn_verde btn_rettangolo nascosto">dov'è il cavallo?!</a>
             </div>
 
-            <!-- bottoni desktop -->
+            <!-- altri bottoni -->
+            <!-- crawling -->
             <div id="crawling_div">
                 <img src="images/crawling_snake.png" alt="">
                 <a href="./crawling"><button class="btn_verde btn_rettangolo">crawling</button></a>
                 <img src="images/crawling_snake_fauci.png" alt="">
             </div>
 
+            <!-- tre! -->
             <a href="./TRE" class="btn_verde btn_rettangolo pos_btn_TRE">ci sono cavalli più belli</a>
             
+            <!-- x te -->
             <a href="./xTe" class="btn_cuore desktop">
                 <span>x te</span>
                 <img src="images/btn_cuore.png" class="btn_cuore_img" alt="Cuoricino" width="90">
             </a>
 
-            <!-- <a href="" id="btn_milan" class="desktop">
+            <!-- AR SOLO mobile -->
+            <button class="btn_verde btn_tondo nascosto AR_btn_trigger">art roulette</button>
+            
+            <!-- milan -->
+            <!-- <a href="" id="btn_milan">
                 <img src="images/milan_beer.png" class="" alt="AC Milan Book Club" height="140">
             </a> -->
             

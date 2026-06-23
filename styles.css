@@ -247,9 +247,6 @@ ul li { /* list item */
     top: -4%;
     cursor: pointer;
     text-decoration: none;
-}
-
-.btn_cuore.desktop {
     display: inline-block;
 }
 
@@ -281,6 +278,113 @@ ul li { /* list item */
 
 #btn_milan_mobile {
     background-image: linear-gradient(90deg, greenyellow 0% 90%, black 90% 93%, red 93% 96%, greenyellow 96% 100%);
+}
+
+/* MENU */
+/* css variables */
+:root {
+    --bar-width: 40px;
+    --bar-height: 6px;
+    --hamburger-gap: 6px;
+    --hamburger-margin: 20px;
+    --color: white; /* default, ma poi lo cambio in some pag*/
+    --animation-timing: 200ms ease-in-out;
+    --hamburger-height: calc(var(--bar-height)*3) + var(--hamburger-gap)*2
+}
+
+/* hamburger */
+.hamburger{
+    --x-width: calc(var(--hamburger-height)*1.41421356237); /*lunghezza trattini quando creo la x */
+    display: none; /*REMOVED FROM DESKTOP*/
+    flex-direction: column;
+    gap: var(--hamburger-gap);
+    width: max-content;
+    position: fixed;
+    top: var(--hamburger-margin);
+    left: var(--hamburger-margin);
+    z-index: 51;
+    cursor: pointer;
+}
+
+.hamburger::before, /*creo pseudo elemento prima dell'input*/
+.hamburger::after, /*creo pseudo elemento dopo l'input*/
+.hamburger input{
+    content: ""; /*stringa vuota, così da ottenere le linee*/
+    width: var(--bar-width);
+    height: var(--bar-height);
+    background-color: var(--color);
+    border-radius: 9999px;
+    transition: opacity var(--animation-timing), width var(--animation-timing), rotate var(--animation-timing), translate var(--animation-timing), background-color var(--animation-timing);
+    transform-origin: left center;
+}
+
+.hamburger input {
+    appearance: none;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    pointer-events: none; 
+}
+
+.hamburger input:checked {
+    opacity: 0;
+    width: 0;
+} 
+
+.hamburger:has(input:checked)::before{
+    rotate: 45deg;
+    width: var(--x-width);
+    translate: 0 calc(var(--bar-height) / -2);
+}
+
+.hamburger:has(input:checked)::after{
+    rotate: -45deg;
+    width: var(--x-width);
+    translate: 0 calc(var(--bar-height) / -2);
+}
+
+.hamburger:has(input:checked){
+    --color: greenyellow;
+}
+
+/* sidebar */
+.sidebar {
+    translate: -100%;
+    transition: translate var(--animation-timing);
+    padding: 0.5em 1em;
+    padding-top: calc(var(--hamburger-height) + var(--hamburger-margin) + 1em);
+    position: fixed;
+    top: 0;
+    display: none;
+    text-align: left;
+    background-color: #2E2E2E;
+    color: greenyellow;
+    min-height: 100vh;
+    width: 15em;
+    z-index: 50;
+    font-size: 1.3em;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.sidebar nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: greenyellow;
+}
+
+.hamburger:has(input:checked) + .sidebar {
+    translate: 0;
+}
+
+html:has(.hamburger input:checked) {
+    overflow: hidden;
 }
 
 /* EFFETTO TYPEWRITER: cursore*/
@@ -340,6 +444,51 @@ ul li { /* list item */
     z-index: -1;
 }
 
+/* HOME: header*/
+#home_header_box {
+    font-family: monospace;
+    margin-bottom: 5em;
+}
+
+#e{
+    height: 6em;
+    width: auto;
+    fill: transparent;
+    stroke-width: 7px;
+    stroke: black;
+}
+
+
+/* HOME: sezione 0 */
+#home_s0 {
+    display: none; /*desktop*/
+    /* background: linear-gradient(0deg, white 0%, lightblue 90%); */
+    position: relative;
+}
+
+#uu {
+    margin-top: 1em;
+    text-align: center;
+    gap: 1em;
+    color:black;
+}
+
+#uu img {
+    max-width: 60wv;
+    max-height: 40vh;
+}
+
+#uu h3 {
+    color: white;
+}
+
+#uu_td {
+    font-family: monospace;
+    width: 70vw;
+    color: white;
+}
+
+
 /* HOME: sezione 1 */
 #home_s1 {
     position: relative;
@@ -369,25 +518,6 @@ ul li { /* list item */
     flex-direction: column;
     align-items: center;
     gap: 1.5em;
-}
-
-#home_header_box {
-    font-family: monospace;
-    margin-bottom: 5em;
-}
-
-#e {
-    height: 6em;
-    width: auto;
-    fill: transparent;
-    stroke-width: 7px;
-    stroke: black;
-}
-
-.lsc { /*letter spacing correction*/
-    display:inline-block;
-    width:0.2em;
-    height: 0.2em;
 }
 
 /* HOME: sezione 2 */
@@ -615,7 +745,7 @@ ul li { /* list item */
 
 #crawling_mobile_div img {
     position: absolute;
-    height: 20em;
+    height: 13em;
     top: 50%;
     left: 52%;
     transform: translate(-50%, -50%);
@@ -626,7 +756,8 @@ ul li { /* list item */
     position: absolute;
     transform: translate(-50%, 0);
     left: 50%;
-    top: 21%;
+    top: 30%;
+    font-size: 1em;
 }
 
 /* xTe */
@@ -1144,10 +1275,6 @@ ul li { /* list item */
         font-size: 1.1em;
     }
 
-    /* .btn_rettangolo {
-        font-size: 1.2em;
-    } */
-    
     .btn_tondo,
     .btn_cuore {
         font-size: 1.3em;
@@ -1174,9 +1301,10 @@ ul li { /* list item */
 
     /* HOME */
     #index_html { /*con questo escamotage riesco a mettere lo sfondo colorato al body ed evitare le fasce bianche con rubber band scroll in safari*/
-        background-color: #b5f9ed;
+        background-color: #b4a4e9;
     }
     
+    /* sfondo */
     #home_body {
         /* background-color: #f7d8ff; */
         /* background-color: rgb(226, 248, 251); */
@@ -1184,24 +1312,41 @@ ul li { /* list item */
         background-size: 100% 72%;
     }
 
-    /* elimino cose */
-    .pos_btn_TRE,
-    #crawling_div,
-    .btn_cuore.desktop,
-    #btn_milan {
-        display: none;
+
+    /* HOME: sezione 0 */
+    #home_s0 {
+        display: block;
+    }
+    
+    /* menu */
+    .hamburger,
+    .sidebar {
+        display: flex;
     }
 
-    #home_main_container .cream_highlight {
-        background-color: transparent; 
+    .sidebar {
+        width: 80vw;
     }
 
-    /* aggiungo cose */
-    #home_body .nascosto {
-        display: inline-block;
+    #e {
+        height: 7em;
+        stroke: white;
     }
 
     /* HOME: sezione 1 */
+    .pos_btn_TRE,
+    #crawling_div,
+    #btn_milan,
+    #btn_bio,
+    #btn_scritti,
+    #home_main_container {
+        display: none;
+    }
+
+    #home_s1 .nascosto {
+        display: inline-block;
+    }
+
     #home_s1 {
         position: static;
         background-image: none;
@@ -1213,11 +1358,6 @@ ul li { /* list item */
         margin: 3em 0 2em;
     }
     
-    #e {
-        height: 7em;
-        stroke: white;
-    }
-
     #home_bg_container { /*lo faccio aderire al alla s1 e non lo cago più*/
         position: static;
         height: auto;
@@ -1225,16 +1365,9 @@ ul li { /* list item */
         transform: translate(0, 0);
     }
 
-    #home_main_container{
-        width: 100vw;
-        padding: 2em 0 1em 0;
-        position: static;
-        transform: translate(0, 0);
-        gap: 2.5em;
-    }
-
     .btn_cuore {
         left: 0%;
+        margin: 3em 0 3em 0;
     }
 
     /* HOME: sezione 2 */
