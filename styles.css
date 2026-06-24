@@ -310,7 +310,7 @@ ul li { /* list item */
     position: fixed;
     top: var(--hamburger-margin);
     left: var(--hamburger-margin);
-    z-index: 51;
+    z-index: 201;
     cursor: pointer;
 }
 
@@ -369,7 +369,7 @@ ul li { /* list item */
     height: 100vh;
     overflow-y: auto;
     width: 15em;
-    z-index: 50;
+    z-index: 200;
     font-size: 1.3em;
     flex-direction: column;
     align-items: center;
@@ -1121,6 +1121,7 @@ ul li { /* list item */
 /* CTRL+I*/
 #ctrl_body {
     background-image: url("images/ctrl_bg.webp"), url("images/ctrl_bg.png");
+    background-color: #d9f2ff;
     background-size: cover;
     --color: black;
 }
@@ -1246,7 +1247,7 @@ ul li { /* list item */
     align-items: center;
     justify-content: center;
     margin: 0 1em;
-    z-index: 1; /* serve per overlay */
+    z-index: 101; /* serve per overlay */
 }
 
 #flipbox button {
