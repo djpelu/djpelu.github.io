@@ -1013,10 +1013,6 @@ html:has(.hamburger input:checked) {
     transition: opacity 0.3s ease;
 }
 
-#lit_home {
-    display: none;
-}
-
 #filter_home {
     margin-top: 1em;
     text-decoration: none;
@@ -1280,7 +1276,7 @@ html:has(.hamburger input:checked) {
 }
 
 
-/* VERSIONE TABLET E MOBILE --------------------- */
+/* TABLET E MOBILE --------------------- */
 @media only screen and (max-width: 1024px) {
 
     p, ul {
@@ -1324,16 +1320,10 @@ html:has(.hamburger input:checked) {
         background-image: url("images/home_bg_mobile_2.webp"), url("images/home_bg_mobile_2.png");
         background-size: 100% 72%;
     }
-
-
-    /* HOME: sezione 0 */
-    #home_s0 {
-        display: block;
-    }
-    
+  
     /* menu */
-    .hamburger,
-    .sidebar {
+    #home_body .hamburger,
+    #home_body .sidebar {
         display: flex;
     }
 
@@ -1345,6 +1335,11 @@ html:has(.hamburger input:checked) {
         height: 7em;
         stroke: white;
         padding-top: 3em;
+    }
+
+    /* HOME: sezione 0 */
+    #home_s0 {
+        display: block;
     }
 
     /* HOME: sezione 1 */
@@ -1597,7 +1592,7 @@ html:has(.hamburger input:checked) {
     }
 }
 
-/* VERSIONE MOBILE --------------------- */
+/* MOBILE --------------------- */
 @media only screen and (max-width: 767px) {
 
     .cols_body {
@@ -1625,8 +1620,9 @@ html:has(.hamburger input:checked) {
     }
 
     /* LIT */
-    #lit_home {
-        display: block;
+    #lit_body .hamburger,
+    #lit_body .sidebar {
+        display: flex;
     }
 
     #filter_home {
@@ -1651,6 +1647,7 @@ html:has(.hamburger input:checked) {
     #lit_title_div { 
         min-height: 3em;
         margin: 3em 0 0;
+        padding-top:2em;
     }
 
     .lit_title {
@@ -1675,16 +1672,12 @@ html:has(.hamburger input:checked) {
         gap: 3em;
         width: 100vw;
         right: auto;
-        margin: 8.5em 0 0;
+        margin: 8.5em 0 3em;
     }
 
     .lit_piece {
         align-self: center;
         grid-template-rows: auto auto;
-    }
-
-    #lit_home {
-        margin: 0 auto 4em;
     }
 
     /* SCOGLIO */
