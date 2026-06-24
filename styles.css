@@ -1344,6 +1344,7 @@ html:has(.hamburger input:checked) {
     #e {
         height: 7em;
         stroke: white;
+        padding-top: 3em;
     }
 
     /* HOME: sezione 1 */
@@ -1450,6 +1451,9 @@ html:has(.hamburger input:checked) {
     }
 
     /* BIO */
+    #bio_body {
+        font-size: 1.2em;
+    }
     #bio_side_col_1 {
         margin-top: 3em;
     }
