@@ -810,8 +810,6 @@ ul li { /* list item */
 #bio_body {
     background-color: #FFFEF2;
     --color: blue; 
-    font-family: monospace;
-    font-size: 1.3em;
 }
 
 #bio_body .hamburger,
@@ -835,6 +833,8 @@ ul li { /* list item */
     text-align: justify;
     background-color: white;
     padding: 1em;
+    font-family: monospace;
+    font-size: 1.3em;
 }
 
 
@@ -842,16 +842,12 @@ ul li { /* list item */
 #tre_body {
     background-image: url("images/tre_bg.webp"), url("images/tre_bg.png");
     background-color: #033621;
-    padding: 7em 0 6em 0;
+    padding: 6em 0 6em 0;
 }
 
 #tre_body .hamburger,
 #tre_body .sidebar {
     display: flex;
-}
-
-#tre_body p {
-    font-size: 1.1em;
 }
 
 #tre_oriz_box {
@@ -860,6 +856,10 @@ ul li { /* list item */
     padding: 0 2em;
     justify-content: center;
     gap: 2em;
+}
+
+#tre_oriz_box p {
+    font-size: 1.1em;
 }
 
 #tre_oriz_box picture {
@@ -1501,9 +1501,6 @@ ul li { /* list item */
     }
 
     /* BIO */
-    #bio_body {
-        font-size: 1.2em;
-    }
     #bio_side_col_1 {
         margin-top: 3em;
     }
@@ -1516,6 +1513,8 @@ ul li { /* list item */
     #xTe_testo {
         margin: 2em;
     }
+
+
     
     /*TRE*/
     #tre_body {
