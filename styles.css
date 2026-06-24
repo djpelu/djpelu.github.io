@@ -1106,12 +1106,29 @@ ul li { /* list item */
 #ctrl_body {
     background-image: url("images/ctrl_bg.webp"), url("images/ctrl_bg.png");
     background-size: cover;
+    --color: black;
 }
+
+#ctrl_body .hamburger,
+#ctrl_body .sidebar {
+    display: flex;
+}
+
+#ctrl_body .page {
+    width: 60%;
+}
+
 
 /* freaky */
 #freaky_body {
     font-family: 'Lato', sans-serif;
     box-shadow: inset 0 0 4em 1em rgba(0, 0, 0, 0.5);
+    --color: #dc5ca5;
+}
+
+#freaky_body .hamburger,
+#freaky_body .sidebar {
+    display: flex;
 }
 
 #freaky_body .central_col {
@@ -1139,9 +1156,18 @@ ul li { /* list item */
     justify-content: center;
 }
 
+#freaky_back {
+    margin: 1em 0 5em;
+}
+
 /* SCOGLIO*/
 #scoglio_body {
     background-color: #8F99AB;
+}
+
+#scoglio_body .hamburger,
+#scoglio_body .sidebar {
+    display: flex;
 }
 
 #scoglio_bg {
@@ -1175,6 +1201,11 @@ ul li { /* list item */
     background-size: 80% auto;
     background-position: center bottom;
     min-height: 100vh;
+}
+
+#sedie_body .hamburger,
+#sedie_body .sidebar {
+    display: flex;
 }
 
 #sedie_body .overlay_popup {
@@ -1545,15 +1576,18 @@ ul li { /* list item */
     }
 
     /* SCOGLIO */  
+    #scoglio_body {
+        --color: #ebd7a9;
+    }
+
     #scoglio_bg {
         height: 98%; /*siccome la velocità del parallax aumenta la dimensione del bg, usa questo per tweeking*/
         background-image: url('images/scoglio_bg_mobile.webp'), url('images/scoglio_bg_mobile.png');
     }
-    
-    
+        
     #scoglio_main {
         overflow: hidden;
-        padding: 3em 0;
+        padding: 4em 0;
         width: 100vw; 
         text-align: center; 
         gap: 0.5em;
@@ -1581,6 +1615,11 @@ ul li { /* list item */
     #lit_body .invisibile {
         opacity: 1;
     }
+
+    /* CTRL+I */
+    #ctrl_body .page {
+        width: auto;
+    }
     
     /* freaky */
     #freaky_body .side_col {
@@ -1591,12 +1630,16 @@ ul li { /* list item */
         display: block;
     }
 
-    #freaky_body.cols_body {
+    #freaky_body .cols_body {
         padding: 0 1em;
     }
 
     #freaky_body .page a {
         text-decoration: underline;
+    }
+
+    #freaky_back {
+        margin: 3em 0 5em;
     }
 }
 
@@ -1707,7 +1750,7 @@ ul li { /* list item */
     }
 
     #sedie_main p {
-        margin-top: 3em;
+        margin-top: 4em;
         order: 0;
         background-color: rgba(0, 0, 0, 0.8);
     }
