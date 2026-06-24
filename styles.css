@@ -801,9 +801,20 @@ html:has(.hamburger input:checked) {
 /* BIO */
 #bio_body {
     background-color: #FFFEF2;
+    --color: blue; 
+    font-family: monospace;
+    font-size: 1.3em;
 }
 
-#bio_side_col {
+#bio_body .hamburger,
+#bio_body .sidebar,
+#bio_body .menubar {
+    display: flex;
+}
+
+#bio_side_col_1,
+#bio_side_col_2,
+#bio_p {
     filter: drop-shadow(0.1em 0.1em 0.1em black);
 }
 
@@ -814,6 +825,8 @@ html:has(.hamburger input:checked) {
 #bio_p {
     text-indent: 1em;
     text-align: justify;
+    background-color: white;
+    padding: 1em;
 }
 
 
@@ -1436,7 +1449,10 @@ html:has(.hamburger input:checked) {
         font-size: clamp(0.5em, 1.1em, 1.1em);
     }
 
-    /* LIT */
+    /* BIO */
+    #bio_side_col_1 {
+        margin-top: 3em;
+    }
     
     /*xTe*/
     #xTe_main {
