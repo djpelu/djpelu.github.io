@@ -302,7 +302,7 @@ ul li { /* list item */
     position: fixed;
     top: var(--hamburger-margin);
     left: var(--hamburger-margin);
-    z-index: 51;
+    z-index: 201;
     cursor: pointer;
 }
 
@@ -362,7 +362,7 @@ ul li { /* list item */
     height: 100vh;
     overflow-y: auto;
     width: 15em;
-    z-index: 50;
+    z-index: 200;
     font-size: 1.3em;
     flex-direction: column;
     align-items: center;
@@ -988,7 +988,6 @@ ul li { /* list item */
 #lit_body {
     background-image: url("images/LIT_bg.webp"), url("images/LIT_bg.png");
     background-color: peachpuff;
-    margin: 4em 2em;
 }
 
 #lit_title_div { 
