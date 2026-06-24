@@ -1593,7 +1593,7 @@ ul li { /* list item */
 
     /* SCOGLIO */  
     #scoglio_body {
-        --color: #ebd7a9;
+        --color: greenyellow;
     }
 
     #scoglio_bg {
