@@ -181,6 +181,14 @@ ul li { /* list item */
     transition: 0.1s ease;
 }
 
+#nav_scritti {
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 0.2em;
+    margin: 0.5em 0;
+    font-size: 1.8em;
+}
+
 .btn_verde {
     font-family: inherit;
     color: #2E2E2E; /* colore testo */
@@ -358,7 +366,6 @@ ul li { /* list item */
     display: none;
     text-align: left;
     background-color: #2E2E2E;
-    color: greenyellow;
     height: 100vh;
     overflow-y: auto;
     width: 15em;
@@ -367,17 +374,15 @@ ul li { /* list item */
     flex-direction: column;
     align-items: center;
     text-align: center;
-    border: 3x solid red;
 }
 
 .sidebar nav {
     display: flex;
     flex-direction: column;
     gap: 0.5em;
-    border: 3x solid red;
 }
 
-.sidebar a {
+.sidebar nav a {
     text-decoration: none;
     color: greenyellow;
 }
@@ -773,7 +778,7 @@ ul li { /* list item */
 #btn_carta {
     background-color: transparent;
     border: none;
-    filter: drop-shadow(0px 3px 1px black)
+    filter: drop-shadow(0px 3px 1px black);
 }
 
 #btn_carta:hover {
@@ -988,6 +993,7 @@ ul li { /* list item */
 #lit_body {
     background-image: url("images/LIT_bg.webp"), url("images/LIT_bg.png");
     background-color: peachpuff;
+    margin: 4em 2em;
 }
 
 #lit_title_div { 
@@ -1696,7 +1702,7 @@ ul li { /* list item */
     #lit_title_div { 
         min-height: 3em;
         margin: 3em 0 0;
-        padding-top:2em;
+        padding-top:1em;
     }
 
     .lit_title {
