@@ -359,19 +359,22 @@ ul li { /* list item */
     text-align: left;
     background-color: #2E2E2E;
     color: greenyellow;
-    min-height: 100vh;
+    height: 100vh;
+    overflow-y: auto;
     width: 15em;
     z-index: 50;
     font-size: 1.3em;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    border: 3x solid red;
 }
 
 .sidebar nav {
     display: flex;
     flex-direction: column;
     gap: 0.5em;
+    border: 3x solid red;
 }
 
 .sidebar a {
@@ -383,9 +386,9 @@ ul li { /* list item */
     translate: 0;
 }
 
-html:has(.hamburger input:checked) {
+/* html:has(.hamburger input:checked) {
     overflow: hidden;
-}
+} */
 
 /* EFFETTO TYPEWRITER: cursore*/
 #typewriter {
@@ -835,6 +838,11 @@ html:has(.hamburger input:checked) {
     background-image: url("images/tre_bg.webp"), url("images/tre_bg.png");
     background-color: #033621;
     padding: 7em 0 6em 0;
+}
+
+#tre_body .hamburger,
+#tre_body .sidebar {
+    display: flex;
 }
 
 #tre_body p {
@@ -1611,7 +1619,6 @@ html:has(.hamburger input:checked) {
 
     /* TRE */
     #tre_oriz_box {
-        padding: 0;
         width: 95%;
     }
 
