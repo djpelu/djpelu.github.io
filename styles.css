@@ -453,6 +453,10 @@ ul li { /* list item */
 }
 
 /* HOME: header*/
+#index_html { /*con questo escamotage riesco a mettere lo sfondo colorato al body ed evitare le fasce bianche con rubber band scroll in safari*/
+    background-color: rgb(46,228,119);
+}
+
 #home_header_box {
     font-family: monospace;
     margin-bottom: 5em;
@@ -1366,7 +1370,7 @@ ul li { /* list item */
 
     /* HOME */
     #index_html { /*con questo escamotage riesco a mettere lo sfondo colorato al body ed evitare le fasce bianche con rubber band scroll in safari*/
-        background-color: #b4a4e9;
+        background: linear-gradient(#b4a4e9 0 85%, rgb(46,228,119) 85% 100%);
     }
     
     /* sfondo */
