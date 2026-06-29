@@ -1370,7 +1370,7 @@ ul li { /* list item */
 
     /* HOME */
     #index_html { /*con questo escamotage riesco a mettere lo sfondo colorato al body ed evitare le fasce bianche con rubber band scroll in safari*/
-        background: linear-gradient(#b4a4e9 0 85%, rgb(46,228,119) 85% 100%);
+        background-color: #b4a4e9;
     }
     
     /* sfondo */
