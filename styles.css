@@ -1340,16 +1340,16 @@ ul li { /* list item */
 }
 
 /* MILAN */
-#milan_body {
-    background-color: rgb(50, 37, 66);
-    background-image: url("images/milan_bg.webp");
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-}
-
-#milan_body .cols_body {
-    background-color: rgba(0, 0, 0, 0.3);
+/* FISSO IL BG NEGLI IPHONE!! */
+#milan_body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('images/milan_bg.webp') center/cover no-repeat;        z-index: -1;
+    pointer-events: none; /* Evita che interferisca con i click */
 }
 
 #milan_body .central_col {
