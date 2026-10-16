@@ -1341,22 +1341,10 @@ ul li { /* list item */
 
 /* MILAN */
 #milan_body {
-    background-color: black;
-    /* il primo è lo strato SUPERIORE, il secondo è lo strato INFERIORE */
-    background-image: 
-        url("images/milan_bg.webp"),
-        repeating-linear-gradient(
-            to right,
-            #000000,           
-            #000000 50px,      
-            #fb090b 50px,      
-            #fb090b 100px      
-        );
-    /* prima regola x immagine, seconda x righe */
-    background-size: cover, auto;
-    background-position: center, left top;
-    background-repeat: no-repeat, repeat;
-    background-attachment: fixed, none;
+    background-color: rgb(50, 37, 66);
+    background-image: url("images/milan_bg.webp");
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 #milan_body .cols_body {
@@ -1378,6 +1366,11 @@ ul li { /* list item */
 #milan_body .hamburger,
 #milan_body .sidebar {
     display: flex;
+}
+
+#milan_body .hamburger:has(input:checked){
+    --color: greenyellow;
+    filter: none;
 }
 
 #milan_body .hamburger {
