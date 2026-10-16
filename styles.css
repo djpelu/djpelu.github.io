@@ -1339,88 +1339,6 @@ ul li { /* list item */
     transform: rotateY(-180deg);
 }
 
-/* MILAN */
-#milan_body {
-    background-image: url("images/milan_bg.webp");
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-#milan_body .cols_body {
-    background-color: rgba(0, 0, 0, 0.3);
-}
-
-#milan_body .central_col {
-    padding: 3em;
-    width: 50vw;
-    text-align: justify;
-    text-indent: 1em;
-    color: white; /* Il colore di partenza da miscelare */
-    font-family: monospace;
-    font-size: 1.4em;
-    text-shadow: 0.07em 0.07em 0.07em black;
-
-}
-
-#milan_body .hamburger,
-#milan_body .sidebar {
-    display: flex;
-}
-
-#milan_body .hamburger {
-    filter: drop-shadow(0.15em 0.15em 0.05em red);
-}
-
-#milan_body h1 {
-    font-family: milan;
-    font-size: 5em;
-    text-align: center;
-    letter-spacing: 0.05em;
-    color: white;
-    text-shadow: 0.04em 0.04em 0em red;
-}
-
-#milan_body h2 {
-    font-family: milan;
-    font-size: 3em;
-    letter-spacing: 0.05em;
-    text-shadow: 0.04em 0.04em 0em red;
-}
-
-#milan_btns {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    font-family: milan;
-    font-size: 1.1em;
-    size: content;
-    gap: 2em;
-    text-shadow: none;
-}
-
-
-#btn_milan_rosso {
-    background-color: red;
-    color: black;
-    text-decoration: none;
-    box-shadow: 0.1em 0.1em 0.1em black;
-    white-space: nowrap;
-    transition: 0.3s ease;
-}
-
-#btn_milan_rosso:hover{
-    background-color: white;
-
-}
-
-#btn_milan_black {
-    background-color: black;
-    color: white;
-    text-decoration: none;
-    box-shadow: 0.1em 0.1em 0.1em black;
-    white-space: nowrap;
-}
-
 
 /* TABLET E MOBILE --------------------- */
 @media only screen and (max-width: 1024px) {
@@ -1605,6 +1523,8 @@ ul li { /* list item */
         margin: 2em;
     }
 
+
+    
     /*TRE*/
     #tre_body {
         background-size: 200%;
@@ -1745,25 +1665,6 @@ ul li { /* list item */
     #freaky_back {
         margin: 3em 0 5em;
     }
-
-    /* milan */
-    #milan_body .cols_body {
-        margin: 0;
-        padding: 3em 0;
-    }
-
-    #milan_body .central_col {
-        padding: 0;
-        width: 70vw;
-    }
-
-    #milan_body h1 {
-        font-size: 4em;
-    }
-
-    #milan_body h2 {
-        font-size: 2.5em;    
-    }
 }
 
 /* MOBILE --------------------- */
@@ -1902,10 +1803,5 @@ ul li { /* list item */
     /* freaky */
     #freaky_body h1 {
         font-size: 4.5em;
-    }
-
-    /* milan */
-    #milan_p {
-        width: 85vw;
     }
 }
