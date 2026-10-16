@@ -1341,9 +1341,22 @@ ul li { /* list item */
 
 /* MILAN */
 #milan_body {
-    background-image: url("images/milan_bg.webp");
-    background-size: cover;
-    background-attachment: fixed;
+    background-color: black;
+    /* il primo è lo strato SUPERIORE, il secondo è lo strato INFERIORE */
+    background-image: 
+        url("images/milan_bg.webp"),
+        repeating-linear-gradient(
+            to right,
+            #000000,           
+            #000000 50px,      
+            #fb090b 50px,      
+            #fb090b 100px      
+        );
+    /* prima regola x immagine, seconda x righe */
+    background-size: cover, auto;
+    background-position: center, left top;
+    background-repeat: no-repeat, repeat;
+    background-attachment: fixed, none;
 }
 
 #milan_body .cols_body {
@@ -1906,7 +1919,16 @@ ul li { /* list item */
     }
 
     /* milan */
-    #milan_p {
+    #milan_body .central_col{
         width: 85vw;
     }
+
+    #milan_body h1 {
+        font-size: 3em;
+    }
+
+    #milan_body h2 {
+        font-size: 2em;    
+    }
+
 }
