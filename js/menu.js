@@ -9,12 +9,14 @@ class SiteMenu extends HTMLElement {
                 <nav>
                     <a href="./bio">su di me</a>  
                     <a href="./lit" id="nav_scritti">SCRITTI</a>
-                    <a id="btn_milan_side" href="./milan">AC Milan ! Book Club</a>
+                    <a id="btn_milan_side" href="./milan">AC Milan B!!k Club</a>
                 </nav>
                 <div id="crawling_mobile_div">
-                    <img src="images/crawling_snake_mobile.png" alt="">
-                    <a href="./crawling"><button class="btn_verde btn_rettangolo">crawling</button></a>
-                    <img id="fauci" src="images/crawling_fauci_mobile.png" alt="">
+                    <img src="images/crawling_icon.png" alt="">
+                    <div id=crawling_wrapper>
+                        <a href="./crawling"><button>crawling</button></a>
+                    </div>
+                    <img id="fauci" src="images/crawling_icon_fauci.png" alt="">
                 </div>
                 <nav>
                     <a href="./TRE">dov'è il cavallo?</a> 

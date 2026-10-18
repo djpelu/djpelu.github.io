@@ -194,6 +194,7 @@ ul li { /* list item */
     font-family: Georgia, 'Times New Roman', Times, serif;
     letter-spacing: 0.2em;
     font-size: 1.8em;
+    margin: 0.5em 0;
 }
 
 .btn_verde {
@@ -393,6 +394,10 @@ ul li { /* list item */
 .sidebar nav a {
     text-decoration: none;
     color: greenyellow;
+}
+
+.sidebar nav a:hover {
+    color: #F2F2F2;
 }
 
 .hamburger:has(input:checked) + .sidebar {
@@ -755,25 +760,69 @@ ul li { /* list item */
 
 #crawling_mobile_div {
     position: relative;
-    height: 14em;
+    height: 6em;
     width: 5em;
 }
 
 #crawling_mobile_div img {
     position: absolute;
-    height: 13em;
+    height: 4.5em;
     top: 50%;
-    left: 52%;
+    left: 50%;
     transform: translate(-50%, -50%);
     pointer-events: none; /* Permette di cliccare attraverso l'immagine */
 }
 
 #crawling_mobile_div button {
+    font-family: inherit;
+    color: greenyellow; /* colore testo */
+    background-color: #2E2E2E;
+    border: 0;
+    cursor: pointer;
+    transition: 0.1s ease;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 1.1em 2em;
+    align-items: center;
+
+    /* concavità con masking*/
+    /* creo una maschera sul bottone allineata con angolo top left ( 0 0 ) e grande tanto quanto (100% 100%) */
+    /* la coloro: ciò che è trasparent (#0000) è caancellato, il resto (#000) è visibile */
+    /* la doppia sintassi è per la compatibilità con i diversi browser */
+    -webkit-mask: 
+        radial-gradient(ellipse 5em 1em at top center, #0000 99%, #000) 0 0 / 100% 100%,
+        radial-gradient(ellipse 5em 1emm at bottom center, #0000 99%, #000) 0 0 / 100% 100%;
+    -webkit-mask-composite: destination-in;
+    mask: 
+        radial-gradient(ellipse 5em 1em at top center, #0000 99%, #000),
+        radial-gradient(ellipse 5em 1em at bottom center, #0000 99%, #000);
+    mask-composite: intersect;
+}
+
+#crawling_mobile_div button:hover {
+    color:#F2F2F2
+}
+
+#crawling_wrapper {
     position: absolute;
     transform: translate(-50%, 0);
     left: 50%;
-    top: 23%;
-    font-size: 0.9em;
+    top: 28%;
+    filter: drop-shadow(0em 0.1em 0.1em rgba(0, 0, 0, 0.8));
+
+    /* drop-shadow segna i bordi del wrapper,uso maschera per cancellarli con dissolvenza */
+    -webkit-mask-image: linear-gradient(
+        to right, 
+        transparent 0%, 
+        black 15% 85%, 
+        transparent 100%
+    );
+    mask-image: linear-gradient(
+        to right, 
+        transparent 0%, 
+        black 15% 85%, 
+        transparent 100%
+    );
 }
 
 /* xTe */
