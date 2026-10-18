@@ -9,7 +9,7 @@ class SiteMenu extends HTMLElement {
                 <nav>
                     <a href="./bio">su di me</a>  
                     <a href="./lit" id="nav_scritti">SCRITTI</a>
-                    <a id="btn_milan_side" href="./milan">AC Milan B!!k Club</a>
+                    <a id="btn_milan_side" href="./milan">AC Milan ! Book Club</a>
                 </nav>
                 <div id="crawling_mobile_div">
                     <img src="images/crawling_icon.png" alt="">
